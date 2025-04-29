@@ -21,7 +21,6 @@ bot = commands.Bot(command_prefix=prefixes, intents=intents)
 bot.remove_command("help")
 
 basedir = os.path.dirname(os.path.abspath(__file__))
-basedir += "/jsons"
 warningsjson = os.path.join(basedir, "warnings.json")
 mutesjson = os.path.join(basedir, "mutes.json")
 bansjson = os.path.join(basedir, "bans.json")
