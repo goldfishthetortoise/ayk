@@ -1,0 +1,3970 @@
+import discord
+import random
+import asyncio
+import os
+import json
+import time
+import re
+from discord.ext import commands
+from discord.app_commands import describe
+from discord.ui import View, Button
+from dotenv import load_dotenv
+from datetime import timezone, datetime, timedelta
+
+load_dotenv()
+
+intents = discord.Intents.default()
+intents.message_content = True
+intents.members = True
+prefixes = ['.']
+bot = commands.Bot(command_prefix=prefixes, intents=intents)
+bot.remove_command("help")
+
+basedir = os.path.dirname(os.path.abspath(__file__))
+#basedir += "/jsons"
+testingjson = os.path.join(basedir, "testing.json")
+warningsjson = os.path.join(basedir, "warnings.json")
+mutesjson = os.path.join(basedir, "mutes.json")
+bansjson = os.path.join(basedir, "bans.json")
+alcasesjson = os.path.join(basedir, "alcases.json")
+accasesjson = os.path.join(basedir, "accases.json")
+lastcaseidjson = os.path.join(basedir, "lastcaseid.json")
+lastsentcmdjson = os.path.join(basedir, "lastsentcmd.json")
+bankedjson = os.path.join(basedir, "banked.json")
+workcdsjson = os.path.join(basedir, "workcds.json")
+dailycdsjson = os.path.join(basedir, "dailycds.json")
+cashjson = os.path.join(basedir, "cash.json")
+robcdsjson = os.path.join(basedir, "robcds.json")
+collectcdsjson = os.path.join(basedir, "collectcds.json")
+actionslogjson = os.path.join(basedir, "actionslog.json")
+
+warnings = {}
+mutes = {}
+bans = {}
+alcases = {}
+accases = {}
+lastinvite = {}
+lastcaseiddict = {}
+lastsentcmd = {}
+banked = {}
+cash = {}
+workcds = {}
+dailycds = {}
+items = {
+    "bronze": {
+        "price": 2500,
+        "roleid": 1363922128096858312,
+    },
+    "silver": {
+        "price": 25000,
+        "roleid": 1363922191963521314,
+    },
+    "gold": {
+        "price": 50000,
+        "roleid": 1375038130658218014,
+    },
+    "platinum": {
+        "price": 100000,
+        "roleid": 1363922236888715454,
+    },
+    "diamond": {
+        "price": 250000,
+        "roleid": 1363922296724652074,
+    },
+    "elite": {
+        "price": 555555,
+        "roleid": 1375036783968129085,
+    },
+    "mythic": {
+        "price": 1000000,
+        "roleid": 1375037220972662795,
+    },
+    "unreal": {
+        "price": 10000000,
+        "roleid": 1375035443950653481,
+    },
+    "VIP": {
+        "price": 25000000,
+        "roleid": 1347697960313553067,
+    }
+}
+robcds = {}
+collectcds = {}
+usersgrabbed = {}
+actionslog = {}
+incomeroles = {
+    "1347697960242384982": { #level 5
+        "amount": 100,
+    },
+    "1347697960242384983": { #level 10
+        "amount": 200,
+    },
+    "1347697960242384984": { #level 20
+        "amount": 500,
+    },
+    "1347697960242384985": { #level 30
+        "amount": 1000,
+    },
+    "1347697960271478895": { #level 40
+        "amount": 2500,
+    },
+    "1347697960271478896": { #level 50
+        "amount": 4000, 
+    },
+    "1347697960271478897": { #level 60
+        "amount": 6000,
+    },
+    "1347697960271478898": { #level 70
+        "amount": 7000,
+    },
+    "1347697960271478899": { #level 80
+        "amount": 8000,
+    },
+    "1347697960271478900": { #level 90
+        "amount": 9000,
+    },
+    "1347697960271478901": { #level 100
+        "amount": 10000,
+    },
+    "1363922128096858312": { #bronze (shop role 1)
+        "amount": 500,
+    },
+    "1363922191963521314": { #silver (shop role 2)
+        "amount": 1000,
+    },
+    "1375038130658218014": { #gold (shop role 3)
+        "amount": 1500,
+    },
+    "1363922236888715454": { #platinum (shop role 4)
+        "amount": 2500,
+    },
+    "1363922296724652074": { #diamond (shop role 5)
+        "amount": 3500,
+    },
+    "1375036783968129085": { #elite (shop role 6)
+        "amount": 5500,
+    },
+    "1375037220972662795": { #mythic (shop role 7)
+        "amount": 7000,
+    },
+    "1375035443950653481": { #unreal (shop role 8)
+        "amount": 10000,
+    },
+    "1347697960313553067": { #VIP (shop role 9)
+        "amount": 5000,
+    },
+    "1347864553538719765": { #booster
+        "amount": 2500,
+    },
+    "1347864843604201533": { #supporter
+        "amount": 2000,
+    },
+}
+lastcaseid = None
+astaffroles = ['1347697960313553071', '1358150972639285419', '1347697960313553070', '1347697960313553069', '1347697960313553068']
+ustaffroles = ['1347697960313553071', '1358150972639285419', '1347697960313553070']
+color = 0xAC2323
+currency = "<:ayk:1366860062966022246>"
+ldrop = False
+lcounter = 0
+testers = ["923701326230212709"]
+bannedusers = ["1035893514577379329"]
+
+def load_data():
+    global warnings, mutes, bans, alcases, accases, lastcaseid, lastsentcmdjson, banked, cash, robcds, collectcds, workcds, dailycds, actionslog
+    try:
+        with open(warningsjson, 'r') as f:
+            warnings = json.load(f)
+    except FileNotFoundError:
+        warnings = {}
+        print("Warnings file not found.")
+    except json.JSONDecodeError:
+        warnings = {}
+        print("Error decoding warnings JSON.")
+    try:
+        with open(mutesjson, 'r') as f:
+            mutes = json.load(f)
+    except FileNotFoundError:
+        mutes = {}
+        print("Mutes file not found.")
+    except json.JSONDecodeError:
+        mutes = {}
+        print("Error decoding mutes JSON.")
+    try:
+        with open(bansjson, 'r') as f:
+            bans = json.load(f)
+    except FileNotFoundError:
+        bans = {}
+        print("Bans file not found.")
+    except json.JSONDecodeError:
+        bans = {}
+        print("Error decoding bans JSON.")
+    try:
+        with open(alcasesjson, 'r') as f:
+            alcases = json.load(f)
+    except FileNotFoundError:
+        alcases = {}
+        print("Alcases file not found.")
+    except json.JSONDecodeError:
+        alcases = {}
+        print("Error decoding alcases JSON.")
+    try:
+        with open(accasesjson, 'r') as f:
+            accases = json.load(f)
+    except FileNotFoundError:
+        accases = {}
+        print("Accases file not found.")
+    except json.JSONDecodeError:
+        accases = {}
+        print("Error decoding accases JSON.")
+    try:
+        with open(lastcaseidjson, 'r') as f:
+            lastcaseiddict = json.load(f)
+            lastcaseid = lastcaseiddict.get("lastcaseid", 0)
+    except FileNotFoundError:
+        lastcaseiddict = {}
+        lastcaseid = 0
+        print("Last case ID file not found.")
+    except json.JSONDecodeError:
+        lastcaseiddict = {}
+        lastcaseid = 0
+        print("Error decoding last case ID JSON.")
+    try: 
+        with open(lastsentcmdjson, 'r') as f:
+            lastsentcmd = json.load(f)
+    except FileNotFoundError:
+        lastsentcmd = {}
+        print("Last sent command file not found.")
+    except json.JSONDecodeError:
+        lastsentcmd = {}
+        print("Error decoding last sent command JSON.")
+    try:
+        with open(bankedjson, 'r') as f:
+            banked = json.load(f)
+    except FileNotFoundError:
+        banked = {}
+        print("Banked file not found.")
+    except json.JSONDecodeError:
+        banked = {}
+        print("Error decoding banked JSON.")
+    try:
+        with open(cashjson, 'r') as f:
+            cash = json.load(f)
+    except FileNotFoundError:
+        cash = {}
+        print("Cash file not found.")
+    except json.JSONDecodeError:
+        cash = {}
+        print("Error decoding cash JSON.")
+    try:
+        with open(workcdsjson, 'r') as f:
+            workcds = json.load(f)
+    except FileNotFoundError:
+        workcds = {}
+        print("Work cooldowns file not found.")
+    except json.JSONDecodeError:
+        workcds = {}
+        print("Error decoding work cooldowns JSON.")
+    try:
+        with open(dailycdsjson, 'r') as f:
+            dailycds = json.load(f)
+    except FileNotFoundError:
+        dailycds = {}
+        print("Daily cooldowns file not found.")
+    except json.JSONDecodeError:
+        dailycds = {}
+        print("Error decoding daily cooldowns JSON.")
+    try:
+        with open(robcdsjson, 'r') as f:
+            robcds = json.load(f)
+    except FileNotFoundError:
+        robcds = {}
+        print("Rob cooldowns file not found.")
+    except json.JSONDecodeError:
+        robcds = {}
+        print("Error decoding rob cooldowns JSON.")
+    try:
+        with open(collectcdsjson, 'r') as f:
+            collectcds = json.load(f)
+    except FileNotFoundError:
+        collectcds = {}
+        print("Collect cooldowns file not found.")
+    except json.JSONDecodeError:
+        collectcds = {}
+        print("Error decoding collect cooldowns JSON.")
+    try:
+        with open(actionslogjson, 'r') as f:
+            actionslog = json.load(f)
+    except FileNotFoundError:
+        actionslog = {}
+        print("Actions log file not found.")
+    except json.JSONDecodeError:
+        actionslog = {}
+        print("Error decoding actions log JSON.")
+
+def save_data():
+    with open(warningsjson, 'w') as f:
+        json.dump(warnings, f, indent=4)
+    with open(mutesjson, 'w') as f:
+        json.dump(mutes, f, indent=4)
+    with open(bansjson, 'w') as f:
+        json.dump(bans, f, indent=4)
+    with open(alcasesjson, 'w') as f:
+        json.dump(alcases, f, indent=4)
+    with open(accasesjson, 'w') as f:
+        json.dump(accases, f, indent=4)
+    with open(lastcaseidjson, 'w') as f:
+        json.dump({"lastcaseid": lastcaseid}, f, indent=4)
+    with open(lastsentcmdjson, 'w') as f:
+        json.dump(lastsentcmd, f, indent=4)
+    with open(bankedjson, 'w') as f:
+        json.dump(banked, f, indent=4)
+    with open(cashjson, 'w') as f:
+        json.dump(cash, f, indent=4)
+    with open(workcdsjson, 'w') as f:
+        json.dump(workcds, f, indent=4)
+    with open(dailycdsjson, 'w') as f:
+        json.dump(dailycds, f, indent=4)
+    with open(robcdsjson, 'w') as f:
+        json.dump(robcds, f, indent=4)
+    with open(collectcdsjson, 'w') as f:
+        json.dump(collectcds, f, indent=4)
+    with open(actionslogjson, 'w') as f:
+        json.dump(actionslog, f, indent=4)
+
+def hasrole(*role_ids):
+    def predicate(ctx):
+        user_role_ids = [role.id for role in ctx.author.roles]
+        return any(int(role_id) in user_role_ids for role_id in role_ids)
+    return commands.check(predicate)
+
+def isinchannel(*channel_ids):
+    def predicate(ctx):
+        return ctx.channel.id in channel_ids
+    return commands.check(predicate)
+
+def testingload():
+    global testing
+    try:
+        with open(testingjson, 'r') as f:
+            testing = json.load(f)
+    except FileNotFoundError:
+        testing = {}
+        print("Testing file not found.")
+    except json.JSONDecodeError:
+        testing = {}
+        print("Error decoding testing JSON.")
+
+def testingsave():
+    global testing
+    with open(testingjson, 'w') as f:
+        json.dump(testing, f, indent=4)
+
+async def getchannels():
+    global lounge, commandsc
+    lounge = bot.get_channel(1347697960820932672)
+    commandsc = bot.get_channel(1347697960820932674)
+
+async def checklasttime(ctx):
+    currenttime = int(time.time())
+    user = ctx.author.id
+    if user in lastsentcmd:
+        lastcmdtime = lastsentcmd[user]
+        timeremainging = currenttime - lastcmdtime
+        if timeremainging <= 3:
+            embed = discord.Embed(
+                title="Slow down!",
+                description=f"<@{user}>, you are sending commands to fast! You can send another command in `{timeremainging}` seconds.",
+                color=color
+            )
+            await ctx.send(embed=embed)
+            return False
+    return True
+
+async def dropcode(ctx):
+    global ldrop
+    scenarios = [
+        f"Someone dropped a handful of {currency}!", 
+        f"It's raining {currency}!", 
+        f"There was a flash flood of {currency}", 
+        f"Mr. Beast showed up, and he's giving out {currency} like there's no tomorrow!", 
+        f"Buried treasure was unearthed, filled with heaps of {currency}!"
+    ]
+    scenario = random.choice(scenarios)
+    embed = discord.Embed(
+        title=f"{currency} Drop",
+        description=f"{scenario} Use `.grab` to claim your share! Hurry up, time is ticking!",
+        color=color
+    )
+    msgref = None
+    if ldrop:
+        msgref = await lounge.send(embed=embed)
+    await asyncio.sleep(30)
+    if msgref:
+        await msgref.delete()
+    msgref = await ctx.channel.send("The drop has ended") 
+    ldrop = False
+    await deletemessage(ctx, msgref)
+    for user in usersgrabbed:
+        usersgrabbed[user] = {"grabbed": False}
+
+async def deletemessage(ctx, msgref):
+    await asyncio.sleep(10)
+    await msgref.delete()
+
+@bot.event
+async def on_ready():
+    global guild, logschannel, testing
+    print(f"logged in as {bot.user}")
+    load_data()
+    guild = bot.get_guild(1347697960242384976)
+    logschannel = bot.get_channel(1347697961026457654)
+    bot.drop_active = False
+    testing = None
+    testingload()
+    await getchannels()
+
+@bot.event
+@commands.has_permissions(moderate_members=True)
+async def on_message(message):
+    global ldrop, lcounter
+    testingload()
+    bannedmessages = ["discord.gg/", "Discord.gg/"]
+    immuner = ["1347697960313553070"]
+    for bannedmessage in bannedmessages:
+        if bannedmessage in message.content.lower():
+            for role in ctx.author.roles:
+                if role.id in immuner:
+                    immune = True
+                    break
+            if immune == True:
+                break
+            user = message.author.id
+            currenttime = int(time.time())
+            if user in lastinvite:
+                lasttime = lastinvite[user]["time"]
+                if currenttime - lasttime < 301:
+                    await message.delete()
+                    await message.author.timeout(discord.utils.utcnow() + timedelta(minutes=10), reason="Automod - advertising discord server")
+                    await warnuser(ctx=message, user=message.author, reason="Automod - advertising discord server", duration="30d")
+                    lastinvite[user]["time"] = currenttime
+                else:
+                    await message.delete()
+                    lastinvite[user]["time"] = currenttime
+            else:
+                await message.delete()
+                lastinvite[user] = {"time": currenttime}
+        ctx = await bot.get_context(message)
+    if message.channel.id == 1347697960820932672 and not ldrop:
+        lcounter += 1
+        if lcounter >= 250:
+            ldrop = True
+            lcounter = 0
+    if ldrop and not bot.drop_active:
+        bot.drop_active = True
+        await dropcode(ctx)
+        bot.drop_active = False
+    await bot.process_commands(message)
+
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CheckFailure):
+        embed = discord.Embed(
+            title="",
+            description="You do not have permission to use this command",
+            color=color
+        )
+        await ctx.send(embed=embed, delete_after=5)
+    if isinstance(error, commands.errors.CommandNotFound):
+        pass
+    else:
+        raise error
+    
+@bot.event
+async def on_member_join(member):
+    if str(member.id) in alcases:
+        load_data()
+        for case in alcases[str(member.id)]:
+            if case["type"] == "kick":
+                case["status"] = "expired"
+                moderator = case["moderator"]
+                caseid = case["caseid"]
+                for action in actionslog[str(moderator.id)]:
+                    if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                        action["status"] = "expired"
+        save_data()
+    
+@bot.event
+async def on_member_leave(member):
+    userid = member.id
+    load_data()
+    if str(userid) in cash:
+        cash.remove(str(userid))
+    if str(userid) in banked:
+        banked.remove(str(userid))
+    save_data()
+    
+#moderation commands
+#i dont use cogs, because there is no flexibility in them.
+async def warnuser(ctx, user, reason, duration):
+    global logschannel
+    caseid = lastcaseid + 1
+    userid = user.id
+    timestamp = datetime.now(timezone.utc)
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if not match:
+            await ctx.send("Invalid duration format! Use '10s', '5m', or '1h'.")
+            return
+        time_value = int(match.group(1))
+        time_unit = match.group(2).lower()
+        if time_unit == "s":
+            duration_seconds = time_value
+            ftime_unit = "second" if time_value == 1 else "seconds"
+        elif time_unit == "m":
+            duration_seconds = time_value * 60
+            ftime_unit = "minute" if time_value == 1 else "minutes"
+        elif time_unit == "h":
+            duration_seconds = time_value * 3600
+            ftime_unit = "hour" if time_value == 1 else "hours"
+        elif time_unit == "d":
+            duration_seconds = time_value * 86400
+            ftime_unit = "day" if time_value == 1 else "days"
+        elif time_unit == "w":
+            duration_seconds = time_value * 604800
+            ftime_unit = "week" if time_value == 1 else "weeks"
+        else:
+            await ctx.send("Invalid time unit! Use 's', 'm', 'h', 'd', or 'w'.", delete_after=5)
+            return
+    else:
+        duration_seconds = None
+    warningentry = {
+        "caseid": caseid,
+        "reason": reason,
+        "timestamp": int(timestamp.timestamp()),
+        "duration": duration_seconds,
+        "moderator": "automod",
+    }
+    accaseentry = {
+        "user": userid,
+        "caseid": caseid,
+        "reason": reason,
+        "timestamp": int(timestamp.timestamp()),
+        "duration": duration_seconds,
+        "type": "warn",
+        "moderator": "automod",
+    }
+    alcaseentry = {
+        "user": userid,
+        "caseid": caseid,
+        "reason": reason,
+        "timestamp": int(timestamp.timestamp()),
+        "duration": duration_seconds,
+        "type": "warn",
+        "moderator": "automod",
+        "status": "active"
+    }
+    if userid not in warnings:
+        warnings[userid] = []
+    warnings[userid].append(warningentry)
+    if userid not in alcases:
+        alcases[userid] = []
+    alcases[userid].append(accaseentry)
+    if userid not in accases:
+        accases[userid] = []
+    accases[userid].append(alcaseentry)
+    description = f"### Warning issued by automod\nReason: {reason}\nCase ID: {caseid}\nDuration: {duration} seconds\nUser: <@{userid}>"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    if duration_seconds:
+        await asyncio.sleep(duration_seconds)
+        warnings[userid] = [w for w in warnings.get(userid, []) if w["case_id"] != caseid]
+        accases[userid] = [w for w in accases.get(userid, []) if w["case_id"] != caseid]
+        for action in alcases[userid]:
+            if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                action["status"] = "expired"
+                break
+    save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+@commands.has_permissions(manage_messages=True)
+async def warn(ctx, member: discord.Member, *, args: str = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    duration = None
+    reason = "No reason provided"
+    timevalue = 0
+    ftimeunit = "Permanent"
+    if args:
+        argssplit = args.split(" ")
+        if re.match(r"^\d+[smhdw]$", argssplit[0]):
+            duration = argssplit[0]
+            reason = " ".join(argssplit[1:]) if len(argssplit) > 1 else reason
+        else:
+            reason = args
+    else:
+        data = False
+    lastcase = lastcaseid
+    caseid = lastcase + 1
+    lastcaseid = caseid
+    userid = member.id
+    username = bot.get_user(userid)
+    timestamp = datetime.now(timezone.utc)
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if not match:
+            await ctx.send("Invalid duration format! Use '10s', '5m', or '1h'.")
+            return
+        timevalue = int(match.group(1))
+        timeunit = match.group(2).lower()
+        if timeunit == "s":
+            durationseconds = timevalue
+            ftimeunit = "second" if timevalue == 1 else "seconds"
+        elif timeunit == "m":
+            durationseconds = timevalue * 60
+            ftimeunit = "minute" if timevalue == 1 else "minutes"
+        elif timeunit == "h":
+            durationseconds = timevalue * 3600
+            ftimeunit = "hour" if timevalue == 1 else "hours"
+        elif timeunit == "d":
+            durationseconds = timevalue * 86400
+            ftimeunit = "day" if timevalue == 1 else "days"
+        elif timeunit == "w":
+            durationseconds = timevalue * 604800
+            ftimeunit = "week" if timevalue == 1 else "weeks"
+        else:
+            await ctx.send("Invalid time unit! Use 's', 'm', 'h', 'd', or 'w'.")
+            return
+    else:
+        durationseconds = None
+    warningentry = {
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "moderator": f"<@{ctx.author.id}>",
+    }
+    if str(userid) not in warnings:
+        warnings[str(userid)] = []
+    warnings[str(userid)].append(warningentry)
+    accaseentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "moderator": f"<@{ctx.author.id}>",
+        "type": "warn",
+    }
+    alcaseentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "moderator": f"<@{ctx.author.id}>",
+        "type": "warn",
+        "status": "active"
+    }
+    actionentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "warn",
+        "status": "active"
+    }
+    if str(userid) not in accases:
+        accases[str(userid)] = []
+    accases[str(userid)].append(accaseentry)
+    if str(userid) not in alcases:
+        alcases[str(userid)] = []
+    alcases[str(userid)].append(alcaseentry)
+    if str(ctx.author.id) not in actionslog:
+        actionslog[str(ctx.author.id)] = []
+    actionslog[str(ctx.author.id)].append(actionentry)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: {username} warned || {reason}\nCase ID: {caseid}",
+        color=color
+    )
+    description = f"### Warning issued by {ctx.author.mention}\nReason: {reason}\nCase ID: {caseid}\nDuration: {duration} seconds\nUser: <@{userid}>"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+    if durationseconds:
+        await asyncio.sleep(durationseconds)
+        warnings[str(userid)] = [w for w in warnings.get(str(userid), []) if w["caseid"] != caseid]
+        accases[str(userid)] = [w for w in accases.get(str(userid), []) if w["caseid"] != caseid]
+        for case in alcases[str(userid)]:
+            if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                action["status"] = "expired"
+                break
+        for action in actionslog[str(ctx.author.id)]:
+            if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                action["status"] = "expired"
+                break
+        save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+@commands.has_permissions(manage_messages=True)
+async def unwarn(ctx, *, args: str = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    caseid = None
+    member = None
+    if args:
+        argssplit = args.split(" ")
+        if len(argssplit) == 2:
+            caseid = argssplit[1]
+        elif len(argssplit) > 2:
+            await ctx.send("Invalid format. Valid parameters are `user` and `caseid`.", delete_after=5)
+            return
+        else:
+            if argssplit[0].isdigit():
+                member = bot.get_user(int(argssplit[0]))
+                if not member:
+                    caseid = argssplit[0]
+                else:
+                    userid = member.id
+            elif argssplit[0].startswith("<@") and argssplit[0].endswith(">"):
+                try:
+                    member = bot.get_user(int(argssplit[0].strip("<@!>")))
+                    if not member:
+                        caseid = argssplit[0]
+                    else:
+                        userid = member.id
+                except ValueError:
+                    await ctx.send("Invalid format. Valid parameters are `user` and `caseid`.", delete_after=5)
+                    return
+    warningsremoved = 0
+    if not caseid and not member:
+        lastcase = None
+        lastmemberid = None
+        for userid, cases in accases.items():
+            for case in cases:
+                if lastcase is None or case["timestamp"] > lastcase["timestamp"]:
+                    lastcase = case
+                    lastmemberid = str(userid)
+                    username = bot.get_user(int(lastmemberid))
+        if lastcase:
+            accases[lastmemberid].remove(lastcase)
+            if not accases[lastmemberid]:
+                accases.pop(lastmemberid)
+            if lastmemberid in warnings:
+                for warning in warnings[str(lastmemberid)]:
+                    lmmoderator = warning["moderator"]
+                    caseid = warning["caseid"]
+                    break
+                warnings[lastmemberid] = [w for w in warnings[lastmemberid] if w["caseid"] != lastcase["caseid"]]
+                if not warnings[lastmemberid]:
+                    warnings.pop(lastmemberid)
+                for case in alcases[str(lastmemberid)]:
+                    if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                        case["status"] = "removed"
+                        break
+                for action in actionslog[str(lmmoderator).strip("<@!>")]:
+                    if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                        action["status"] = "removed"
+                        break
+            member = bot.get_user(int(lastmemberid))
+            embed = discord.Embed(
+                title="",
+                description=f":white_check_mark: Warning with case ID {caseid} removed from {username}",
+                color=color
+            )
+        else:
+            embed = discord.Embed(
+                title="",
+                description=":x: There are no warns to remove for that user.",
+                color=color
+            )
+        await ctx.send(embed=embed)
+        description = f"### Warning removed by {ctx.author.mention}\nCase ID: {caseid}\nUser: <@{userid}>"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        save_data()
+        return
+    if member and str(userid) in accases:
+        username = bot.get_user(userid)
+        warningsremoved += len(accases[str(userid)])
+        for case in accases[str(userid)][:]:
+            if case["type"] == "warn":
+                accases[str(userid)].remove(case) 
+            casemod = case["moderator"].strip("<@!>")
+            print(casemod)
+            for action in actionslog[str(casemod)]:
+                if action["user"].strip("<@!>") == str(userid) and action["status"] == "active":
+                    action["status"] = "removed"
+        for case in alcases[str(userid)]:
+            if case["status"] == "active":
+                case["status"] = "removed"
+        warnings.pop(str(userid), None)
+        embed = discord.Embed(
+            title="Warnings Removed",
+            description=f"Successfully removed all warnings from {username}.\nNumber of warnings removed: {warningsremoved}",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        description = f"### Warnings removed by {ctx.author.mention}\nNumber of warnings removed: {warningsremoved}\nFrom: <@{userid}>"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        save_data()
+        return    
+    if caseid:
+        caseremoved = False
+        for userid, cases in accases.items():
+            for case in cases[:]:
+                if int(case["caseid"]) == int(caseid):
+                    accases[str(userid)].remove(case)
+                    moderator = case["moderator"].strip("<@!>")
+                    for case in alcases[str(userid)]:
+                        if int(case["caseid"]) == int(caseid) and case["status"].lower() == "active":
+                            case["status"] = "removed"
+                            break
+                    for action in actionslog[str(moderator)]:
+                        if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                            action["status"] = "removed"
+                            break
+                    if not accases[str(userid)]:
+                        accases.pop(str(userid))
+                    caseremoved = True
+                    break
+            if caseremoved:
+                break
+        caseremoved = False
+        for userid, warningslist in warnings.items():
+            for warning in warningslist[:]:
+                if int(warning["caseid"]) == int(caseid):
+                    warnings[str(userid)].remove(warning)
+                    if not warnings[str(userid)]:
+                        warnings.pop(str(userid))
+                    moderator = warning["moderator"].strip("<@!>")
+                    for case in alcases[str(userid)]:
+                        if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                            case["status"] = "removed"
+                            break
+                    for action in actionslog[str(moderator)]:
+                        if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                            action["status"] = "removed"
+                            break
+                    caseremoved = True
+                    break
+            if caseremoved:
+                break
+        if caseremoved:
+            embed = discord.Embed(
+                title="",
+                description=f":white_check_mark: Warning removed",
+                color=color
+            )
+            description = f"### Warning removed by {ctx.author.mention}\nCase ID: {caseid}"
+            logsembed = discord.Embed(
+                title="Moderation log",
+                description=description,
+                color=color
+            )
+            await logschannel.send(embed=logsembed)
+        else:
+            embed = discord.Embed(
+                title="",
+                description=f":warning: No warnings found",
+                color=color
+            )
+        await ctx.send(embed=embed)
+        save_data()
+        return
+    await ctx.send("Please provide either a member mention, a case ID, or leave it empty to remove the most recent warning.", delete_after=5)
+    save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+@commands.has_permissions(manage_messages=True)
+async def masswarn(ctx, *, args: str):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    members = []
+    reason = "No reason provided"
+    duration = None
+    argssplit = args.split()
+    for word in argssplit:
+        if word.isdigit():
+            member = bot.get_user(int(word))
+            if member:
+                userid = int(word)
+                members.append(member)
+        elif word.startswith("<@") and word.endswith(">"):
+            try:
+                userid = int(word.strip("<@!>"))
+                member = bot.get_user(userid)
+                if member:
+                    members.append(member)
+            except ValueError:
+                print(f"Skipping invalid mention format: {word}")
+        elif re.match(r"^\d+[smhdw]$", word):
+            duration = word
+        else:
+            reason = f"{word} "
+    reason = reason.strip()
+    if not members:
+        await ctx.send("Please mention at least one member to warn.", delete_after=5)
+        return
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if match:
+            timevalue = int(match.group(1))
+            timeunit = match.group(2).lower()
+            if timeunit == "s":
+                durationseconds = timevalue
+                timeunitlabel = "second" if timevalue == 1 else "seconds"
+            elif timeunit == "m":
+                durationseconds = timevalue * 60
+                timeunitlabel = "minute" if timevalue == 1 else "minutes"
+            elif timeunit == "h":
+                durationseconds = timevalue * 3600
+                timeunitlabel = "hour" if timevalue == 1 else "hours"
+            elif timeunit == "d":
+                durationseconds = timevalue * 86400
+                timeunitlabel = "day" if timevalue == 1 else "days"
+            elif timeunit == "w":
+                durationseconds = timevalue * 604800
+                timeunitlabel = "week" if timevalue == 1 else "weeks"
+            else:
+                await ctx.send("Invalid time unit! Use 's', 'm', 'h', 'd', or 'w'.")
+                return
+        else:
+            await ctx.send("Invalid duration format! Use '10s', '5m', or '1h'.")
+            return
+    else:
+        durationseconds = None
+        timeunitlabel = "Permanent"
+    success_list = []
+    caseids = []
+    timestamp = datetime.now(timezone.utc)
+    for member in members:
+        userid = member.id
+        lastcase = lastcaseid
+        caseid = lastcase + 1
+        lastcaseid = caseid
+        warningentry = {
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+        }
+        accaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "warn",
+        }
+        alcaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "warn",
+            "status": "active"
+        }
+        actionsentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "type": "warn",
+            "status": "active"
+        }
+        if not str(userid) in warnings:
+            warnings[str(userid)] = []
+        if not str(userid) in accases:
+            accases[str(userid)] = []
+        if not str(userid) in alcases:
+            alcases[str(userid)] = []
+        if not str(ctx.author.id) in actionslog:
+            actionslog[str(ctx.author.id)] = []
+        warnings[str(userid)].append(warningentry)
+        accases[str(userid)].append(accaseentry)
+        alcases[str(userid)].append(alcaseentry)
+        actionslog[str(ctx.author.id)].append(actionsentry)
+        success_list.append(member)
+        caseids.append(caseid)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Users warned || {reason}\nCase IDs: {', '.join([str(c) for c in caseids])}",
+        color=color
+    )
+    description = f"### Warnings issued by {ctx.author.mention}\nReason: {reason}\nCase IDs: {', '.join([str(c) for c in caseids])}\nDuration: {duration} seconds\nUsers: {', '.join([str(m) for m in success_list])}"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+    if durationseconds:
+        await asyncio.sleep(durationseconds)
+        for member in success_list:
+            member_id_str = str(member.id)
+            warnings[member_id_str] = [w for w in warnings[member_id_str] if w["caseid"] != caseid]
+            accases[member_id_str] = [w for w in accases[member_id_str] if w["caseid"] != caseid]
+            for case in alcases[str(userid)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "expired"
+                    break
+            for action in actionslog[str(ctx.author.id)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "expired"
+                    break
+        save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+@commands.has_permissions(manage_messages=True)
+async def massunwarn(ctx, *args):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    members = []
+    caseids = []
+    for arg in args:
+        if arg.isdigit():
+            member = bot.get_user(int(arg))
+            if member:
+                userid = int(arg)
+                members.append(member)
+            else:
+                caseids.append(arg)
+        elif arg.startswith("<@") and arg.endswith(">"):
+            userid = int(arg.strip("<@!>"))
+            member = ctx.guild.get_member(userid)
+            if member:
+                members.append(member)
+    warningsremoved = []
+    accasesremoved = []
+    warningfound = False
+    warningsfoundno = 0
+    notfoundwarnsno = 0
+    notfoundwarnsci = set()
+    warnfoundmembers = []
+    warnnotfoundmembers = []
+    if members and not caseids:
+        for member in members:
+            userid = member.id
+            if str(userid) in warnings:
+                warningsremoved.append(warnings[str(userid)])
+                del warnings[str(userid)]
+                warningfound = True
+                warningsfoundno += 1
+                warnfoundmembers.append(member)
+            else:
+                warnnotfoundmembers.append(member)
+                notfoundwarnsno += 1
+            if str(userid) in accases:
+                accasesremoved.append(accases[str(userid)])
+                del accases[str(userid)]
+            for case in alcases[str(userid)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "removed"
+            moderator = case["moderator"]
+            for action in actionslog[str(moderator)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "removed"
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Removed all warnings from {', '.join([str(m) for m in warnfoundmembers])}",
+            color=color
+        )
+        description = f"### Warnings removed by {ctx.author.mention}\nNumber of warnings removed: {warningsfoundno}\nFrom: {', '.join([str(m) for m in warnfoundmembers])}"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+        save_data()
+        return
+    if caseids:
+        for caseid in caseids:
+            caseidfound = False
+            for userid, user_warnings in list(warnings.items()):
+                for warning in user_warnings[:]:
+                    if str(warning["caseid"]) == caseid:
+                        warnings[str(userid)].remove(warning)
+                        warningfound = True
+                        warningsremoved.append(caseid)
+                        warningsfoundno += 1
+                        caseidfound = True
+                        break
+            if not caseidfound:
+                notfoundwarnsno += 1
+                notfoundwarnsci.add(caseid)
+        for caseid in caseids:
+            caseidfound = False
+            for userid, useraccases in list(accases.items()):
+                for accase in useraccases[:]:
+                    if str(accase["caseid"]) == caseid:
+                        accases[str(userid)].remove(accase)
+                        warningfound = True
+                        caseidfound = True
+                        break 
+            if not caseidfound:
+                notfoundwarnsci.add(caseid)
+            for case in alcases[str(userid)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "removed"
+                    break
+            moderator = case["moderator"]
+            for action in actionslog[str(moderator.id)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "removed"
+                    break
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Removed warnings with case IDs {', '.join([str(c) for c in warningsremoved])}",
+            color=color
+        )
+        description = f"### Warnings removed by {ctx.author.mention}\nNumber of warnings removed: {warningsfoundno}\nCase IDs: {', '.join([str(c) for c in warningsremoved])}"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+    else:
+        await ctx.send("No warnings found for the specified members or case IDs.", delete_after=5)
+    save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+async def mute(ctx, member: discord.Member, *, args: str = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    duration = None
+    reason = "No reason provided"
+    ftimeunit = "Permanent"
+    timevalue = 0
+    if args:
+        argssplit = args.split(" ", 1)
+        if re.match(r"^\d+[smhdw]$", argssplit[0]):
+            duration = argssplit[0]
+            reason = argssplit[1] if len(argssplit) > 1 else reason
+        else:
+            reason = args
+    lastcase = lastcaseid
+    caseid = lastcase + 1
+    lastcaseid = caseid
+    userid = member.id
+    username = bot.get_user(userid)
+    timestamp = datetime.now(timezone.utc)
+    if not ctx.guild.me.guild_permissions.mute_members:
+        await ctx.send("I do not have permission to mute members.", delete_after=5)
+        return
+    #if not ctx.author.guild_permissions.mute_members:
+        #await ctx.send("You do not have permission to mute members.", delete_after=5)
+        #return
+    if member.is_timed_out():
+        await ctx.send(f"{username} is already muted.", delete_after=5)
+        return
+    durationseconds = None
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if not match:
+            await ctx.send("Invalid duration format! Use formats like '10s', '5m', or '1h'.")
+            return
+        timevalue = int(match.group(1))
+        timeunit = match.group(2).lower()
+        timeunitmap = {"s": 1, "m": 60, "h": 3600, "d": 86400, "w": 604800}
+        if timeunit in timeunitmap:
+            print(timevalue, timeunitmap[timeunit])
+            durationseconds = timevalue * timeunitmap[timeunit]
+            print(durationseconds)
+            ftimeunit = {
+                "s": "second" if timevalue == 1 else "seconds",
+                "m": "minute" if timevalue == 1 else "minutes",
+                "h": "hour" if timevalue == 1 else "hours",
+                "d": "day" if timevalue == 1 else "days",
+                "w": "week" if timevalue == 1 else "weeks",
+            }[timeunit]
+        else:
+            await ctx.send("Invalid time unit! Use 's', 'm', 'h', 'd', or 'w'.")
+            return
+    else:
+        durationseconds = None
+    try:
+        if durationseconds:
+            await member.timeout(discord.utils.utcnow() + timedelta(seconds=durationseconds), reason=reason)
+        else:
+            await member.timeout(discord.utils.utcnow() + timedelta(days=28), reason=reason)
+        muteentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+        }
+        if str(userid) not in mutes:
+            mutes[str(userid)] = []
+        mutes[str(userid)].append(muteentry)
+        accaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "mute",
+        }
+        alcaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "mute",
+            "status": "active"
+        }
+        actionsentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "type": "mute",
+            "status": "active"
+        }
+        if str(userid) not in accases:
+            accases[str(userid)] = []
+        accases[str(userid)].append(accaseentry)
+        if str(userid) not in alcases:
+            alcases[str(userid)] = []
+        alcases[str(userid)].append(alcaseentry)
+        if str(ctx.author.id) not in actionslog:
+            actionslog[str(ctx.author.id)] = []
+        actionslog[str(ctx.author.id)].append(actionsentry)
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Muted {username} || {reason}\nCase ID: {caseid}",
+            color=color
+        )
+        description = f"### User muted by {ctx.author.mention}\nReason: {reason}\nCase ID: {caseid}\nDuration: {duration}\nUser: <@{userid}>"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+        save_data()
+        if durationseconds:
+            await asyncio.sleep(durationseconds)
+            await member.timeout(None, reason="Expired")
+            for case in alcases[str(userid)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "expired"
+                    break
+            for action in actionslog[str(ctx.author.id)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "expired"
+                    break
+            del mutes[str(userid)]
+            save_data()
+    except Exception as e:
+        await ctx.send(f"An error occurred while muting {username}: {e}", delete_after=5)
+        return
+    
+@bot.command()
+@hasrole(*astaffroles)
+async def massmute(ctx, *, args: str):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    members = []
+    reason = "No reason provided"
+    duration = None
+    argssplit = args.split(" ")
+    for word in argssplit:
+        if word.isdigit():
+            member = ctx.guild.get_member(int(word))
+            if member:
+                userid = int(word)
+                members.append(member)
+        elif word.startswith("<@") and word.endswith(">"):
+            try:
+                userid = int(word.strip("<@!>"))
+                member = ctx.guild.get_member(userid)
+                if member:
+                    members.append(member)
+            except ValueError:
+                print(f"Skipping invalid mention format: {word}")
+        elif re.match(r"^\d+[smhdw]$", word):
+            duration = word
+        else:
+            reason = f"{word} "
+    reason = reason.strip()
+    if not members:
+        await ctx.send("Please mention at least one member to mute.", delete_after=5)
+        return
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if match:
+            timevalue = int(match.group(1))
+            timeunit = match.group(2).lower()
+            if timeunit == "s":
+                durationseconds = timevalue
+                timeunitlabel = "second" if timevalue == 1 else "seconds"
+            elif timeunit == "m":
+                durationseconds = timevalue * 60
+                timeunitlabel = "minute" if timevalue == 1 else "minutes"
+            elif timeunit == "h":
+                durationseconds = timevalue * 3600
+                timeunitlabel = "hour" if timevalue == 1 else "hours"
+            elif timeunit == "d":
+                durationseconds = timevalue * 86400
+                timeunitlabel = "day" if timevalue == 1 else "days"
+            elif timeunit == "w":
+                durationseconds = timevalue * 604800
+                timeunitlabel = "week" if timevalue == 1 else "weeks"
+            else:
+                await ctx.send("Invalid time unit! Use 's', 'm', 'h', 'd', or 'w'.")
+                return
+        else:
+            await ctx.send("Invalid duration format! Use '10s', '5m', or '1h'.")
+            return
+    else:
+        durationseconds = None
+        timeunitlabel = "Permanent"
+    successlist = []
+    timestamp = datetime.now(timezone.utc)
+    caseids = []
+    for member in members:
+        if durationseconds:
+            await member.timeout(discord.utils.utcnow() + timedelta(seconds=durationseconds), reason=reason)
+        else:
+            await member.timeout(discord.utils.utcnow() + timedelta(days=28), reason=reason)
+        lastcase = lastcaseid
+        caseid = lastcase + 1
+        lastcaseid = caseid
+        muteentry = {
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+        }
+        accaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": ctx.author,
+            "type": "mute",
+        }
+        alcaseentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "mute",
+            "status": "active"
+        }
+        actionsentry = {
+            "user": f"{member.mention}",
+            "caseid": caseid,
+            "reason": reason,
+            "duration": duration if duration else "Permanent",
+            "timestamp": int(timestamp.timestamp()),        
+            "moderator": f"<@{ctx.author.id}>",
+            "type": "mute",
+            "status": "active"
+        }
+        if not str(member.id) in mutes:
+            mutes[str(member.id)] = []
+        if not str(member.id) in accases:
+            accases[str(member.id)] = []
+        if not str(member.id) in alcases:
+            alcases[str(member.id)] = []
+        if not str(ctx.author.id) in actionslog:
+            actionslog[str(ctx.author.id)] = []
+        mutes[str(member.id)].append(muteentry)
+        accases[str(member.id)].append(alcaseentry)
+        alcases[str(member.id)].append(accaseentry)
+        actionslog[str(ctx.author.id)].append(actionsentry)
+        successlist.append(member)
+        caseids.append(caseid)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Users muted || {reason}\nCase IDs: {', '.join([str(c) for c in caseids])}",
+        color=color
+    )
+    description = f"### Users muted by {ctx.author.mention}\nReason: {reason}\nCase IDs: {', '.join([str(c) for c in caseids])}\nDuration: {duration}\nUsers: {', '.join([str(m) for m in successlist])}"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+    if durationseconds:
+        await asyncio.sleep(durationseconds)
+        for member in successlist:
+            await member.timeout(None, reason="Mute expired")
+            mutes.pop(str(member.id), None)
+            accases[str(member.id)] = [m for m in accases[str(member.id)] if m["caseid"] != caseid]
+            for case in alcases[str(member.id)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "expired"
+                    break
+            for action in actionslog[str(ctx.author.id)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "expired"
+                    break
+        save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+async def unmute(ctx, member: discord.Member):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    userid = member.id
+    username = bot.get_user(userid)
+    if not ctx.guild.me.guild_permissions.mute_members:
+        await ctx.send("I do not have permission to unmute members.", delete_after=5)
+        return
+    #if not ctx.author.guild_permissions.mute_members:
+        #await ctx.send("You do not have permission to unmute members.", delete_after=5)
+        #return
+    if not member.is_timed_out():
+        embed = discord.Embed(
+            title="",
+            description=f":x: {username} is not muted.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    await member.timeout(None, reason=f"Unmuted by {ctx.author.mention}")
+    caseid = mutes[str(userid)]["caseid"]
+    if str(userid) in mutes:
+        mutes.pop(str(userid), None)
+    for case in accases[str(userid)]:
+        if int(case["caseid"]) == int(caseid):
+            accases.remove(case)
+    for case in alcases[str(member.id)]:
+        if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+            case["status"] = "removed"
+            break
+    for action in actionslog[str(ctx.author.id)]:
+        if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+            action["status"] = "removed"
+            break
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Unmuted {username}",
+        color=color
+    )
+    description = f"### User unmuted by {ctx.author.mention}\nUser: <@{userid}>"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@hasrole(*astaffroles)
+async def massunmute(ctx, *, args: str):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    members = []
+    args_split = args.split()
+    for arg in args_split:
+        if arg.isdigit():
+            member = ctx.guild.get_member(int(arg))
+            if member:
+                userid = int(arg)
+                members.append(member)
+        elif arg.startswith("<@") and arg.endswith(">"):
+            try:
+                userid = int(arg.strip("<@!>"))
+                member = ctx.guild.get_member(userid)
+                if member:
+                    members.append(member)
+                else:
+                    await ctx.send(f"Could not find member with ID: {userid}", delete_after=5)
+                    return
+            except ValueError:
+                await ctx.send(f"Invalid member mention: {arg}", delete_after=5)
+                return
+        else:
+            await ctx.send("Please provide valid users using mentions (e.g., @User).", delete_after=5)
+            return
+    if not members:
+        await ctx.send("No valid members provided to unmute.", delete_after=5)
+        return
+    successful_unmutes = []
+    failed_unmutes = []
+    for member in members:
+        userid = member.id
+        try:
+            caseid = mutes[str(userid)]["caseid"]
+            if str(userid) in mutes:
+                await member.timeout(None, reason=f"Unmuted by {ctx.author.mention}")
+                successful_unmutes.append(member)
+            else:
+                failed_unmutes.append(member)
+            mutes.pop(str(userid), None)
+            if str(userid) in accases:
+                accases[str(userid)] = [
+                    case for case in accases[str(userid)] if case["type"] != "mute"
+                ]
+                if not accases[str(userid)]:
+                    accases.pop(str(userid), None)
+            for case in alcases[str(member.id)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "removed"
+                    break
+            for action in actionslog[str(ctx.author.id)]:
+                if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                    action["status"] = "removed"
+                    break
+        except Exception as e:
+            failed_unmutes.append(member)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Unmuted {', '.join([str(m) for m in successful_unmutes])}",
+        color=color
+    )
+    description = f"### Users unmuted by {ctx.author.mention}\nUsers: {', '.join([str(m) for m in successful_unmutes])}"
+    logsembed = discord.Embed(
+        title="Moderation Logs",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@hasrole(*ustaffroles)
+async def kick(ctx, member: discord.Member, *, reason=None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    lastcase = lastcaseid
+    caseid = lastcase + 1
+    lastcaseid = caseid
+    userid = member.id
+    username = bot.get_user(userid)
+    timestamp = datetime.now(timezone.utc)
+    if not ctx.guild.me.guild_permissions.kick_members:
+        await ctx.send("I do not have permission to kick members.", delete_after=5)
+        return
+    if not ctx.author.guild_permissions.kick_members:
+        await ctx.send("You do not have permission to kick members.", delete_after=5)
+        return
+    if not reason:
+        reason = "No reason provided"
+    await member.kick(reason=reason)
+    alcaseentry = {
+        "user": f"<@{userid}>",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": "N/A",
+        "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+        "type": "kick",
+        "status": "active"
+    }
+    actionsentry = {
+        "user": f"<@{userid}>",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": "N/A",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "kick",
+        "status": "active"
+    }
+    if member.id not in alcases:
+        alcases[userid] = []
+    if str(ctx.author.id) not in actionslog:
+        actionslog[str(ctx.author.id)] = []
+    alcases[userid].append(alcaseentry)
+    actionslog[str(ctx.author.id)].append(actionsentry)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Kicked {username} || {reason}\nCase ID: {caseid}",
+        color=color
+    )
+    description = f"### User kicked by {ctx.author.mention}\nReason: {reason}\nCase ID: {caseid}\nUser: <@{userid}> ({bot.get_user(userid)})"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@hasrole(*ustaffroles)
+@commands.has_permissions(ban_members=True)
+async def ban(ctx, member: discord.Member, *, args: str = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    duration = None
+    reason = "No reason provided"
+    timevalue = 0
+    ftimeunit = "Permanent"
+    if args is None:
+        await ctx.send("You must provide a reason for the ban.")
+        return
+    argssplit = args.split(" ")
+    if re.match(r"^\d+[smhdw]$", argssplit[0]):
+        duration = argssplit[0]
+        reason = " ".join(argssplit[1:]) if len(argssplit) > 1 else reason
+    else:
+        reason = args
+    lastid = lastcaseid
+    caseid = lastid + 1
+    lastcaseid = caseid
+    timestamp = datetime.now(timezone.utc)
+    userid = member.id
+    username = bot.get_user(userid)
+    durationseconds = None
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if not match:
+            await ctx.send("Invalid duration format! Use a format like '10s', '5m', or '1h'.")
+            return
+        timevalue = int(match.group(1))
+        timeunit = match.group(2).lower()
+        if timeunit == "s":
+            durationseconds = timevalue
+            ftimeunit = "second" if timevalue == 1 else "seconds"
+        elif timeunit == "m":
+            durationseconds = timevalue * 60
+            ftimeunit = "minute" if timevalue == 1 else "minutes"
+        elif timeunit == "h":
+            durationseconds = timevalue * 3600
+            ftimeunit = "hour" if timevalue == 1 else "hours"
+        elif timeunit == "d":
+            durationseconds = timevalue * 86400
+            ftimeunit = "day" if timevalue == 1 else "days"
+        elif timeunit == "w":
+            durationseconds = timevalue * 604800
+            ftimeunit = "week" if timevalue == 1 else "weeks"
+        else:
+            await ctx.send("Invalid time unit! Use 's' for seconds, 'm' for minutes, 'h' for hours, 'd' for days, or 'w' for weeks.", delete_after=5)
+            return
+    try:
+        await member.ban(reason=reason)
+    except discord.Forbidden:
+        await ctx.send(f"I do not have permission to ban {member.mention}.", delete_after=5)
+        return
+    except discord.HTTPException as e:
+        await ctx.send(f"Failed to ban {member.mention}. Error: {e}", delete_after=5)
+        return
+    if member.id not in bans:
+        bans[member.id] = []
+    banentry = {
+        "user": f"<@{userid}>",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+            "moderator": f"<@{ctx.author.id}>",
+    }
+    bans[userid].append(banentry)
+    if member.id not in accases:
+        accases[member.id] = []
+    if member.id not in alcases:
+        alcases[member.id] = []
+    if str(ctx.author.id) not in actionslog:
+        actionslog[str(ctx.author.id)] = []
+    accaseentry = {
+        "user": f"<@{userid}>",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "moderator": f"<@{ctx.author.id}>",
+        "type": "ban"
+    }
+    alcaseentry = {
+        "user": f"<@{userid}>",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "moderator": f"<@{ctx.author.id}>",
+        "type": "ban",
+        "status": "active"
+    }
+    actionentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": reason,
+        "duration": duration if duration else "Permanent",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "ban",
+        "status": "active"
+    }
+    accases[userid].append(accaseentry)
+    alcases[userid].append(alcaseentry)
+    actionslog[str(ctx.author.id)].append(actionentry)
+    save_data()
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Banned {username} || {reason}\nCase ID: {caseid}",
+        color=color
+    )
+    description = f"### User banned by {ctx.author.mention}\nReason: {reason}\nCase ID: {caseid}\nDuration: {duration}\nUser: <@{userid}> ({bot.get_user(userid)})"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed)
+    if durationseconds:
+        await asyncio.sleep(durationseconds)
+        bans[userid] = [b for b in bans.get(userid, []) if b["caseid"] != caseid]
+        accases[userid] = [b for b in accases.get(userid, []) if b["caseid"] != caseid]
+        for case in alcases[str(userid)]:
+            if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                case["status"] = "expired"
+                break
+        for action in actionslog[str(ctx.author.id)]:
+            if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                action["status"] = "expired"
+                break
+        save_data()
+
+@bot.command()
+@hasrole(*ustaffroles)
+@commands.has_permissions(ban_members=True)
+async def unban(ctx, userid: str, *, reason=None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    if userid.startswith("<@") and userid.endswith(">"):
+        userid = userid.strip("<@!>")
+    try:
+        userid = int(userid)
+    except ValueError:
+        await ctx.send("Invalid user ID or mention. Please provide a valid user ID or mention.", delete_after=5)
+        return
+    if not ctx.guild.me.guild_permissions.ban_members:
+        await ctx.send("I do not have permission to unban members.")
+        return
+    username = bot.get_user(userid)
+    try:
+        user = await bot.fetch_user(userid) 
+        await ctx.guild.unban(user, reason=reason)
+        if str(userid) in bans:
+            caseid = bans[str(userid)][0]["caseid"]
+            del bans[str(userid)]
+        if str(userid) in accases:
+            for case in accases[str(userid)]:
+                if int(case["caseid"]) == int(caseid):
+                    accases.remove(case)
+                    break
+        for case in alcases[str(userid)]:
+            if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                case["status"] = "removed"
+                break
+        for action in actionslog[str(ctx.author.id)]:
+            if int(action["caseid"]) == int(caseid) and action["status"] == "active":
+                action["status"] = "removed"
+                break
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Successfully unbanned {username}.",
+            color=color
+        )
+        description = f"### User unbanned by {ctx.author.mention}\nUser: <@{userid}> ({bot.get_user(userid)})"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+        save_data()
+    except discord.NotFound:
+        await ctx.send(f"User with ID {userid} is not banned.")
+    except discord.Forbidden:
+        await ctx.send("I do not have permission to unban this user.")
+    except Exception as e:
+        await ctx.send(f"An error occurred: {e}")
+
+@bot.command()
+@hasrole(*astaffroles)
+async def modlogs(ctx, member: discord.Member = None):
+    if ctx.author.bot:
+        return
+    load_data()
+    if not member:
+        await ctx.message.delete()
+        await ctx.send("Please provide a user.", delete_after=5)
+        return
+    userid = member.id
+    username = bot.get_user(userid)
+    usercases = sorted(accases[str(userid)], key=lambda w: w["timestamp"], reverse=False) if str(userid) in accases else []
+    if not usercases:
+        embed = discord.Embed(
+            title="",
+            description=f"No active cases found for {username}.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    embed = discord.Embed(
+        title="",
+        description=f"### {username}'s active modlogs",
+        color=color
+    )
+    logsref = None
+    a = 0
+    b = 0
+    async def writelogs():
+        nonlocal a, b, embed, logsref
+        embed.clear_fields()
+        start_index = b * 5 if b != 0 else 0
+        end_index = min(start_index + 5, len(usercases))
+        for i in range(start_index, end_index):
+            case = usercases[i]
+            if not case:
+                break
+            caseid = case["caseid"] 
+            reason = case["reason"] if case["reason"] else ""
+            duration = case["duration"] if case["duration"] else ""
+            moderator = case["moderator"]
+            actiontype = case["type"]
+            timestamp = case["timestamp"]
+            value = ""
+            value = f"Reason: {reason}\n" if reason else ""
+            value += f"Duration: {duration}\nTimestamp: <t:{timestamp}>\nModerator: {moderator}\nAction Type: {actiontype}"
+            embed.add_field(
+                name=f"Case ID: {caseid}",
+                value=value,
+                inline=False
+            )
+        view = logsbuttons()
+        if logsref:
+            await logsref.edit(embed=embed, view=view)
+        else:
+            logsref = await ctx.send(embed=embed, view=view)    
+    async def firstbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = 0 
+        b = 0
+        await writelogs()
+    async def backbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a -= 10 
+        b -= 1
+        await writelogs()
+    async def forwardbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a += 10 
+        b += 1
+        await writelogs()
+    async def lastbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = len(usercases) - 1
+        b = round(len(usercases) / 5)
+        if b * 5 == a + 1:
+            b -= 1
+        await writelogs()
+    def logsbuttons():
+        nonlocal a, b
+        view = View()
+        firstbtn = discord.ui.Button(emoji="⏪", style=discord.ButtonStyle.red)
+        backbtn = discord.ui.Button(emoji="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(emoji="▶️", style=discord.ButtonStyle.red)
+        lastbtn = discord.ui.Button(emoji="⏩", style=discord.ButtonStyle.red)
+        firstbtn.callback = firstbutton
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        lastbtn.callback = lastbutton
+        view.add_item(firstbtn)
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        view.add_item(lastbtn)
+        if b == 0:
+            backbtn.disabled = True
+            firstbtn.disabled = True
+        c = 0
+        if round(len(usercases) / 5) < len(usercases) / 5:
+            c = round(len(usercases) / 5)
+        else:
+            c = round(len(usercases) / 5) - 1 
+        if b == c:
+            forwardbtn.disabled = True
+            lastbtn.disabled = True
+        return view
+    await writelogs()
+
+@bot.command()
+@hasrole(*astaffroles)
+async def alogs(ctx, member: discord.Member = None):
+    if ctx.author.bot:
+        return
+    load_data()
+    if not member:
+        await ctx.message.delete()
+        await ctx.send("Please provide a user.", delete_after=5)
+        return
+    userid = member.id
+    username = bot.get_user(userid)
+    usercases = sorted(alcases[str(userid)], key=lambda w: w["timestamp"], reverse=False) if str(userid) in alcases else []
+    if not usercases:
+        embed = discord.Embed(
+            title="",
+            description=f"No active cases found for {username}.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    embed = discord.Embed(
+        title="",
+        description=f"### All modlogs for {username}",
+        color=color
+    )
+    logsref = None
+    a = 0
+    b = 0
+    async def writelogs():
+        nonlocal a, b, embed, logsref
+        embed.clear_fields()
+        start_index = b * 5 if b != 0 else 0
+        end_index = min(start_index + 5, len(usercases))
+        for i in range(start_index, end_index):
+            case = usercases[i]
+            if not case:
+                break
+            caseid = case["caseid"] 
+            reason = case["reason"] if case["reason"] else ""
+            duration = case["duration"]
+            moderator = case["moderator"] if case["moderator"] else ""
+            actiontype = case["type"]
+            timestamp = case["timestamp"]
+            status = case["status"]
+            value = ""
+            value = f"Reason: {reason}\n" if reason else ""
+            value += f"Duration: {duration}\nTimestamp: <t:{timestamp}>\nModerator: {moderator}\nAction Type: {actiontype}\nStatus: {status}"
+            embed.add_field(
+                name=f"Case ID: {caseid}",
+                value=value,
+                inline=False
+            )
+        view = logsbuttons()
+        if logsref:
+            await logsref.edit(embed=embed, view=view)
+        else:
+            logsref = await ctx.send(embed=embed, view=view)    
+    async def firstbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = 0 
+        b = 0
+        await writelogs()
+    async def backbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a -= 10 
+        b -= 1
+        await writelogs()
+    async def forwardbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a += 10 
+        b += 1
+        await writelogs()
+    async def lastbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = len(usercases) - 1
+        b = round(len(usercases) / 5)
+        if b * 5 == a + 1:
+            b -= 1
+        await writelogs()
+    def logsbuttons():
+        nonlocal a, b
+        view = View()
+        firstbtn = discord.ui.Button(emoji="⏪", style=discord.ButtonStyle.red)
+        backbtn = discord.ui.Button(emoji="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(emoji="▶️", style=discord.ButtonStyle.red)
+        lastbtn = discord.ui.Button(emoji="⏩", style=discord.ButtonStyle.red)
+        firstbtn.callback = firstbutton
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        lastbtn.callback = lastbutton
+        view.add_item(firstbtn)
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        view.add_item(lastbtn)
+        if b == 0:
+            backbtn.disabled = True
+            firstbtn.disabled = True
+        c = 0
+        if round(len(usercases) / 5) < len(usercases) / 5:
+            c = round(len(usercases) / 5)
+        else:
+            c = round(len(usercases) / 5) - 1 
+        if b == c:
+            forwardbtn.disabled = True
+            lastbtn.disabled = True
+        return view
+    await writelogs()
+    
+@bot.command()
+@hasrole(*astaffroles)
+async def actionlogs(ctx, member: discord.Member = None):
+    if ctx.author.bot:
+        return
+    load_data()
+    if not member:
+        await ctx.message.delete()
+        await ctx.send("Please provide a user.", delete_after=5)
+        return
+    userid = member.id
+    username = bot.get_user(userid)
+    usercases = sorted(actionslog[str(userid)], key=lambda w: w["timestamp"], reverse=False) if str(userid) in actionslog else []
+    if not usercases:
+        embed = discord.Embed(
+            title="",
+            description=f"No actions found for {username}.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    embed = discord.Embed(
+        title="",
+        description=f"### All moderation actions for for {username}",
+        color=color
+    )
+    logsref = None
+    a = 0
+    b = 0
+    async def writelogs():
+        nonlocal a, b, embed, logsref
+        embed.clear_fields()
+        start_index = b * 5 if b != 0 else 0
+        end_index = min(start_index + 5, len(usercases))
+        for i in range(start_index, end_index):
+            case = usercases[i]
+            if not case:
+                break
+            user = case["user"] if case["user"] else ""
+            caseid = case["caseid"] 
+            reason = case["reason"] if case["reason"] else ""
+            duration = case["duration"]
+            actiontype = case["type"]
+            timestamp = case["timestamp"]
+            status = case["status"]
+            value = f"User: {user}\n" if user else ""
+            value += f"Reason: {reason}\n" if reason else ""
+            value += f"Duration: {duration}\nTimestamp: <t:{timestamp}>\nAction Type: {actiontype}\nStatus: {status}"
+            embed.add_field(
+                name=f"Case ID: {caseid}",
+                value=value,
+                inline=False
+            )
+        view = logsbuttons()
+        if logsref:
+            await logsref.edit(embed=embed, view=view)
+        else:
+            logsref = await ctx.send(embed=embed, view=view)    
+    async def firstbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = 0 
+        b = 0
+        await writelogs()
+    async def backbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a -= 10 
+        b -= 1
+        await writelogs()
+    async def forwardbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a += 10 
+        b += 1
+        await writelogs()
+    async def lastbutton(interaction):
+        nonlocal a, b
+        await interaction.response.defer()
+        a = len(usercases) - 1
+        b = round(len(usercases) / 5)
+        if b * 5 == a + 1:
+            b -= 1
+        await writelogs()
+    def logsbuttons():
+        nonlocal a, b
+        view = View()
+        firstbtn = discord.ui.Button(emoji="⏪", style=discord.ButtonStyle.red)
+        backbtn = discord.ui.Button(emoji="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(emoji="▶️", style=discord.ButtonStyle.red)
+        lastbtn = discord.ui.Button(emoji="⏩", style=discord.ButtonStyle.red)
+        firstbtn.callback = firstbutton
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        lastbtn.callback = lastbutton
+        view.add_item(firstbtn)
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        view.add_item(lastbtn)
+        if b == 0:
+            backbtn.disabled = True
+            firstbtn.disabled = True
+        c = 0
+        if round(len(usercases) / 5) < len(usercases) / 5:
+            c = round(len(usercases) / 5)
+        else:
+            c = round(len(usercases) / 5) - 1 
+        if b == c:
+            forwardbtn.disabled = True
+            lastbtn.disabled = True
+        return view
+    await writelogs()
+
+@bot.command()
+@hasrole(*astaffroles)
+async def modstats(ctx, member: discord.Member = None):
+    if ctx.author.bot:
+        return
+    load_data()
+    if not member:
+        await ctx.message.delete()
+        await ctx.send("Please provide a user.", delete_after=5)
+        return
+    userid = member.id
+    username = bot.get_user(userid)
+    totalwarns = 0
+    activewarns = 0
+    totalmutes = 0
+    activemutes = 0
+    totalkicks = 0
+    totalbans = 0
+    activebans = 0
+    totalroles = 0
+    activeroles = 0
+    types = ["temprole", "role"]
+    if str(userid) in actionslog:
+        for action in actionslog[str(userid)]:
+            if action["type"] == "warn":
+                totalwarns += 1
+                if action["status"] == "active":
+                    activewarns  += 1
+            elif action["type"] == "mute":
+                totalmutes += 1
+                if action["status"] == "active":
+                    activemutes  += 1
+            elif action["type"] == "kick":
+                totalkicks += 1
+            elif action["type"] == "ban":
+                totalbans += 1
+                if action["status"] == "active":
+                    activebans  += 1
+            elif action["type"] in types:
+                totalroles += 1
+                if action["status"] == "active":
+                    activeroles  += 1
+    embed = discord.Embed(
+        title="",
+        description=f"### Mod stats for {username}",
+        color=color
+    )
+    embed.add_field(name="Warns", value=f"Total: {totalwarns}\nActive: {activewarns}")
+    embed.add_field(name="Mutes", value=f"Total: {totalmutes}\nActive: {activemutes}")
+    embed.add_field(name="Roles", value=f"Total: {totalroles}\nActive: {activeroles}")
+    embed.add_field(name="", value="", inline=False)
+    embed.add_field(name="Kicks", value=f"Total: {totalkicks}")
+    embed.add_field(name="Bans", value=f"Total: {totalbans}\nActive: {activebans}")
+    embed.add_field(name="", value="")
+    await ctx.send(embed=embed)
+
+@bot.command()
+@hasrole(*ustaffroles)
+async def role(ctx, member: discord.Member = None, role: discord.Role = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    if not member:
+        await ctx.send("Please provide a user to add the role to.", delete_after=5)
+        return
+    if not role:
+        await ctx.send("Please provide a role to add to the user.", delete_after=5)
+        return
+    if role in member.roles:
+        await ctx.send("This user already has this role.", delete_after=5)
+        return
+    try:
+        await member.add_roles(role)
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Succesfully added {role} to {member}.",
+            color=color
+        )
+        description = f"### Role added to {member.mention} by {ctx.author.mention}\nRole: {role}"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        lastcase = lastcaseid
+        caseid = lastcase + 1
+        lastcaseid = caseid
+        timestamp = datetime.now(timezone.utc)
+        await ctx.send(embed=embed)
+        accasesentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": "",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "role",
+        "moderator": f"<@{ctx.author.id}>"
+        }
+        alcaseentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": "",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "role",
+        "moderator": f"<@{ctx.author.id}>",
+        "status": "active"
+        }
+        actionsentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": "",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "role",
+        "status": "active"
+        }
+        if str(member.id) not in accases:
+            accases[str(member.id)] = []
+        if str(member.id) not in alcases:
+            alcases[str(member.id)] = []
+        if not str(ctx.author.id) in actionslog:
+            actionslog[str(ctx.author.id)] = []
+        accases[str(member.id)].append(accasesentry)
+        alcases[str(member.id)].append(alcaseentry)
+        actionslog[str(ctx.author.id)].append(actionsentry)
+        save_data()
+    except discord.HTTPException:
+        await ctx.send("Failed to add role to user.", delete_after=5)
+        return
+
+@bot.command()
+@hasrole(*ustaffroles)
+async def temprole(ctx, member: discord.Member = None, role: discord.Role = None, duration: str = None):
+    global lastcaseid, logschannel
+    if ctx.author.bot:
+        return
+    await ctx.message.delete()
+    load_data()
+    if not member:
+        await ctx.send("Please provide a user to add the role to.", delete_after=5)
+        return
+    if not role:
+        await ctx.send("Please provide a role to add to the user.", delete_after=5)
+        return
+        duration = None
+    reason = "No reason provided"
+    timevalue = 0
+    ftimeunit = "30d"
+    if duration is None:
+        await ctx.send("You must provide a reason for the ban.")
+        return
+    durationsplit = duration.split(" ")
+    if re.match(r"^\d+[smhdw]$", durationsplit[0]):
+        duration = durationsplit[0]
+    else:
+        await ctx.send("Please provide a valid duration.", delete_after=5)
+    lastid = lastcaseid
+    caseid = lastid + 1
+    lastcaseid = caseid
+    timestamp = datetime.now(timezone.utc)
+    userid = member.id
+    username = bot.get_user(userid)
+    durationseconds = None
+    if duration:
+        match = re.match(r"(\d+)([smhdw])", duration)
+        if not match:
+            await ctx.send("Invalid duration format! Use a format like '10s', '5m', or '1h'.")
+            return
+        timevalue = int(match.group(1))
+        timeunit = match.group(2).lower()
+        if timeunit == "s":
+            durationseconds = timevalue
+            ftimeunit = "second" if timevalue == 1 else "seconds"
+        elif timeunit == "m":
+            durationseconds = timevalue * 60
+            ftimeunit = "minute" if timevalue == 1 else "minutes"
+        elif timeunit == "h":
+            durationseconds = timevalue * 3600
+            ftimeunit = "hour" if timevalue == 1 else "hours"
+        elif timeunit == "d":
+            durationseconds = timevalue * 86400
+            ftimeunit = "day" if timevalue == 1 else "days"
+        elif timeunit == "w":
+            durationseconds = timevalue * 604800
+            ftimeunit = "week" if timevalue == 1 else "weeks"
+        else:
+            await ctx.send("Invalid time unit! Use 's' for seconds, 'm' for minutes, 'h' for hours, 'd' for days, or 'w' for weeks.", delete_after=5)
+            return
+    try:
+        await member.add_roles(role)
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Added {role} to {member} || {duration}",
+            color=color
+        )
+        description = f"### Temporary role added to {member.mention} by {ctx.author.mention}\nRole: {role}\nDuration: {duration}"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+    except discord.HTTPException:
+        await ctx.send("Failed to add role to user.", delete_after=5)
+        return
+    userid = member.id
+    if str(userid) not in accases:
+        accases[str(userid)] = []
+    if str(userid) not in alcases:
+        alcases[str(userid)] = []
+    timestamp = datetime.now(timezone.utc)
+    accaseentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": duration if duration else "30d",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "temprole",
+        "moderator": f"<@{ctx.author.id}>"
+    }
+    alcaseentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": duration if duration else "30d",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "temprole",
+        "moderator": f"<@{ctx.author.id}>",
+        "status": "active"
+    }
+    actionsentry = {
+        "user": f"{member.mention}",
+        "caseid": caseid,
+        "reason": "",
+        "duration": duration if duration else "30d",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "temprole",
+        "status": "active"
+    }
+    if not str(userid) in accases:
+        accases[str(userid)] = []
+    if not str(userid) in alcases:
+        alcases[str(userid)] = []
+    if not str(ctx.author.id) in actionslog:
+        actionslog[str(ctx.author.id)] = []
+    accases[str(userid)].append(accaseentry)
+    alcases[str(userid)].append(alcaseentry)
+    actionslog[str(ctx.author.id)].append(actionsentry)
+    save_data()
+    if durationseconds:
+        await asyncio.sleep(durationseconds)
+        load_data()
+        if role in member.roles:
+            await member.remove_roles(role)
+            accases[str(userid)] = [b for b in accases.get(str(userid), []) if b["caseid"] != caseid]
+            for case in alcases[str(userid)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "expired"
+                    break
+            for case in actionslog[str(ctx.author.id)]:
+                if int(case["caseid"]) == int(caseid) and case["status"] == "active":
+                    case["status"] = "expired"
+                    break
+        else:
+            return
+        save_data()
+
+@bot.command()
+@hasrole(*ustaffroles)
+async def removerole(ctx, member: discord.Member = None, role: discord.Role = None):
+    global logschannel
+    if ctx.author.bot:
+        return
+    load_data()
+    if not member:
+        await ctx.send("Please provide a user to remove the role from.", delete_after=5)
+        return
+    if not role:
+        await ctx.send("Please provide a role to remove from the user.", delete_after=5)
+        return
+    if role not in member.roles:
+        await ctx.send("This user does not have this role.", delete_after=5)
+        return
+    try:
+        await member.remove_roles(role)
+        userid = member.id
+        embed = discord.Embed(
+            title="",
+            description=f":white_check_mark: Successfully removed {role} from {member}.",
+            color=color
+        )
+        description = f"### Role removed from {member.mention} by {ctx.author.mention}\nRole: {role}"
+        logsembed = discord.Embed(
+            title="Moderation log",
+            description=description,
+            color=color
+        )
+        await logschannel.send(embed=logsembed)
+        await ctx.send(embed=embed)
+        types = ["temprole", "role"]
+        for case in alcases[str(member.id)]:
+            if case["type"] in types and case["status"] == "active":
+                case["status"] = "removed"
+                caseid = case["caseid"]
+                break
+        for action in actionslog[str(ctx.author.id)]:
+            if action["type"] in types and action["status"] == "active":
+                action["status"] = "removed"
+                break
+        accases[str(userid)] = [b for b in accases.get(str(userid), []) if b["caseid"] != caseid]
+        save_data()
+    except discord.HTTPException:
+        await ctx.send("Failed to remove role from user.", delete_after=5)
+        return
+    
+@bot.command()
+@hasrole(*astaffroles)
+async def purge(ctx, amount: int = None):
+    global logschannel
+    if ctx.author.bot:
+        return
+    if not amount or amount < 1 or amount > 100:
+        await ctx.send("Please provide a number between 1 and 100.", delete_after=5)
+        return
+    await ctx.message.delete()
+    messages = []
+    async for message in ctx.channel.history(limit=amount):
+        messages.append(message)
+    log_lines = []
+    for message in messages:
+        log_lines.append(f"[{message.created_at}] {message.author}: {message.content}")
+    log_file_path = os.path.join(basedir, "purge_log.txt")
+    with open(log_file_path, "w", encoding="utf-8") as log_file:
+        log_file.write("\n".join(log_lines))
+    await ctx.channel.purge(limit=amount)
+    logschannel = bot.get_channel(1347697961026457654)
+    await logschannel.send(file=discord.File(log_file_path))
+    os.remove(log_file_path)
+    global lastcaseid
+    caseid = lastcaseid + 1
+    lastcaseid = caseid
+    timestamp = datetime.now(timezone.utc)
+    actionsentry = {
+        "user": "N/A",
+        "caseid": caseid,
+        "reason": "N/A",
+        "duration": "N/A",
+        "timestamp": int(timestamp.timestamp()),
+        "type": "purge",
+        "status": "N/A"
+    }
+    if str(ctx.author.id) not in actionslog:
+        actionslog[str(ctx.author.id)] = []
+    actionslog[str(ctx.author.id)].append(actionsentry)
+    embed = discord.Embed(
+        title="",
+        description=f":white_check_mark: Purged {amount} messages.",
+        color=color
+    )
+    description = f"### Channel purged by {ctx.author.mention}\nMessages deleted: {amount}\nChannel: {ctx.channel.mention}"
+    logsembed = discord.Embed(
+        title="Moderation log",
+        description=description,
+        color=color
+    )
+    await logschannel.send(embed=logsembed)
+    await ctx.send(embed=embed, delete_after=5)
+    save_data() 
+
+#economy commands
+@bot.command()
+@isinchannel(1347697960820932674)
+async def work(ctx):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    global cash
+    currenttime = int(time.time())
+    user = ctx.author.id
+    username = bot.get_user(user)
+    jobs = ["stripper", "lawyer", "cop", "accountant", "engineer", "electrician", "construction worker", "doctor", "nurse", "data anylyst", "coder", "IT guy", "teacher", "diver", "soldier", "welder", "plumber", "carpenter", "banker", "firefighter", "cashier", "truck driver", "taxi driver", "secretary", "CEO", "clerk", "pimp"]
+    for users in workcds:
+        if int(users) == int(user):
+            unextwork = workcds[str(user)]["nextwork"]
+            if (unextwork - currenttime) > 0:
+                embed = discord.Embed(
+                    title="Work",
+                    description=f"{username}, you are too tired to work right now! come back <t:{unextwork}:R>",
+                    color=color
+                )
+                await ctx.send(embed=embed)
+                return
+    amountgiven = random.randint(200, 300)
+    ucash = None
+    for users in cash:
+        if int(users) == int(user):
+            ucash = cash[str(user)]["amount"]
+            ucash += amountgiven
+    if ucash:
+        pass
+    else:
+        ucash = amountgiven
+    cash[user] = {
+        "amount": ucash
+    }
+    workcds[user] = {
+        "nextwork": currenttime + 300
+    }
+    job = random.choice(jobs)
+    embed = discord.Embed(
+        title="Working",
+        description=f"{username}, you worked very hard as a {job} and made {amountgiven}{currency}!",
+        color=color
+    )
+    embed.set_footer(text="dm goldfish if theres any jobs you want to add")
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command(name="balance", aliases=["bal"])
+@isinchannel(1347697960820932674)
+async def balance(ctx, member: discord.Member = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    if member:
+        user = member.id
+        username = bot.get_user(user)
+    else:
+        user = ctx.author.id
+        username = ctx.author
+    if str(user) not in cash:
+        cash[str(user)]={"amount":0}
+    if str(user) not in banked:
+        banked[str(user)]={"amount":0}
+    ucash = round(int(cash[str(user)]["amount"]))
+    ubanked = round(int(banked[str(user)]["amount"]))
+    utotal = round(ucash + ubanked)
+    columnwidth = 16
+    embed = discord.Embed(title=f"{username}'s Balance\u2009", color=color)
+    embed.add_field(name=f"**Wallet:\u2003\u2003 **", value=f"{ucash:,}{currency}")
+    embed.add_field(name=f"**Banked:\u2003\u2003 **", value=f"{ubanked:,}{currency}")
+    embed.add_field(name=f"**Total:**", value=f"{utotal:,}{currency}")
+    await ctx.send(embed=embed)
+
+@bot.command(name="deposit", aliases=["dep"])
+@isinchannel(1347697960820932674)
+async def deposit(ctx, args):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not args:
+        await ctx.send("Please provide a valid integer or percentage, or put 'all' or 'half.'")
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    if str(user) not in cash:
+        cash[str(user)] = {"amount": 0}
+    if str(user) not in banked:
+        banked[str(user)] = {"amount": 0}
+    ucash = cash[str(user)]["amount"]
+    if args.lower() == "all":
+        todep = ucash
+    elif args.lower() == "half":
+        todep = ucash * 0.5
+    else:
+        try:
+            if "%" in args:
+                percent = int(args.replace("%", ""))
+                todep = ucash * (percent / 100)
+            else:
+                todep = int(args)
+        except ValueError:
+            await ctx.send("Invalid input. Please enter a number, percentage, 'all', or 'half'.")
+            return
+    if todep > ucash:
+        embed = discord.Embed(
+            title="",
+            description=f"You only have {ucash:,}{currency} on hand!",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    if todep < 0:
+        await ctx.send("You cannot deposit {currency} you don't have.")
+        return
+    ucash -= todep
+    ubanked = banked[str(user)]["amount"]
+    ubanked += todep
+    cash[str(user)]["amount"] = ucash
+    banked[str(user)]["amount"] = ubanked
+    embed = discord.Embed(
+        title=f"{username}'s Deposit",
+        description=f"Successfully deposited {int(todep):,}{currency} to your bank account!",
+        color=color
+    )
+    await ctx.send(embed=embed)
+    save_data()
+        
+@bot.command(name="withdraw", aliases=["with"])
+@isinchannel(1347697960820932674)
+async def withdraw(ctx, args):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not args:
+        await ctx.send("Please provide a valid integer or percentage, or put 'all' or 'half.'")
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    if str(user) not in cash:
+        cash[str(user)] = {"amount": 0}
+    if str(user) not in banked:
+        banked[str(user)] = {"amount": 0}
+    ucash = cash[str(user)]["amount"]
+    ubanked = banked[str(user)]["amount"]
+    if args.lower() == "all":
+        towith = ubanked
+    elif args.lower() == "half":
+        towith = round(ubanked * 0.5)
+    else:
+        try:
+            if "%" in args:
+                percent = int(args.replace("%", ""))
+                towith = round(ubanked * (percent / 100))
+            else:
+                towith = int(args)
+        except ValueError:
+            await ctx.send("Invalid input. Please enter a number, percentage, 'all', or 'half'.")
+            return
+    if towith > ubanked:
+        await ctx.send("You cannot withdraw more then you have in your bank.")
+        return
+    if towith == 0:
+        await ctx.send("You have no money to withdraw.")
+        return
+    ucash += towith
+    ubanked -= towith
+    cash[str(user)]["amount"] = ucash
+    banked[str(user)]["amount"] = ubanked
+    embed = discord.Embed(
+        title=f"{username}'s Withdrawal",
+        description=f"Successfully withdrew {int(towith):,}{currency} from your bank account!",
+        color=color
+    )
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@isinchannel(1347697960820932674)
+async def daily(ctx):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    unextdaily = None
+    for users in dailycds:
+        if int(user) == int(users):
+            unextdaily = dailycds[str(user)]["nextdaily"]
+    if unextdaily:
+        pass
+    else:
+        unextdaily = 0
+    currenttime = int(time.time())
+    if (currenttime - unextdaily) >= 0:
+        togive = random.randint(2000, 3000)
+        ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+        ucash += togive
+        cash[str(user)]={"amount":ucash}
+        responses = [f"You recieved {togive}{currency} from social security!", f"You got lucky and got {togive:,}{currency} on your tax return!", f"you found {togive:,}{currency} lying on the street!", f"You recieved {togive:,}{currency} from a distant relative!"]
+        response = random.choice(responses)
+        embed = discord.Embed(
+            title=f"{username}'s Daily",
+            description=response,
+            color=color
+        )
+        await ctx.send(embed=embed)
+        dailycds[str(user)]={"nextdaily":currenttime + 86400}
+    else:
+        embed = discord.Embed(
+            title="",
+            description=f"{username}, you already claimed your daily reward! Come back <t:{unextdaily}:R>!",
+            color=color
+        )
+        await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@isinchannel(1347697960820932672)
+async def grab(ctx):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    if not str(user) in usersgrabbed:
+        usersgrabbed[str(user)] = {"grabbed": False}
+    usergrabbed = usersgrabbed[str(user)]["grabbed"]
+    if usergrabbed:
+        msgref = await ctx.send("You already grabbed this drop!")
+        await deletemessage(ctx, msgref)
+        return
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    if ldrop and ctx.channel == lounge:
+        togive = random.randint(600, 1000)
+        ucash += togive
+        cash[str(user)] = {"amount": ucash}
+        embed = discord.Embed(
+            title="",
+            description=f"{username}, you grabbed {togive:,}{currency} from the drop!",
+            color=color
+        )
+        msgref = await ctx.send(embed=embed)
+        usersgrabbed[str(user)]["grabbed"] = True
+        cash[str(user)]={"amount":ucash}
+    elif not ldrop and ctx.channel == lounge:
+        embed = discord.Embed(
+            title="",
+            description="There is no active drop right now!",
+            color=color
+        )
+        msgref = await ctx.send(embed=embed)
+    await deletemessage(ctx, msgref)
+    save_data()
+
+@bot.command()
+@isinchannel(1347697960820932674)
+async def rob(ctx, member: discord.Member):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    currenttime = int(time.time())
+    user = ctx.author.id
+    username = bot.get_user(user)
+    if ctx.author.id == member.id:
+        await ctx.send("You cannot rob yourself, idiot.")
+        return
+    if str(user) not in robcds:
+        robcds[str(user)]={"nextrob":0}
+    unextrob = robcds[str(user)]["nextrob"]
+    if currenttime - unextrob < 0:
+        embed = discord.Embed(
+            title="",
+            description=f"{username}, you are on cooldown right now! Come back <t:{unextrob}:R>.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    suser = member.id
+    susername = bot.get_user(suser)
+    if str(user) not in cash:
+        cash[str(user)] = {"amount": 0}
+    if str(suser) not in cash:
+        cash[str(suser)] = {"amount": 0}
+    ucash = cash[str(user)]["amount"]
+    scash = cash[str(suser)]["amount"]
+    if scash == 0:
+        embed = discord.Embed(
+            title="",
+            description=f"{susername} has no {currency} to steal!",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    successful = random.randint(1, 2)
+    if successful == 1:
+        tostealper = random.randint(33, 75)
+        stolen = round(scash * (tostealper / 100))
+        scash -= stolen
+        ucash += stolen
+        cash[str(user)] = {"amount": ucash}
+        cash[str(suser)] = {"amount": scash}
+        embed = discord.Embed(
+            title=f"{username}'s Robbery",
+            description=f"{username}, you successfully stole {stolen:,}{currency} from {susername}!",
+            color=color
+        )
+        await ctx.send(embed=embed)
+    else:
+        fineamount = random.randint(5000, 10000)
+        ucash -= fineamount
+        cash[str(user)] = {"amount": ucash}
+        embed = discord.Embed(
+            title=f"{username}'s Robbery",
+            description=f"You were caught stealing from {susername} and have been fined {fineamount:,}{currency}.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+    robcds[str(user)]={"nextrob":currenttime + 3600}
+    save_data()
+
+@bot.command(name="leaderboard", aliases=["lb"])
+@isinchannel(1347697960820932674)
+async def leaderboard(ctx, args: str = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    global curboard, astotal, ascash, asbanked, lbmsgref, lbuser, curpage, rpages
+    astotal = []
+    asbanked = []
+    ascash = []
+    lbuser = ctx.author.id
+    curpage = 1
+    rpages = None
+    load_data()
+    butr = []
+    cutr = []
+    for user in banked:
+        if banked[user]["amount"] == 0:
+            butr.append(user)
+    for user in cash:
+        if cash[user]["amount"] == 0:
+            cutr.append(user)
+    for user in butr:
+        banked.pop(user)
+    for user in cutr:
+        cash.pop(user)
+    async def totallb(ctx):
+        global curpage, rpages, astotal, curboard, lbmsgref
+        curboard = "totals"
+        usertotals = []
+        cutr = []
+        butr = []
+        for user in cash:
+            username = bot.get_user(int(user))
+            if username is None:
+                cutr.append(str(user))
+                if str(user) in banked:
+                    butr.append(str(user))
+            else:
+                ucash = cash[str(user)]["amount"]
+                ubanked = banked.get(str(user), {"amount": 0})["amount"]
+                utotal = round(ucash + ubanked)
+                usertotals.append((username, utotal))
+        for user in banked:
+            if user not in cash:
+                username = bot.get_user(int(user))
+                if username is None:
+                    butr.append(str(user))
+                else:
+                    ubanked = banked[str(user)]["amount"]
+                    utotal = round(ubanked)
+                    usertotals.append((username, utotal))
+        for user in cutr:
+            if user in cash:
+                del cash[user]
+        for user in butr:
+            if user in banked:
+                del banked[user]
+        usertotals.sort(key=lambda x: x[1], reverse=True)
+        astotal = []
+        for idx, (username, utotal) in enumerate(usertotals):
+            astotal.append(f"{username}, {utotal}")
+        upages = len(astotal) / 10
+        rpages = round(upages)
+        while upages > rpages:
+            rpages += 1
+        embed = discord.Embed(
+            title="Total balances leaderboard",
+            color=color
+        )
+        i = (curpage - 1) * 10
+        l = i + 1
+        pmax = 10 if curpage == 1 else curpage * 10
+        if len(astotal) < pmax:
+            pmax = len(astotal)
+        pmin = 0 if curpage == 1 else 10 * (curpage - 1)
+        while pmin <= i < pmax:
+            username, utotal = usertotals[i]
+            if utotal != 0:
+                embed.add_field(name="", value=f"**{l}. {username}:** {utotal:,}{currency}", inline=False)
+                l += 1
+            i += 1
+        backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        view = View()
+        view.add_item(changelbmenu())
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        if curpage == 1:
+            backbtn.disabled = True
+        if curpage == rpages:
+            forwardbtn.disabled = True
+        await lbmsgref.edit(content="", embed=embed, view=view)
+        await updatebuttons(ctx)
+    async def cashlb(ctx):
+        global ascash, lbmsgref, curpage, rpages
+        curboard = "cash"
+        ascash = []
+        sorted_cash = sorted(cash.items(), key=lambda x: x[1]["amount"], reverse=True)
+        for user_id, data in sorted_cash:
+            username = bot.get_user(int(user_id))
+            if username:
+                ucash = round(data["amount"])
+                ascash.append(f"{username.name}, {ucash}")
+        upages = len(ascash) / 10
+        rpages = round(upages)
+        while upages > rpages:
+            rpages += 1
+        embed = discord.Embed(
+            title="Wallet balances leaderboard",
+            color=color
+        )
+        i = (curpage - 1) * 10
+        l = i + 1
+        pmax = 10 if curpage == 1 else curpage * 10
+        if len(ascash) < pmax:
+            pmax = len(ascash)
+        pmin = 0 if curpage == 1 else 10 * (curpage - 1)
+        while pmin <= i < pmax:
+            entry = ascash[i].split(", ")
+            username = entry[0]
+            ucash = int(entry[1])
+            if ucash != 0:
+                embed.add_field(name="", value=f"**{l}. {username}:** {ucash:,}{currency}", inline=False)
+                l += 1
+            i += 1
+        backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        view = View()
+        view.add_item(changelbmenu())
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        await lbmsgref.edit(content="", embed=embed, view=view)
+        await updatebuttons(ctx)
+    async def bankedlb(ctx):
+        global asbanked, lbmsgref, curpage, rpages
+        curboard = "banked"
+        asbanked = []
+        for user_id, data in banked.items():
+            username = bot.get_user(int(user_id))
+            if username:
+                ubanked = round(data["amount"])
+                asbanked.append((username.name, ubanked))
+        asbanked.sort(key=lambda x: x[1], reverse=True)
+        upages = len(asbanked) / 10
+        rpages = round(upages)
+        if upages > rpages:
+            rpages += 1
+        embed = discord.Embed(
+            title="Bank Balances Leaderboard",
+            color=color
+        )
+        i = (curpage - 1) * 10
+        l = i + 1
+        pmax = min(len(asbanked), curpage * 10)
+        pmin = 0 if curpage == 1 else 10 * (curpage - 1)
+        while pmin <= i < pmax:
+            username, ubanked = asbanked[i]
+            if ubanked != 0:
+                embed.add_field(
+                    name="",
+                    value=f"**{l}. {username}:** {ubanked:,}{currency}",
+                    inline=False
+                )
+                l += 1
+            i += 1
+        backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+        backbtn.callback = backbutton
+        forwardbtn.callback = forwardbutton
+        view = View()
+        view.add_item(changelbmenu())
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        if curpage == 1:
+            backbtn.disabled = True
+        if curpage == rpages:
+            forwardbtn.disabled = True
+        if lbmsgref:
+            await lbmsgref.edit(content="", embed=embed, view=view)
+        else:
+            lbmsgref = await ctx.send(embed=embed, view=view)
+    async def forwardbutton(interaction: discord.Interaction):
+        global curpage, rpages
+        nonlocal author
+        if interaction.user.id != author:
+            await interaction.response.send_message("This is not your command!", ephemeral=True)
+            return
+        await interaction.response.defer()
+        curpage += 1
+        if curboard == "totals":
+            await totallb(interaction)
+        elif curboard == "cash":
+            await cashlb(interaction)
+        else:
+            await bankedlb(interaction)
+        await updatebuttons(interaction)
+    async def backbutton(interaction: discord.Interaction):
+        global curpage
+        nonlocal author
+        if interaction.user.id != author:
+            await interaction.response.send_message("This is not your command!", ephemeral=True)
+            return
+        await interaction.response.defer()
+        curpage -= 1
+        if curboard == "totals":
+            await totallb(interaction)
+        elif curboard == "cash":
+            await cashlb(interaction)
+        else:
+            await bankedlb(interaction)
+        await updatebuttons(interaction)
+    async def updatebuttons(ctx):
+        global curpage, rpages, lbmsgref
+        backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+        forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+        backbtn.callback = lambda i: backbutton(i)
+        forwardbtn.callback = lambda i: forwardbutton(i)
+        if curpage == 1:
+            backbtn.disabled = True
+        if curpage == rpages:
+            forwardbtn.disabled = True
+        view = View()
+        view.add_item(changelbmenu())
+        view.add_item(backbtn)
+        view.add_item(forwardbtn)
+        await lbmsgref.edit(view=view)
+    class changelbview(discord.ui.View):
+        def __init__(self):
+            self.add_item(changelbmenu())
+    class changelbmenu(discord.ui.Select):
+        def __init__(self):
+            options = [
+                discord.SelectOption(label="Total balances" + (" (current)" if curboard == "totals" else ""), value="totals", default=(curboard == "totals")),
+                discord.SelectOption(label="Wallet balances" + (" (current)" if curboard == "cash" else ""), value="cash", default=(curboard == "cash")),
+                discord.SelectOption(label="Bank balances" + (" (current)" if curboard == "banked" else ""), value="banked", default=(curboard == "banked"))
+            ]
+            super().__init__(placeholder="Switch leaderboard types", min_values=1, max_values=1, options=options)
+
+        async def callback(self, interaction: discord.Interaction):
+            global curboard, astotal, ascash, asbanked, curpage, lbmsgref
+            muser = interaction.user.id
+            if muser != lbuser:
+                await interaction.followup.send("This is not your command!", )
+                return
+            selected = self.values[0]
+            await interaction.response.defer()
+            if selected == "totals":
+                curboard = "totals"
+                await totallb(ctx = interaction)
+            elif selected == "cash":
+                curboard = "cash"
+                await cashlb(ctx = interaction)
+            else:
+                curboard = "banked"
+                await bankedlb(ctx = interaction)
+    if not args:
+        curboard = "totals"
+        lbmsgref = await ctx.send("Loading...")
+        await totallb(ctx)
+    elif args.lower() == ("totals" or "total"):
+        curboard = "totals"
+        lbmsgref = await ctx.send("Loading...")
+        await totallb(ctx)
+    elif args.lower() == ("cash" or "wallet"):
+        curboard = "cash"
+        lbmsgref = await ctx.send("Loading...")
+        await cashlb(ctx)
+    elif args.lower() == ("banked" or "bank"):
+        curboard = "banked"
+        lbmsgref = await ctx.send("Loading...")
+        await bankedlb(ctx)
+    else:
+        await ctx.send("The leaderboard categories are:\n- Totals\n- Cash\n- Banked")
+        return
+    author = ctx.author.id
+
+bot.remove_command("help")
+
+@bot.command() 
+async def help(ctx, page: str=None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    global helpuser, hcurpage, hmsgref, guild
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    class changehelpview(discord.ui.View):
+        def __init__(self):
+            super().__init__()
+            self.add_item(changehelpmenu())
+    class changehelpmenu(discord.ui.Select):
+        def __init__(self):
+            options = [
+                discord.SelectOption(label="Economy commands", value="economy"),
+                discord.SelectOption(label="Gambling commands", value="gambling")
+            ]
+            adminroles = []
+            staffroles = []
+            aappended = False
+            mappended = False
+            for roleid in ustaffroles:
+                role = guild.get_role(int(roleid))
+                if role:
+                    adminroles.append(role)
+            for roleid in astaffroles:
+                role = guild.get_role(int(roleid))
+                if role:
+                    staffroles.append(role)
+            for role in adminroles:
+                if role in helpuser.roles and not aappended:
+                    options.append(discord.SelectOption(label="Admin commands", value="admin"))
+                    aappended = True 
+            for role in staffroles:
+                if role in helpuser.roles and not mappended:
+                    options.append(discord.SelectOption(label="Moderation commands", value="moderation"))
+                    mappended = True
+            super().__init__(placeholder="Choose a help menu", min_values=1, max_values=1, options=options)
+        async def callback(self, interaction: discord.Interaction):
+            global hcurpage
+            muser = interaction.user
+            if muser != helpuser:
+                await interaction.followup.send("This is not your command!", ephemeral=True)
+                return
+            selected = self.values[0]
+            await interaction.response.defer()
+            if selected == "economy" and hcurpage != 1:
+                hcurpage = 1
+                await economyhelppage(ctx=interaction)
+            gidents = ["gambling", "gamble"]
+            if selected in gidents and hcurpage != 2:
+                hcurpage = 2 
+                await gamblinghelppage(ctx=interaction)
+            if selected == "admin" and hcurpage != 3:
+                hcurpage = 3
+                await adminhelppage(ctx=interaction)
+            if selected == "moderation" and hcurpage != 4:
+                hcurpage = 4
+                await staffhelppage(ctx=interaction)
+            else:
+                await ctx.send("Unknown page. Help pages are: Economy and gambling")
+                return
+    async def economyhelppage(ctx):
+        embed = discord.Embed(
+            title="Command list",
+            description="## All commands for Ayk Utilities\n\n### Economy commands:",
+            color=color
+        )
+        async def pageone():
+            nonlocal embed
+            embed.clear_fields()
+            embed.add_field(name="Work:", value=f"Gives between 200 and 300{currency}. Can be used every 5 minutes.", inline=True)
+            embed.add_field(name="Daily:", value=f"Gives between 2000 and 3000{currency}. Can be used every 24 hours.", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Rob:", value=f"Gives a percentage of the specified user's wallet. Has a 50% chance of success. Can be used every 60 minutes. Format: `.rob <user>`.", inline=True)
+            embed.add_field(name="Income:", value=f"Gives you {currency} for each of the roles you have with an assigned value. Can be used every 15 minutes. Aliases: `roleincome, collect, collectincome, collectroleincome.`", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Grab:", value=f"Only used for drops. Drops occur in <#1347697960820932672>.", inline=True)
+            embed.add_field(name="Balance:", value=f"Displays your or the specified user's wallet, bank, and total {currency} balance. Format: `.balance <user>*`. Aliases: `bal`", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Deposit:", value=f"Deposits the specified amount from your wallet into your bank. Accepted amounts are: `all,half, <integer 1-100>%, positive integer.` Format: `.!deposit <amount>`. Aliases: `dep`.", inline=True)
+            embed.add_field(name="Withdraw:", value=f"Withdraws the specified amount from your bank into your wallet. Accepted amounts are: `all,` `half,` `<integer 1-100>%,` and `positive integer.` Format: `.withdraw <amount>`. Aliases: `with`.", inline=True)
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Leaderboard:", value=f"Displays a leaderboard with the specified category. Defaults to total balances. All categories are total balances, wallet balances, and bank balances. Format: `.leaderboard <category>*`. Aliases: `lb`.", inline=True)
+            embed.add_field(name="Shop:", value=f"Displays a list of roles available for purchase. Use o!buy with the provided key to purchase a role.", inline=True)
+            embed.set_footer(text="* - This field is optional.")
+        async def pagetwo():
+            nonlocal embed
+            embed.clear_fields()
+            embed.add_field(name="Buy:", value=f"Allows you to purchase roles from the shop, using the code from the shop. Format: `.buy <key>`.", inline=True)
+            embed.add_field(name="Gift:", value=f"Gives your {currency} to another user. Format: `.gift <user> <amount>`.")
+            embed.add_field(name="Help:", value=f"This command. Gives a list of all commands for Opal. Has economy and gambling commands. Format: `.help <type>*`.")
+            embed.set_footer(text="* - This field is optional.")
+        async def ecbuttons():
+            async def forwardbutton(interaction):
+                if interaction.user != helpuser:
+                    await interaction.response.send_message("This is not your command.", ephemeral=True)
+                    return
+                await interaction.response.defer()
+                nonlocal ecpage
+                ecpage = 2
+                await economyhelppage(ctx = interaction)
+            async def backbutton(interaction):
+                if interaction.user != helpuser:
+                    await interaction.response.send_message("This is not your command.", ephemeral=True)
+                    return
+                await interaction.response.defer()
+                nonlocal ecpage
+                ecpage = 1
+                await economyhelppage(ctx = interaction)
+            backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+            forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+            backbtn.callback = backbutton
+            forwardbtn.callback = forwardbutton
+            view = discord.ui.View()
+            view.add_item(backbtn)
+            view.add_item(forwardbtn)
+            if ecpage == 1:
+                backbtn.disabled = True
+            if ecpage == 2:
+                forwardbtn.disabled = True
+            return view
+        if ecpage == 1:
+            await pageone()
+        elif ecpage == 2:
+            await pagetwo()
+        view = await ecbuttons()
+        view.add_item(changehelpmenu())
+        hcurpage = 1
+        await hmsgref.edit(content="", embed=embed, view=view)
+    async def gamblinghelppage(ctx):
+        embed = discord.Embed(
+            title="Command list", 
+            description="## All commands for Ayk Utilities\n\n### Gambling commands:",
+            color=color
+        )
+        embed.add_field(name="Coinflip:", value="Flip a coin for a 50/50 chance of doubling your bet or losing it. Format: `.coinflip <amount> <heads/tails>.` Aliases: `cf.`")
+        #embed.add_field(name="Highlow:", value="Choose a number and select higher, lower, or the same, and (hopefully) win money! Format: `.highlow <bet> <hi/low/same> <amount>.` Aliases: `highlow, high-low, and hi-lo.`")
+        #embed.add_field(name="", value="", inline=False)
+        embed.add_field(name="Help:", value="This command. Gives a list of all commands for Opal. Has economy and gambling commands. Format: `.help <type>*,`")
+        embed.set_footer(text="* - This field is optional.")
+        view = View()
+        view.add_item(changehelpmenu())
+        hcurpage = 2
+        await hmsgref.edit(content="", embed=embed, view=view)
+    async def adminhelppage(ctx):
+        embed = discord.Embed(
+            title="Command list", 
+            description="## All commands for Ayk Utilities\n\n### Admin commands:",
+            color=color
+        )
+        embed.add_field(name="Addbal:", value=f"Adds the specified number of {currency} to the specified user's wallet balance. Format: `.addbal <user> <amount>.`", inline=True)
+        embed.add_field(name="Removebal:", value=f"Removes the specified number of {currency} from the specified user's wallet balance. Format: `.removebal <user> <amount>.`", inline=True)
+        embed.add_field(name="", value="", inline=False)
+        embed.add_field(name="Role:", value="Gives the specified user the specified role. Format: `.role <user> <role>.` Accepts user IDs or @ mentions.")
+        embed.add_field(name="Temprole:", value="Gives the specified user the specified role for the specified duration. Base duration in 30 days. Format: `.temprole <user> <role> <duration>*.` Accepts user IDs or @ mentions.")
+        embed.add_field(name="", value="", inline=False)
+        embed.add_field(name="Removerole:", value="Removes the specified role from the specified user. Format: `.removerole <user> <role>.` Accepts user IDs or @ mentions.")
+        embed.add_field(name="Help:", value="This command. Gives a list of all commands for Ayk's Utilities. Has economy, gambling, moderation, and admin commands. Format: `.help <type>*.`")
+        embed.set_footer(text="* - This field is optional.")
+        view = View()
+        view.add_item(changehelpmenu())
+        hcurpage = 3
+        await hmsgref.edit(content="", embed=embed, view=view)
+    async def staffhelppage(ctx):
+        embed = discord.Embed(
+            title="Command list",
+            description="## All commands for Ayk Utilities\n\n### Staff commands:",
+            color=color
+        )
+        async def spageone():
+            nonlocal embed
+            embed.clear_fields()
+            embed.add_field(name="Warn:", value="Warns the specified user. Format: `.warn <user> <duration>* <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="Unwarn:", value="Unwarns the specified user. If no fields are specified, the last given warn will be removed. If only a user is provided, all warns for that user will be removed. Format: `.unwarn <user>* <caseid>*.` Accepts user IDs or @ mentions. Can be a user or a case ID.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Masswarn:", value="Warns the specified users. Format: `.masswarn <user> <duration>* <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="Massunwarn:", value="Unwarns the specified users. Removes all warns from specified users if no case IDs are specified. Format: `.unwarn <user>* <caseid>*.` Accepts user IDs or @ mentions. Can be a user or a case ID.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Mute:", value="Mutes the specified user. Format: `.mute <user> <duration>* <reason>*.` Accepts user IDs or @ mentions. If no duration is specified, discord's maximum duration (28 days) will be used.")
+            embed.add_field(name="Unmute:", value="Unmutes the specified user. Format: `.unmute <user> <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Massmute:", value="Mutes the specified users. Format: `.massmute <users> <duration>* <reason>*.` Accepts user IDs or @ mentions. If no duration is specified, discord's maximum duration (28 days) will be used.")
+            embed.add_field(name="Massunmute:", value="Unmutes the specified users. Format: `.massunmute <users> <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Kick:", value="Kicks the specified user. Format: `.kick <user> <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="Modlogs:", value="Displays the specified user's modlogs. Format: `.modlogs <user>.` Accepts user IDs or @ mentions.")
+            embed.set_footer(text="* - This field is optional.")
+        async def spagetwo():
+            nonlocal embed
+            embed.clear_fields()
+            embed.add_field(name="Ban:", value="Bans the specified user. Format: `.ban <user> <duration>* <reason>.` Accepts user IDs.")
+            embed.add_field(name="Unban:", value="Unbans the specified user. Format: `.unban <user> <reason>*.` Accepts user IDs or @ mentions.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Purge:", value="Deleted the last <specified number> of messages in the channel. Format: `.purge <amount>.`")
+            embed.add_field(name="Role:", value="Gives the specified user the specified role. Format: `.role <user> <role>.` Accepts user and role IDs or @ mentions.")
+            embed.add_field(name="", value="", inline=False)
+            embed.add_field(name="Temprole:", value="Gives the specified user the specified role for the specified duration. Base duration is 30 days. Format: `.temprole <user> <role> <duration>*.` Accepts user and role IDs or @ mentions.")
+            embed.add_field(name="Removerole:", value="Removes the specified role from the specified user. Format: `.removerole <user> <role>.` Accepts user and role IDs or @ mentions.")
+            embed.add_field(name="", value="", inline=False)
+            embed.set_footer(text="* - This field is optional.")
+        async def stbuttons():
+            async def forwardbutton(interaction):
+                if interaction.user != helpuser:
+                    await interaction.response.send_message("This is not your command.", ephemeral=True)
+                    return
+                await interaction.response.defer()
+                nonlocal shpage
+                shpage = 2
+                await staffhelppage(ctx = interaction)
+            async def backbutton(interaction):
+                if interaction.user != helpuser:
+                    await interaction.response.send_message("This is not your command.", ephemeral=True)
+                    return
+                await interaction.response.defer()
+                nonlocal shpage
+                shpage = 1
+                await staffhelppage(ctx = interaction)
+            backbtn = discord.ui.Button(label="◀️", style=discord.ButtonStyle.red)
+            forwardbtn = discord.ui.Button(label="▶️", style=discord.ButtonStyle.red)
+            backbtn.callback = backbutton
+            forwardbtn.callback = forwardbutton
+            view = discord.ui.View()
+            view.add_item(backbtn)
+            view.add_item(forwardbtn)
+            if shpage == 1:
+                backbtn.disabled = True
+            if shpage == 2:
+                forwardbtn.disabled = True
+            return view
+        if shpage == 1:
+            await spageone()
+        elif shpage == 2:
+            await spagetwo()
+        view = await stbuttons()
+        view.add_item(changehelpmenu())
+        hcurpage = 4
+        await hmsgref.edit(content="", embed=embed, view=view)
+    helpuser = ctx.author
+    hcurpage = 1
+    ecpage = 1
+    ghpage = 1
+    ahpage = 1
+    shpage = 1
+    hmsgref = await ctx.send("Loading...")
+    if not page:
+        hcurpage = 1
+        await economyhelppage(ctx)
+    elif page.lower() == "economy":
+        hcurpage = 1
+        await economyhelppage(ctx)
+    elif page.lower() == "gambling":
+        hcurpage = 2
+        await gamblinghelppage(ctx)
+    elif page.lower() == "admin":
+        hcurpage = 3
+        await adminhelppage(ctx)
+    elif page.lower() == "moderation":
+        hcurpage = 4
+        await staffhelppage(ctx)
+    else:
+        await hmsgref.edit(content="That page does not exist. Existing pages are:\n- Economy\n- Gambling" + "\n- admin" if 1350907447333752854 in helpuser.roles else "")
+
+@bot.command()
+@isinchannel(1347697960820932674)
+async def gift(ctx, member: discord.Member = None, amount: str = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not member:
+        await ctx.send(f"Choose someone to give your {currency} to!")
+        return
+    if not amount:
+        await ctx.send("Choose an amount to give!")
+        return
+    load_data()
+    user = ctx.author.id
+    guser = member.id
+    if user == guser:
+        await ctx.send("You cant gift yourself, silly!")
+        return
+    username = bot.get_user(user)
+    gusername = bot.get_user(guser)
+    if str(user) not in cash:
+        cash[str(user)]={"amount":0}
+    if str(guser) not in cash:
+        cash[str(guser)]={"amount":0}
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    gcash = cash[str(guser)]["amount"] if str(guser) in cash else 0
+    #parsing amount
+    if amount.lower() == "all":
+        togive = ucash
+    elif amount.lower() == "half":
+        togive = round(ucash / 2)
+    else:
+        try:
+            pertogive = amount.split('%')
+            if len(pertogive) > 1:
+                togive = round(ucash * (int(pertogive[0]) / 100))
+            else:
+                togive = int(pertogive[0])
+            if togive > ucash:
+                await ctx.send("You cannot give more then you have in your wallet!")
+                return
+        except TypeError:
+            if not togive:
+                await ctx.send("Please provide a valid integer, a valid percentage between 1 and 100, or put `all` or `half`.")
+                return
+            else:
+                pass
+    if togive > ucash:
+        await ctx.send("You cannot give more then you have in your wallet!")
+        return
+    ucash -= togive
+    gcash += togive
+    cash[str(user)]={"amount":ucash}
+    cash[str(guser)]={"amount":gcash}
+    embed = discord.Embed(
+        title=f"{username}'s gift",
+        description=f"{username} has given a gift of {togive:,}{currency} to {gusername}!",
+        color=color
+    )
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@hasrole(*ustaffroles)
+async def addbal(ctx, member: discord.Member = None, amount: str = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not member:
+        await ctx.send(f"Choose who to add {currency} to.")
+        return
+    if not amount:
+        await ctx.send("Choose how much to give the user.")
+        return
+    try:
+        amount = int(amount)
+    except ValueError:
+        await ctx.send("Please provide a positive integer to add to the user's balance.")
+        return
+    load_data()
+    writer = ctx.author.id
+    user = member.id
+    if writer == user:
+        await ctx.send(f"You can't give yourself {currency}!")
+        return
+    username = bot.get_user(user)
+    if str(user) not in cash:
+        cash[str(user)] = {"amount": 0}
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    embed = discord.Embed(
+        title="Adding balance",
+        description=f"Successfully added {amount:,}{currency} to {username}'s wallet!",
+        color=color
+    )
+    ucash += int(amount)
+    cash[str(user)] = {"amount": ucash}
+    await ctx.send(embed=embed)
+    save_data()
+    
+@bot.command()
+@hasrole(*ustaffroles)
+async def removebal(ctx, member: discord.Member = None, amount: str = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not member:
+        await ctx.send(f"Choose who to remove {currency} from.")
+        return
+    if not amount:
+        await ctx.send(f"Choose how much {currency} to remove.")
+        return
+    try:
+        amount = int(amount)
+    except TypeError:
+        await ctx.send("Please provide a valid integer to remove from the users balance.")
+        return
+    load_data()
+    writer = ctx.author.id
+    user= member.id
+    if writer == user:
+        await ctx.send(f"You cannot remove {currency} from your own balance!")
+        return
+    username = bot.get_user(user)
+    if str(user) not in cash:
+        cash[str(user)]={"amount":0}
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    embed = discord.Embed(
+        title="Removing balance",
+        description=f"Succesfully removed {amount:,}{currency} from {username}'s balance.",
+        color=color
+    )
+    ucash -= amount
+    cash[str(user)]={"amount":ucash}
+    await ctx.send(embed=embed)
+    save_data()
+    
+@bot.command()
+@isinchannel(1347697960820932674)
+async def shop(ctx):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    embed = discord.Embed(
+        title="Ayk shop", 
+        description=f"Purchase roles that give benefits such as extra {currency} in o!collect. Available roles:",
+        color=color
+    )
+    embed.add_field(name="", value="", inline=False)
+    for item in items:
+        buykey = str(item)
+        a = items[str(buykey)]["price"]
+        b = items[str(buykey)]["roleid"]
+        c = guild.get_role(b)
+        embed.add_field(name=f"{c}  —  {a:,}{currency}", value=f"Gives the <@&{b}> role. These roles give benefits such as extra role income. Use `.buy {c}` to purchase this role.", inline=False)
+        embed.add_field(name="", value="", inline=False)
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command()
+@isinchannel(1347697960820932674)
+async def buy(ctx, itembk: str = None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not itembk:
+        await ctx.send("Please select an item to buy.")
+        return
+    load_data()
+    user = ctx.author.id
+    member = ctx.author
+    username = bot.get_user(user)
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    try:
+        price = items[str(itembk)]["price"]
+        roleid = items[str(itembk)]["roleid"]
+    except KeyError:
+        await ctx.send("This item does not exist.")
+        return 
+    role = ctx.guild.get_role(roleid)
+    if ucash >= price:
+        if not roleid in member.roles:
+            await member.add_roles(role)
+            ucash -= price
+        else:
+            await ctx.send("You already have this role!")
+            return
+    else:
+        await ctx.send("You cannot afford this item.")
+        return
+    embed = discord.Embed(
+        title=f"{username}'s purchase",
+        description=f"You purchased the <@&{roleid}> role! Enjoy your new perks!",
+        color=color
+    )
+    cash[str(user)]={"amount":ucash}
+    await ctx.send(embed=embed)
+    save_data()
+
+@bot.command(name="income", aliases=["roleincome", "collect", "collectincome", "collectroleincome"])
+@isinchannel(1347697960820932674)
+async def income(ctx):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    currenttime = int(time.time())
+    if not str(user) in collectcds:
+        collectcds[str(user)]={"nextcollect":currenttime}
+    unextcollect = collectcds[str(user)]["nextcollect"]
+    if unextcollect - currenttime > 0:
+        embed = discord.Embed(
+            title="",
+            description=f"{username}, you are on cooldown right now! Come back <t:{unextcollect}:R>.",
+            color=color
+        )
+        await ctx.send(embed=embed)
+        return
+    member = ctx.author
+    uroles = [role for role in member.roles if str(role.id) in incomeroles]
+    embed = discord.Embed(
+        title=f"{username}'s role income",
+        color=color
+    )
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    togive = 0
+    for role in uroles:
+        rgives = incomeroles[str(role.id)]["amount"]
+        togive += int(rgives)
+        embed.add_field(name="", value=f"**<@&{role.id}>** - {rgives:,}{currency}", inline = False)
+    if not uroles:
+        embed.add_field(name="", value="You don't have any roles that give income.")
+    ucash += togive
+    cash[str(user)] = {"amount":ucash}
+    collectcds[str(user)]={"nextcollect":currenttime + 900}
+    await ctx.send(embed=embed)
+    save_data()
+
+#gambling commands
+@bot.command(name="cf", aliases=["coinflip"])
+@isinchannel(1347697960820932674)
+async def cf(ctx, bet: str=None, hot: str=None):
+    if testing == True and str(ctx.author.id) not in testers:
+        await ctx.send("The bot is currently in testing mode. Please try again later.")
+        return
+    if str(ctx.author.id) in bannedusers:
+        await ctx.send("You are banned from using this bot's economy.")
+        return
+    canproceed = await checklasttime(ctx)
+    if not canproceed:
+        return
+    if not bet:
+        await ctx.send("Please provide an amount to bet.")
+        return
+    if not hot:
+        await ctx.send("Please choose heads or tails.")
+        return
+    load_data()
+    user = ctx.author.id
+    username = bot.get_user(user)
+    ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    #parsing bet
+    if bet.lower() == "all":
+        tobet = ucash
+    elif bet.lower() == "half":
+        tobet = round(ucash * .5)
+    else:
+        try:
+            pertobet = bet.split('%')
+            if len(pertobet) > 1:
+                tobet = round(ucash * (int(pertobet[0]) / 100))
+            else:
+                tobet = int(pertobet[0])
+            if tobet > ucash:
+                await ctx.send("You cannot bet more then you have in your wallet.")
+                return
+        except TypeError:
+            await ctx.send("Please provide a valid integer or percent to bet, or put 'all' or 'half.'")
+            return
+    if tobet > ucash:
+        await ctx.send(f"You can't bet more {currency} than you have in your wallet!")
+        return
+    if tobet < 50:
+        await ctx.send(f"You must bet more then 50{currency}.")
+        return
+    outcomes = ["heads", "tails"]
+    outcome = random.choice(outcomes)
+    ucash -= tobet
+    #parsing hot
+    if hot.lower() not in outcomes:
+        await ctx.send("A coin only has two sides, silly! Choose heads or tails.")
+        return
+    if hot.lower() == outcome:
+        winnings = round(tobet * 2)
+        embed = discord.Embed(
+            title=f"{username}'s coinflip",
+            description=f"The coin landed on {outcome}. Congratulations, you won {winnings:,}{currency}!",
+            color=color
+        )
+        ucash += winnings
+        cash[str(user)]={"amount":ucash}
+        await ctx.send(embed=embed)
+    else:
+        embed = discord.Embed(
+            title=f"{username}'s coinflip",
+            description=f"The coin landed on {outcome}. Better luck next time!",
+            color=color
+        )
+        cash[str(user)]={"amount":ucash}
+        await ctx.send(embed=embed)
+    save_data()
+  
+#@bot.command(name="hilo", aliases=["highlow", "high-low", "hi-lo"])
+#@isinchannel(1347697960820932674)
+#async def hilo(ctx, bet: str=None, hislo: str=None, number: int=None):
+    #canproceed = await checklasttime(ctx)
+    #if not canproceed:
+        #return
+    #if not bet:
+        #await ctx.send("Please provide an amount to bet.")
+        #return
+    #if not hislo:
+        #await ctx.send("Please choose high, low, or same.")
+        #return
+    #if not number:
+        #await ctx.send("Please choose a number to bet on.")
+        #return
+    #load_data()
+    #user = ctx.author.id
+    #username = bot.get_user(user)
+    #ucash = cash[str(user)]["amount"] if str(user) in cash else 0
+    #parsing bet
+    #if bet.lower() == "all":
+        #tobet = ucash
+    #elif bet.lower() == "half":
+        #tobet = round(ucash * .5)
+    #else:
+        #try:
+            #pertobet = bet.split('%')
+            #if len(pertobet) > 1:
+                #tobet = round(ucash * (int(pertobet[0]) / 100))
+            #else:
+                #tobet = int(pertobet[0])
+            #if tobet > ucash:
+                #await ctx.send("You cannot bet more then you have in your wallet.")
+                #return
+        #except TypeError:
+            #await ctx.send("Please provide a valid integer or percent to bet, or put 'all' or 'half.'")
+            #return
+    #if tobet > ucash:
+        #await ctx.send(f"You can't bet more {currency} then you have in your wallet!")
+        #return
+    #if tobet < 50:
+        #await ctx.send(f"You must bet more then 50{currency}.")
+        #return
+    #ucash -= tobet
+    #parsing hislo
+    #validhisloa = ["hi", "lo", "high", "low", "higher", "lower", "same", "center"]
+    #validhisloh = ["hi", "high", "higher"]
+    #validhislol = ["lo", "low", "lower"]
+    #validhislos = ["same", "center"]
+    #if hislo.lower() not in validhisloa or not hislo:
+        #await ctx.send("Please choose higher, lower, or the same.")
+        #return
+    #if not number:
+        #await ctx.send("Choose a number (1-100) to bet on.")
+        #return
+    #if hislo.lower() in validhislol and number == 1:
+        #await ctx.send("You can't go lower then 1!")
+        #return
+    #if hislo.lower() in validhisloh and number == 100:
+        #await ctx.send("You can't go higher then 100!")
+        #return
+    #if not 0 < number < 101:
+        #await ctx.send("Choose anumber between 1 and 100.")
+        #return
+    #results
+    #won = False
+    #result = random.randint(1, 100)
+    #if hislo.lower() in validhisloh and result > number:
+        #winmult = (100 / (100 - number))
+        #winnings = round(tobet * winmult)
+        #ucash += winnings
+        #won = True
+    #elif hislo.lower() in validhislol and result < number:
+        #winmult = 1+((100 - number)/100)
+        #print(winmult, tobet,)
+        #winnings = tobet * winmult
+        #ucash += winnings
+        #won = True
+    #elif hislo.lower() in validhislos and result == number:
+        #winnings = tobet * 100
+        #ucash += winnings
+        #won = True
+    #else:
+        #cash[str(user)]={"amount":ucash}
+        #embed = discord.Embed(
+            #title=f"{username}'s HiLo game",
+            #description=f"The number was {result}. You lost {int(tobet):,}{currency}. Better luck next time!",
+            #color=color
+        #)
+        #await ctx.send(embed=embed)
+    #if won:
+        #embed = discord.Embed(
+            #title=f"{username}'s HiLo game",
+            #description=f"The number was {result}. You won {int(winnings):,}{currency}!",
+            #color=color
+        #)
+        #await ctx.send(embed=embed)
+    #cash[str(user)]={"amount":ucash}
+    #save_data()
+
+@bot.command()
+async def test(ctx, active: bool = None):
+    global testing
+    testingload()
+    testers = ["923701326230212709", "1207107834349617262"]
+    if ctx.author.bot or str(ctx.author.id) not in testers:
+        return
+    if active == None:
+        return
+    if active == True:
+        testing = True
+    if active == False:
+        testing = False
+    await ctx.send(f"Testing is now set to {testing}.")
+    testingsave()
+
+bot.run(os.getenv("aykubotkey"))

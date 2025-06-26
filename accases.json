@@ -1,0 +1,3442 @@
+{
+    "1104920741603983491": [
+        {
+            "user": "<@1104920741603983491>",
+            "caseid": 6,
+            "reason": "1 hour",
+            "duration": "Permanent",
+            "timestamp": 1746135488,
+            "moderator": "<@1207107834349617262>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1104920741603983491>",
+            "caseid": 584,
+            "reason": "weird topics",
+            "duration": "Permanent",
+            "timestamp": 1750538816,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1280470094488670263": [
+        {
+            "user": "<@1280470094488670263>",
+            "caseid": 427,
+            "reason": "alt",
+            "duration": "Permanent",
+            "timestamp": 1749764715,
+            "moderator": "<@1183496778406957189>",
+            "type": "ban"
+        }
+    ],
+    "1110154164421541969": [
+        {
+            "user": "<@1110154164421541969>",
+            "caseid": 310,
+            "reason": "erm",
+            "duration": "Permanent",
+            "timestamp": 1749139239,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "923701326230212709": [
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 9,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1746153391,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 41,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746482269,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        }
+    ],
+    "1207107834349617262": [
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 11,
+            "reason": "not giving perm",
+            "duration": "Permanent",
+            "timestamp": 1746191556,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 163,
+            "reason": "saying bih",
+            "duration": "Permanent",
+            "timestamp": 1747422313,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 174,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1747569218,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 498,
+            "reason": "not giving bj",
+            "duration": "Permanent",
+            "timestamp": 1749980216,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        }
+    ],
+    "900599492762538044": [
+        {
+            "user": "<@900599492762538044>",
+            "caseid": 12,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746221027,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        }
+    ],
+    "1328310119703908397": [
+        {
+            "user": "<@1328310119703908397>",
+            "caseid": 13,
+            "reason": "sybau you holy peace of shit you dirty monkey go fuck yourself or suck your mom bbc you shit",
+            "duration": "Permanent",
+            "timestamp": 1746344517,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1228464292290891900": [
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 14,
+            "reason": "discriminating someone who has no gif perms",
+            "duration": "Permanent",
+            "timestamp": 1746362116,
+            "moderator": "<@1003968075521081465>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 17,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746405722,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 23,
+            "reason": "No reason provided",
+            "duration": "838m",
+            "timestamp": 1746462565,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 33,
+            "reason": "30 min saying kill",
+            "duration": "Permanent",
+            "timestamp": 1746476533,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 36,
+            "reason": "30 min",
+            "duration": "Permanent",
+            "timestamp": 1746477525,
+            "moderator": "<@1207107834349617262>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 38,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746477590,
+            "moderator": "<@1207107834349617262>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 40,
+            "reason": "being a bad boy",
+            "duration": "30m",
+            "timestamp": 1746481333,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 66,
+            "reason": "10 minutes not cool",
+            "duration": "Permanent",
+            "timestamp": 1746650150,
+            "moderator": "<@1207107834349617262>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 68,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650530,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 69,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650530,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 70,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650531,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 71,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650534,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 72,
+            "reason": "loser",
+            "duration": "Permanent",
+            "timestamp": 1746650585,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 73,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746651682,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 74,
+            "reason": "disrespecting owner",
+            "duration": "Permanent",
+            "timestamp": 1746651848,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 75,
+            "reason": "disrespect to higher ups",
+            "duration": "Permanent",
+            "timestamp": 1746651950,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 76,
+            "reason": "being very rude to higher ranks",
+            "duration": "Permanent",
+            "timestamp": 1746652250,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 77,
+            "reason": "saying people to end it",
+            "duration": "Permanent",
+            "timestamp": 1746652454,
+            "moderator": "<@986609832327012393>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 78,
+            "reason": "telling ppl to end it",
+            "duration": "30m",
+            "timestamp": 1746652547,
+            "moderator": "<@986609832327012393>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 89,
+            "reason": "No reason provided",
+            "duration": "83839s",
+            "timestamp": 1746810240,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 93,
+            "reason": "racist",
+            "duration": "Permanent",
+            "timestamp": 1746835092,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 95,
+            "reason": "No reason provided",
+            "duration": "8383s",
+            "timestamp": 1746838549,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 162,
+            "reason": "skull reacting \ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1747422300,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 169,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1747521892,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 172,
+            "reason": "sexual harrasment fr",
+            "duration": "29h",
+            "timestamp": 1747563130,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 175,
+            "reason": "1000y using gif",
+            "duration": "Permanent",
+            "timestamp": 1747570054,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 176,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1747570200,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 177,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1747570303,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 178,
+            "reason": "racism",
+            "duration": "Permanent",
+            "timestamp": 1747570608,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        }
+    ],
+    "1334264239392555098": [
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 18,
+            "reason": "30 min disrespect and weird",
+            "duration": "Permanent",
+            "timestamp": 1746405847,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 19,
+            "reason": "30 min swearing and being werid",
+            "duration": "Permanent",
+            "timestamp": 1746406151,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 20,
+            "reason": "20 min",
+            "duration": "Permanent",
+            "timestamp": 1746406302,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        }
+    ],
+    "1122573779307089960": [
+        {
+            "user": "<@1122573779307089960>",
+            "caseid": 21,
+            "reason": "causing drama likes to lie on people's names",
+            "duration": "Permanent",
+            "timestamp": 1746406415,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1035893514577379329": [
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 45,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1746529825,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 47,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746530702,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 48,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746531003,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 50,
+            "reason": "1sec for being so hot",
+            "duration": "Permanent",
+            "timestamp": 1746531488,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 52,
+            "reason": "100days suck your small dick ama put my big dick insised you amd make u drink all the cum u stupid asshole",
+            "duration": "Permanent",
+            "timestamp": 1746531728,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 56,
+            "reason": "No reason provided",
+            "duration": "1s",
+            "timestamp": 1746539189,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 88,
+            "reason": "nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746810213,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 103,
+            "reason": "false warn",
+            "duration": "Permanent",
+            "timestamp": 1746882338,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 143,
+            "reason": "nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747146272,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 166,
+            "reason": "direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1747443433,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 179,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1747571596,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 216,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1748105262,
+            "moderator": "<@1362845612344611138>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 217,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1748105287,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 233,
+            "reason": "flooding/spamming",
+            "duration": "Permanent",
+            "timestamp": 1748265874,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 234,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1748265885,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 235,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265905,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 236,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265905,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 237,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265907,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 238,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265908,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 239,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265909,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 292,
+            "reason": "sending nazi pics / memes",
+            "duration": "Permanent",
+            "timestamp": 1748880585,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 499,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1749980233,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 512,
+            "reason": "fake mute\ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1750131826,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 513,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131989,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 514,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131990,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 515,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131991,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 516,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131997,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 517,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131999,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 518,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132000,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 519,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132002,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 520,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132004,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 521,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132005,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 522,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132006,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 523,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132007,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 524,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132008,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 525,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132009,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 526,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132010,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 527,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132011,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 528,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132012,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 529,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132013,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 530,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132015,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 531,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132016,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 532,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132017,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 533,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132018,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 534,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132019,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 535,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132021,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 536,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132021,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 537,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132022,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 538,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132023,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 539,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132024,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 540,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132025,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 541,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132026,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 542,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132027,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 543,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132028,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 544,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132030,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 545,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132031,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 546,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132032,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 547,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132033,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 548,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132038,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 549,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132039,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 550,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132041,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 551,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132042,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 552,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132043,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 553,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132044,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 554,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132045,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 555,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132046,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 556,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132047,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 577,
+            "reason": "n word\ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1750478382,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        }
+    ],
+    "1223047237161193482": [
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 24,
+            "reason": "10 min rasisct",
+            "duration": "Permanent",
+            "timestamp": 1746463642,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 132,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1746991147,
+            "moderator": "<@1319648890529513472>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 133,
+            "reason": "10min",
+            "duration": "Permanent",
+            "timestamp": 1746991256,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 139,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1747142427,
+            "moderator": "<@1319648890529513472>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 295,
+            "reason": "\"Kill yourzelf\"",
+            "duration": "10m",
+            "timestamp": 1748884809,
+            "moderator": "<@1291437732685680761>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 296,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1748884854,
+            "moderator": "<@1291437732685680761>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 308,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1749016905,
+            "moderator": "<@991327146859560970>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 316,
+            "reason": "flooding chat",
+            "duration": "Permanent",
+            "timestamp": 1749158658,
+            "moderator": "<@991327146859560970>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 343,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749375147,
+            "moderator": "<@991327146859560970>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 349,
+            "reason": "don't try to flood again",
+            "duration": "Permanent",
+            "timestamp": 1749476693,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 411,
+            "reason": "certified annoying man",
+            "duration": "Permanent",
+            "timestamp": 1749682202,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 414,
+            "reason": "unnecessary spamming",
+            "duration": "Permanent",
+            "timestamp": 1749715560,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 417,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749717398,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 423,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749742015,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 424,
+            "reason": "spamming",
+            "duration": "30s",
+            "timestamp": 1749742553,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 460,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1749819719,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 574,
+            "reason": "N-word by pass",
+            "duration": "10m",
+            "timestamp": 1750443050,
+            "moderator": "<@1291437732685680761>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 582,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750536091,
+            "moderator": "<@1114612853756932206>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 583,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1750536386,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 586,
+            "reason": "n word again",
+            "duration": "Permanent",
+            "timestamp": 1750552485,
+            "moderator": "<@1114612853756932206>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 588,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750584875,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 591,
+            "reason": "bullying",
+            "duration": "Permanent",
+            "timestamp": 1750599649,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "820355901155704903": [
+        {
+            "user": "<@820355901155704903>",
+            "caseid": 26,
+            "reason": "10 min nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746472504,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        }
+    ],
+    "1114612853756932206": [
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 27,
+            "reason": "10 min nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746472725,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 29,
+            "reason": "30 min sending nsfw again",
+            "duration": "Permanent",
+            "timestamp": 1746475599,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 30,
+            "reason": "1 hour direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1746475808,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 31,
+            "reason": "1 hour swearing",
+            "duration": "Permanent",
+            "timestamp": 1746475846,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 104,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1746884130,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 170,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1747526419,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 180,
+            "reason": "n word in sticker",
+            "duration": "Permanent",
+            "timestamp": 1747581567,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 182,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747588748,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 285,
+            "reason": "imagine",
+            "duration": "9s",
+            "timestamp": 1748869469,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 410,
+            "reason": "certified annoying man",
+            "duration": "Permanent",
+            "timestamp": 1749682039,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 486,
+            "reason": "No reason provided",
+            "duration": "30s",
+            "timestamp": 1749895644,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 487,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749896962,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 488,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749919289,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 580,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1750535371,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1349461121580404737": [
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 32,
+            "reason": "30 min saying k__",
+            "duration": "Permanent",
+            "timestamp": 1746476080,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 232,
+            "reason": "flooding/spamming",
+            "duration": "Permanent",
+            "timestamp": 1748265863,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 327,
+            "reason": "self advertising and flodding/spaming",
+            "duration": "Permanent",
+            "timestamp": 1749242738,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        }
+    ],
+    "1308989731459305472": [
+        {
+            "user": "<@1308989731459305472>",
+            "caseid": 34,
+            "reason": "racism",
+            "duration": "Permanent",
+            "timestamp": 1746476867,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        }
+    ],
+    "1071584378221772891": [
+        {
+            "user": "<@1071584378221772891>",
+            "caseid": 39,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1746481013,
+            "moderator": "<@1183496778406957189>",
+            "type": "ban"
+        }
+    ],
+    "1291437732685680761": [
+        {
+            "user": "<@1291437732685680761>",
+            "caseid": 37,
+            "reason": "30",
+            "duration": "Permanent",
+            "timestamp": 1746477565,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1291437732685680761>",
+            "caseid": 563,
+            "reason": "go sleep",
+            "duration": "Permanent",
+            "timestamp": 1750198737,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1213083863207907338": [
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 42,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746483050,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 82,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746735223,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 83,
+            "reason": "saying faggot",
+            "duration": "Permanent",
+            "timestamp": 1746735339,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 87,
+            "reason": "n word",
+            "duration": "838338s",
+            "timestamp": 1746809681,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 90,
+            "reason": "10sec hot",
+            "duration": "Permanent",
+            "timestamp": 1746817206,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 181,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747588589,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "1356661993314189495": [
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 43,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746483100,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 44,
+            "reason": "disrespecting",
+            "duration": "Permanent",
+            "timestamp": 1746483167,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 602,
+            "reason": "spam pinging",
+            "duration": "Permanent",
+            "timestamp": 1750682355,
+            "moderator": "<@1172875702538866802>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 603,
+            "reason": "spam pinging",
+            "duration": "15m",
+            "timestamp": 1750682363,
+            "moderator": "<@1172875702538866802>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 613,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1750683172,
+            "moderator": "<@1172875702538866802>",
+            "type": "mute"
+        }
+    ],
+    "991327146859560970": [
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 49,
+            "reason": "No reason provided",
+            "duration": "83h",
+            "timestamp": 1746531185,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 51,
+            "reason": "suck your small dick or put a big lond bambo in your ass before I touch you",
+            "duration": "2992s",
+            "timestamp": 1746531597,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 53,
+            "reason": "Suck you holy white big dick before you get rape by 2994383 men and your asshole get nucked",
+            "duration": "696969s",
+            "timestamp": 1746531801,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 288,
+            "reason": "nice try diddy",
+            "duration": "10s",
+            "timestamp": 1748878582,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 290,
+            "reason": "do a blowjob and suck my dick",
+            "duration": "83h",
+            "timestamp": 1748878726,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1319648890529513472": [
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 58,
+            "reason": "calling me fat + disrespect. very aimed",
+            "duration": "Permanent",
+            "timestamp": 1746545230,
+            "moderator": "<@1141396469002281000>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 65,
+            "reason": "No reason provided",
+            "duration": "838383s",
+            "timestamp": 1746637314,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 102,
+            "reason": "No reason provided",
+            "duration": "99999s",
+            "timestamp": 1746877216,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 135,
+            "reason": "\ud83e\udd11",
+            "duration": "2h",
+            "timestamp": 1747066203,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 161,
+            "reason": "skull reacting \ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1747422289,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 164,
+            "reason": "5 min spamming",
+            "duration": "Permanent",
+            "timestamp": 1747422762,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 165,
+            "reason": "5min spamming+rasisct",
+            "duration": "Permanent",
+            "timestamp": 1747422890,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 258,
+            "reason": "stop getting alts in here <:angy_cat:1348307808856047628>",
+            "duration": "Permanent",
+            "timestamp": 1748453973,
+            "moderator": "<@947397046720143431>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 279,
+            "reason": "nsfw",
+            "duration": "1h",
+            "timestamp": 1748803417,
+            "moderator": "<@1291437732685680761>",
+            "type": "mute"
+        }
+    ],
+    "1183496778406957189": [
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 59,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746557038,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 129,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746989399,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 137,
+            "reason": "abusing for income",
+            "duration": "Permanent",
+            "timestamp": 1747117434,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 193,
+            "reason": "abuuus",
+            "duration": "Permanent",
+            "timestamp": 1747839406,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 194,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1747839426,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 200,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1747928307,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "986609832327012393": [
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 585,
+            "reason": "retard",
+            "duration": "Permanent",
+            "timestamp": 1750549234,
+            "moderator": "<@947397046720143431>",
+            "type": "ban"
+        }
+    ],
+    "1103720457745748048": [
+        {
+            "user": "<@1103720457745748048>",
+            "caseid": 61,
+            "reason": "1b direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1746565670,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1103720457745748048>",
+            "caseid": 62,
+            "reason": "direct swearing",
+            "duration": "1h",
+            "timestamp": 1746565701,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        }
+    ],
+    "1299063668436107278": [
+        {
+            "user": "<@1299063668436107278>",
+            "caseid": 64,
+            "reason": "get out you 11y old bitch ass",
+            "duration": "Permanent",
+            "timestamp": 1746636690,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1141396469002281000": [
+        {
+            "user": "<@1141396469002281000>",
+            "caseid": 79,
+            "reason": "No reason provided",
+            "duration": "29s",
+            "timestamp": 1746710760,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1141396469002281000>",
+            "caseid": 266,
+            "reason": "provocating with H word",
+            "duration": "Permanent",
+            "timestamp": 1748724427,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        }
+    ],
+    "1003968075521081465": [
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 81,
+            "reason": "weird",
+            "duration": "Permanent",
+            "timestamp": 1746733559,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 90,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746819272,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 203,
+            "reason": "No reason provided",
+            "duration": "7977s",
+            "timestamp": 1747928500,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1266909773949964451": [
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 84,
+            "reason": "7 day said n word",
+            "duration": "Permanent",
+            "timestamp": 1746808769,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 85,
+            "reason": "n word bypass",
+            "duration": "Permanent",
+            "timestamp": 1746808792,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 86,
+            "reason": "sigma gay boy",
+            "duration": "1m",
+            "timestamp": 1746809437,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 111,
+            "reason": "n word in dms",
+            "duration": "Permanent",
+            "timestamp": 1746916839,
+            "moderator": "<@947397046720143431>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 112,
+            "reason": "dm n word",
+            "duration": "Permanent",
+            "timestamp": 1746916934,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 119,
+            "reason": "gay",
+            "duration": "1m",
+            "timestamp": 1746983250,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 123,
+            "reason": "stink",
+            "duration": "5m",
+            "timestamp": 1746984618,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 125,
+            "reason": "weirdo",
+            "duration": "10m",
+            "timestamp": 1746986675,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 126,
+            "reason": "harrasing members",
+            "duration": "1h",
+            "timestamp": 1746987220,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 127,
+            "reason": "harrasing members",
+            "duration": "1h",
+            "timestamp": 1746987636,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 128,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1746988449,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        }
+    ],
+    "1346529721055318047": [
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 92,
+            "reason": "spammed",
+            "duration": "3s",
+            "timestamp": 1746832986,
+            "moderator": "<@1003968075521081465>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 94,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1746836770,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 393,
+            "reason": "sybau",
+            "duration": "1d",
+            "timestamp": 1749626352,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1065936938034532443": [
+        {
+            "user": "<@1065936938034532443>",
+            "caseid": 97,
+            "reason": "kid",
+            "duration": "93h",
+            "timestamp": 1746867087,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1287847461142003757": [
+        {
+            "user": "<@1287847461142003757>",
+            "caseid": 98,
+            "reason": "not following host rules",
+            "duration": "Permanent",
+            "timestamp": 1746874833,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "472102714025967656": [
+        {
+            "user": "<@472102714025967656>",
+            "caseid": 99,
+            "reason": "go fuck your self you monkey put some lays in your ass and get fucked",
+            "duration": "Permanent",
+            "timestamp": 1746876878,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1213245138143420466": [
+        {
+            "user": "<@1213245138143420466>",
+            "caseid": 101,
+            "reason": "using languages other than english",
+            "duration": "3d",
+            "timestamp": 1746877054,
+            "moderator": "<@1003968075521081465>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1213245138143420466>",
+            "caseid": 306,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1748972583,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        }
+    ],
+    "1228241844962332692": [
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 107,
+            "reason": "No reason provided",
+            "duration": "6s",
+            "timestamp": 1746889941,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 156,
+            "reason": "No reason provided",
+            "duration": "8833s",
+            "timestamp": 1747400703,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 157,
+            "reason": "No reason provided",
+            "duration": "3s",
+            "timestamp": 1747401174,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 168,
+            "reason": "deleting warns + fake warning",
+            "duration": "Permanent",
+            "timestamp": 1747520251,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 254,
+            "reason": "848y",
+            "duration": "Permanent",
+            "timestamp": 1748438524,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 282,
+            "reason": "No reason provided",
+            "duration": "83h",
+            "timestamp": 1748835298,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 412,
+            "reason": "let me trade",
+            "duration": "1m",
+            "timestamp": 1749695965,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 472,
+            "reason": "No reason provided",
+            "duration": "2m",
+            "timestamp": 1749828166,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 505,
+            "reason": "No reason provided",
+            "duration": "3m",
+            "timestamp": 1750059796,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 508,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1750129675,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 557,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1750133349,
+            "moderator": "<@1141396469002281000>",
+            "type": "mute"
+        }
+    ],
+    "1363889156199157883": [
+        {
+            "user": "<@1363889156199157883>",
+            "caseid": 109,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1746897794,
+            "moderator": "<@1319648890529513472>",
+            "type": "warn"
+        }
+    ],
+    "1341745492329234474": [
+        {
+            "user": "<@1341745492329234474>",
+            "caseid": 110,
+            "reason": "opening ticket with no reason",
+            "duration": "Permanent",
+            "timestamp": 1746916705,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1266170272352960543": [
+        {
+            "user": "<@1266170272352960543>",
+            "caseid": 113,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1746919430,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1266170272352960543>",
+            "caseid": 114,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1746919697,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        }
+    ],
+    "1202558638061789236": [
+        {
+            "user": "<@1202558638061789236>",
+            "caseid": 116,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1746945932,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1202558638061789236>",
+            "caseid": 188,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747669736,
+            "moderator": "<@442628530963218432>",
+            "type": "warn"
+        }
+    ],
+    "1170320584001998868": [
+        {
+            "user": "<@1170320584001998868>",
+            "caseid": 118,
+            "reason": "dm advertising twice",
+            "duration": "Permanent",
+            "timestamp": 1746968223,
+            "moderator": "<@1003968075521081465>",
+            "type": "ban"
+        }
+    ],
+    "1335946956572201032": [
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 120,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1746983253,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 121,
+            "reason": "Be respectful",
+            "duration": "Permanent",
+            "timestamp": 1746983900,
+            "moderator": "<@1319648890529513472>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 122,
+            "reason": "direct swearing, acting like a wierdo",
+            "duration": "1h",
+            "timestamp": 1746983940,
+            "moderator": "<@1003968075521081465>",
+            "type": "mute"
+        }
+    ],
+    "1295145929346908375": [
+        {
+            "user": "<@1295145929346908375>",
+            "caseid": 124,
+            "reason": "dm advertising + scam server",
+            "duration": "Permanent",
+            "timestamp": 1746986172,
+            "moderator": "<@1003968075521081465>",
+            "type": "ban"
+        }
+    ],
+    "985898170150187028": [
+        {
+            "user": "<@985898170150187028>",
+            "caseid": 186,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1747664441,
+            "moderator": "<@1003968075521081465>",
+            "type": "ban"
+        }
+    ],
+    "1343969807481045087": [
+        {
+            "user": "<@1343969807481045087>",
+            "caseid": 144,
+            "reason": "asshole",
+            "duration": "Permanent",
+            "timestamp": 1747151820,
+            "moderator": "<@1207107834349617262>",
+            "type": "ban"
+        }
+    ],
+    "1346009864245346336": [
+        {
+            "user": "<@1346009864245346336>",
+            "caseid": 145,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747156197,
+            "moderator": "<@1003968075521081465>",
+            "type": "ban"
+        }
+    ],
+    "1345795681104826453": [
+        {
+            "user": "<@1345795681104826453>",
+            "caseid": 147,
+            "reason": "your holy mf send nsfw link next time or I will smash your small gyatt with level 0 get better kid and bend over and let me tell where the mother goes and oil up for diddy he is coming tonight\nCase ID: 146",
+            "duration": "Permanent",
+            "timestamp": 1747156560,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1353863542184607774": [
+        {
+            "user": "<@1353863542184607774>",
+            "caseid": 148,
+            "reason": "100days be a good boy",
+            "duration": "Permanent",
+            "timestamp": 1747242169,
+            "moderator": "<@991327146859560970>",
+            "type": "mute"
+        }
+    ],
+    "1303140677399482441": [
+        {
+            "user": "<@1303140677399482441>",
+            "caseid": 149,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1747252941,
+            "moderator": "<@1228464292290891900>",
+            "type": "warn"
+        }
+    ],
+    "855696210786254879": [
+        {
+            "user": "<@855696210786254879>",
+            "caseid": 150,
+            "reason": "saying nig",
+            "duration": "Permanent",
+            "timestamp": 1747317176,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@855696210786254879>",
+            "caseid": 155,
+            "reason": "bypassing nword",
+            "duration": "Permanent",
+            "timestamp": 1747400062,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        }
+    ],
+    "1294023220290261065": [
+        {
+            "user": "<@1294023220290261065>",
+            "caseid": 151,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1747328277,
+            "moderator": "<@1319648890529513472>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1294023220290261065>",
+            "caseid": 152,
+            "reason": "saying bad words to a good mod",
+            "duration": "Permanent",
+            "timestamp": 1747328316,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "806195088500850698": [
+        {
+            "user": "<@806195088500850698>",
+            "caseid": 559,
+            "reason": "harassment",
+            "duration": "Permanent",
+            "timestamp": 1750173902,
+            "moderator": "<@1183496778406957189>",
+            "type": "ban"
+        }
+    ],
+    "1365328431742717973": [
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 399,
+            "reason": "1) i bet i can touch ur belly button from the inside\n2) ru spaghetti cuz i want u to meat my ballz\n3) are your legs oreos cuz i want to split them and lick them up\n4) ur such a baddie my zipper is falling for u\n5) my dik just died -- can i bury it in u\n6) (irl one)\n\nme: lemme clear a place for you to sit\n\nme: wipes face\n7) What\u2019s the need of all pick up lines when I can pin you down\n8) is ur butt the new snapchat filter? cuz i want it on my face\n9) I often make a mess while eating, spread ur legs and let me demonstrate\n10) im not a dentist but i sure could give u a filling\n11) They say that beauty is on the inside and i haven't been inside of you yet !\n12)  You are like a mathematical equation that makes me wanna add our beds, divide your legs and multiply.\n13) hey girl do u work in a farm?? because u raised my cok.\n14) hear ur looking for a stud, I've got the std, all I need is u\n15) do u wanna celebrate the next fathers day with a one month old?\n16) hey i pooped my pants... can i get in urs?\n17) What is the difference between u and sunglasses?\n\nSunglasses sit higher on my face\n18) u know big bang theory? Its when I bang u with my big dik\n19) hey babe u look great in jeans, but imagine great ur kids will look with my genes!\n20) i think my dik died. can u give it mouth to mouth?\n21) ur like my pinky toe -- u support me and im going to bang u on the coffee table\n22) do u mix concrete for a living? cuz ur making me hard.\n23) are you constipated? cuz i wanna fudge the sh it out of u\n24) I dont work at subway, but I can still give u a footlong\n26) I like my coffee how I like my woman\u2026 ||creamed||\n27) Nice pants- can I test the zipper?\n28) some1 vacuum my lap -- this girl needs a clean place to sit\n29) the tango burns 69 calories per minute. wanna wrok out?\n30) I\u2019ll give u a nickel if you tickle my pickle\n31) ur turning my floppy disc into a hard drive\n32) i heard u get good grades- hope this D won\u2019t hurt\n33) ru a lightbulb? cuz I\u2019m trying to screw u\n34) my cond om expires tomorrow. lets not let it go to waste.",
+            "duration": "Permanent",
+            "timestamp": 1749646317,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1369342910360715264": [
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 158,
+            "reason": "100y",
+            "duration": "Permanent",
+            "timestamp": 1747401203,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 191,
+            "reason": "using commands in <#1347697960820932672>",
+            "duration": "Permanent",
+            "timestamp": 1747674998,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 256,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1748448235,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 276,
+            "reason": "NSFW",
+            "duration": "1h",
+            "timestamp": 1748794060,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        }
+    ],
+    "1114347211216666634": [
+        {
+            "user": "<@1114347211216666634>",
+            "caseid": 159,
+            "reason": "splitting messages to farm messages/flooding",
+            "duration": "Permanent",
+            "timestamp": 1747411210,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1114347211216666634>",
+            "caseid": 160,
+            "reason": "keeps on splitting messages",
+            "duration": "3h",
+            "timestamp": 1747411229,
+            "moderator": "<@1003968075521081465>",
+            "type": "mute"
+        }
+    ],
+    "977697896990380115": [
+        {
+            "user": "<@977697896990380115>",
+            "caseid": 167,
+            "reason": "n word",
+            "duration": "7d",
+            "timestamp": 1747519508,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        }
+    ],
+    "1342539958304510033": [
+        {
+            "user": "<@1342539958304510033>",
+            "caseid": 171,
+            "reason": "scam link",
+            "duration": "7d",
+            "timestamp": 1747529559,
+            "moderator": "<@1228464292290891900>",
+            "type": "mute"
+        }
+    ],
+    "1198604285643079700": [
+        {
+            "user": "<@1198604285643079700>",
+            "caseid": 173,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747569173,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        }
+    ],
+    "1362845612344611138": [
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 342,
+            "reason": "7 days",
+            "duration": "Permanent",
+            "timestamp": 1749344602,
+            "moderator": "<@1207107834349617262>",
+            "type": "ban"
+        }
+    ],
+    "1373790337071448177": [
+        {
+            "user": "<@1373790337071448177>",
+            "caseid": 189,
+            "reason": "scam",
+            "duration": "Permanent",
+            "timestamp": 1747671644,
+            "moderator": "<@1207107834349617262>",
+            "type": "ban"
+        }
+    ],
+    "980573948007817217": [
+        {
+            "user": "<@980573948007817217>",
+            "caseid": 190,
+            "reason": "using commands in <#1347697960820932672>",
+            "duration": "Permanent",
+            "timestamp": 1747674974,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        },
+        {
+            "user": "<@980573948007817217>",
+            "caseid": 378,
+            "reason": " stfu",
+            "duration": "5m",
+            "timestamp": 1749595520,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "947397046720143431": [
+        {
+            "user": "<@947397046720143431>",
+            "caseid": 202,
+            "reason": "imagine getting warned",
+            "duration": "Permanent",
+            "timestamp": 1747928390,
+            "moderator": "<@1003968075521081465>",
+            "type": "warn"
+        }
+    ],
+    "1161742900904853545": [
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 406,
+            "reason": "gay",
+            "duration": "Permanent",
+            "timestamp": 1749661777,
+            "moderator": "<@1183496778406957189>",
+            "type": "ban"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 428,
+            "reason": "don't spam cutie",
+            "duration": "Permanent",
+            "timestamp": 1749817227,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 429,
+            "reason": "No reason provided",
+            "duration": "30s",
+            "timestamp": 1749817423,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 432,
+            "reason": "sybau",
+            "duration": "3d",
+            "timestamp": 1749818391,
+            "moderator": "<@947397046720143431>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 432,
+            "reason": "stopp",
+            "duration": "2h",
+            "timestamp": 1749818391,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 473,
+            "reason": "No reason provided",
+            "duration": "20m",
+            "timestamp": 1749838231,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 474,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1749868361,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 475,
+            "reason": "No reason provided",
+            "duration": "3m",
+            "timestamp": 1749869398,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 575,
+            "reason": "n-word by pass",
+            "duration": "10m",
+            "timestamp": 1750443063,
+            "moderator": "<@1291437732685680761>",
+            "type": "mute"
+        }
+    ],
+    "784791278692073475": [
+        {
+            "user": "<@784791278692073475>",
+            "caseid": 208,
+            "reason": "idk",
+            "duration": "Permanent",
+            "timestamp": 1747982574,
+            "moderator": "<@1207107834349617262>",
+            "type": "ban"
+        }
+    ],
+    "1335317212075921451": [
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 224,
+            "reason": "making members uncomfortable",
+            "duration": "Permanent",
+            "timestamp": 1748129632,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 225,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1748129679,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 226,
+            "reason": "n word and swearing in dms",
+            "duration": "2d",
+            "timestamp": 1748130266,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        }
+    ],
+    "854591758704050178": [
+        {
+            "user": "<@854591758704050178>",
+            "caseid": 229,
+            "reason": "NSFW",
+            "duration": "Permanent",
+            "timestamp": 1748195657,
+            "moderator": "<@1291437732685680761>",
+            "type": "warn"
+        }
+    ],
+    "1366455849140097075": [
+        {
+            "user": "<@1366455849140097075>",
+            "caseid": 231,
+            "reason": "underaged",
+            "duration": "Permanent",
+            "timestamp": 1748258700,
+            "moderator": "<@947397046720143431>",
+            "type": "ban"
+        }
+    ],
+    "1359098260492648468": [
+        {
+            "user": "<@1359098260492648468>",
+            "caseid": 242,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1748276623,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "1365589268902183052": [
+        {
+            "user": "<@1365589268902183052>",
+            "caseid": 243,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1748283740,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1376352264020693106": [
+        {
+            "user": "<@1376352264020693106>",
+            "caseid": 246,
+            "reason": "retard",
+            "duration": "Permanent",
+            "timestamp": 1748297216,
+            "moderator": "<@947397046720143431>",
+            "type": "ban"
+        }
+    ],
+    "1362678688943968370": [
+        {
+            "user": "<@1362678688943968370>",
+            "caseid": 249,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1748331610,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1377333861947670709": [
+        {
+            "user": "<@1377333861947670709>",
+            "caseid": 257,
+            "reason": "alt",
+            "duration": "Permanent",
+            "timestamp": 1748453949,
+            "moderator": "<@947397046720143431>",
+            "type": "ban"
+        }
+    ],
+    "1335060551260442704": [
+        {
+            "user": "<@1335060551260442704>",
+            "caseid": 264,
+            "reason": "fake ticket",
+            "duration": "Permanent",
+            "timestamp": 1748702902,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "735147814878969968": [
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 268,
+            "reason": "No reason provided",
+            "duration": "2h",
+            "timestamp": 1748748326,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 307,
+            "reason": "no",
+            "duration": "1d",
+            "timestamp": 1749002175,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 365,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1749564725,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1322450201427841046": [
+        {
+            "user": "<@1322450201427841046>",
+            "caseid": 272,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1748784670,
+            "moderator": "<@902330799649615943>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1322450201427841046>",
+            "caseid": 273,
+            "reason": "spamming",
+            "duration": "1h",
+            "timestamp": 1748784687,
+            "moderator": "<@902330799649615943>",
+            "type": "mute"
+        }
+    ],
+    "887606375381868594": [
+        {
+            "user": "<@887606375381868594>",
+            "caseid": 289,
+            "reason": "nsfw fr",
+            "duration": "93h",
+            "timestamp": 1748878641,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1315775161273684069": [
+        {
+            "user": "<@1315775161273684069>",
+            "caseid": 303,
+            "reason": "why alt just use main  duck",
+            "duration": "Permanent",
+            "timestamp": 1748963661,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1092423332743348244": [
+        {
+            "user": "<@1092423332743348244>",
+            "caseid": 309,
+            "reason": "saying n word",
+            "duration": "Permanent",
+            "timestamp": 1749036570,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "840247968073777194": [
+        {
+            "user": "<@840247968073777194>",
+            "caseid": 317,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749171734,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@840247968073777194>",
+            "caseid": 318,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749171754,
+            "moderator": "<@1183496778406957189>",
+            "type": "warn"
+        }
+    ],
+    "901549711218049046": [
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 339,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749331689,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 340,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749331716,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 350,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749477676,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 492,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1749934576,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1268607189376045067": [
+        {
+            "user": "<@1268607189376045067>",
+            "caseid": 341,
+            "reason": "acusing me",
+            "duration": "Permanent",
+            "timestamp": 1749342169,
+            "moderator": "<@991327146859560970>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1268607189376045067>",
+            "caseid": 571,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1750363925,
+            "moderator": "<@991327146859560970>",
+            "type": "warn"
+        }
+    ],
+    "984001093505790012": [
+        {
+            "user": "<@984001093505790012>",
+            "caseid": 363,
+            "reason": "my son is a truly nigga",
+            "duration": "Permanent",
+            "timestamp": 1749558276,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1379094443684134916": [
+        {
+            "user": "<@1379094443684134916>",
+            "caseid": 383,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749623001,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1379094443684134916>",
+            "caseid": 564,
+            "reason": "No reason provided",
+            "duration": "45h",
+            "timestamp": 1750240442,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1218378802934190162": [
+        {
+            "user": "<@1218378802934190162>",
+            "caseid": 385,
+            "reason": "don't advertise",
+            "duration": "Permanent",
+            "timestamp": 1749623763,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "873046793393438761": [
+        {
+            "user": "<@873046793393438761>",
+            "caseid": 407,
+            "reason": "sybau",
+            "duration": "5m",
+            "timestamp": 1749668125,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        },
+        {
+            "user": "<@873046793393438761>",
+            "caseid": 408,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749668255,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1381147943322648576": [
+        {
+            "user": "<@1381147943322648576>",
+            "caseid": 493,
+            "reason": "alt account",
+            "duration": "Permanent",
+            "timestamp": 1749937724,
+            "moderator": "<@1183496778406957189>",
+            "type": "ban"
+        }
+    ],
+    "814075485667065878": [
+        {
+            "user": "<@814075485667065878>",
+            "caseid": 425,
+            "reason": "change ur pfp noww in 2hrs otherwise strict action will be taken",
+            "duration": "Permanent",
+            "timestamp": 1749744269,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "432610292342587392": [
+        {
+            "user": "<@432610292342587392>",
+            "caseid": 426,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1749747174,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1278763693198409794": [
+        {
+            "user": "<@1278763693198409794>",
+            "caseid": 433,
+            "reason": "No reason provided",
+            "duration": "1s",
+            "timestamp": 1749819274,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        },
+        {
+            "user": "<@1278763693198409794>",
+            "caseid": 592,
+            "reason": "bullying",
+            "duration": "Permanent",
+            "timestamp": 1750599657,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1359195579166752948": [
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 434,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1749819334,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 435,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819415,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 436,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819416,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 437,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819417,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 438,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819418,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 439,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819419,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 440,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819420,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 441,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819421,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 442,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819421,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 443,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819422,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 444,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819423,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 445,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819424,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 446,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819425,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 447,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819426,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 448,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819426,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 449,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819428,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 450,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819429,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 451,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819430,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 452,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819431,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 453,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819432,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 454,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819433,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 455,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819434,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 456,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819436,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 457,
+            "reason": "road to 69.warn <@1359195579166752948> road to 69.warn <@1359195579166752948> road to 69.warn <@1359195579166752948> road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819684,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 458,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819687,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 459,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819688,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 461,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822106,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 462,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822107,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 463,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822108,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 464,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822205,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 465,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822206,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 466,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822208,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 467,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822209,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 468,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822210,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 469,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822212,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 497,
+            "reason": "false information",
+            "duration": "Permanent",
+            "timestamp": 1749980191,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        }
+    ],
+    "1210662269193687131": [
+        {
+            "user": "<@1210662269193687131>",
+            "caseid": 489,
+            "reason": "\ud83d\ude1f",
+            "duration": "Permanent",
+            "timestamp": 1749921012,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        }
+    ],
+    "1228630046927884288": [
+        {
+            "user": "<@1228630046927884288>",
+            "caseid": 501,
+            "reason": "indian bla.... Scammer || you cant scam a scammer lil bro get better",
+            "duration": "Permanent",
+            "timestamp": 1749997944,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1321803089942020122": [
+        {
+            "user": "<@1321803089942020122>",
+            "caseid": 558,
+            "reason": "don't spam asher",
+            "duration": "Permanent",
+            "timestamp": 1750138547,
+            "moderator": "<@1228241844962332692>",
+            "type": "warn"
+        }
+    ],
+    "635295666976849936": [
+        {
+            "user": "<@635295666976849936>",
+            "caseid": 560,
+            "reason": "hoe",
+            "duration": "Permanent",
+            "timestamp": 1750177616,
+            "moderator": "<@1207107834349617262>",
+            "type": "ban"
+        }
+    ],
+    "981955063692013638": [
+        {
+            "user": "<@981955063692013638>",
+            "caseid": 565,
+            "reason": "No reason provided",
+            "duration": "83m",
+            "timestamp": 1750301396,
+            "moderator": "<@1035893514577379329>",
+            "type": "mute"
+        }
+    ],
+    "1276618110367170665": [
+        {
+            "user": "<@1276618110367170665>",
+            "caseid": 568,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1750345034,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ],
+    "1178205197227524198": [
+        {
+            "user": "<@1178205197227524198>",
+            "caseid": 569,
+            "reason": "No reason provided",
+            "duration": "2s",
+            "timestamp": 1750359578,
+            "moderator": "<@1228241844962332692>",
+            "type": "mute"
+        }
+    ],
+    "1289994660797874358": [
+        {
+            "user": "<@1289994660797874358>",
+            "caseid": 572,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750409287,
+            "moderator": "<@1035893514577379329>",
+            "type": "warn"
+        }
+    ],
+    "1172875702538866802": [
+        {
+            "user": "<@1172875702538866802>",
+            "caseid": 590,
+            "reason": "gay",
+            "duration": "Permanent",
+            "timestamp": 1750591738,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        },
+        {
+            "user": "<@1172875702538866802>",
+            "caseid": 600,
+            "reason": "misgendering my bf",
+            "duration": "Permanent",
+            "timestamp": 1750668873,
+            "moderator": "<@1207107834349617262>",
+            "type": "warn"
+        }
+    ],
+    "1356915119119929344": [
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 598,
+            "reason": "YOU LITTLE PEAVE OF SHIT YOU ASS HOLE GET OUT OF THIS SERVER YOU NIG--- INDIAN CATFISHER SCAMMER AND KICK YOUR BALLS NOW GET OUT MONKEY",
+            "duration": "Permanent",
+            "timestamp": 1750664859,
+            "moderator": "<@1035893514577379329>",
+            "type": "ban"
+        }
+    ],
+    "1362914630703386654": [
+        {
+            "user": "<@1362914630703386654>",
+            "caseid": 614,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1750705063,
+            "moderator": "<@1183496778406957189>",
+            "type": "mute"
+        }
+    ]
+}

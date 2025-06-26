@@ -1,0 +1,5607 @@
+{
+    "1207107834349617262": [
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 1,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1746060688,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1104920741603983491>",
+            "caseid": 6,
+            "reason": "1 hour",
+            "duration": "Permanent",
+            "timestamp": 1746135488,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1280470094488670263>",
+            "caseid": 7,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1746135744,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 28,
+            "reason": "mean",
+            "duration": "Permanent",
+            "timestamp": 1746474945,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 36,
+            "reason": "30 min",
+            "duration": "Permanent",
+            "timestamp": 1746477525,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 38,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746477590,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 54,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1746532157,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 66,
+            "reason": "10 minutes not cool",
+            "duration": "Permanent",
+            "timestamp": 1746650150,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 68,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650530,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 69,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650530,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 70,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650531,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 71,
+            "reason": "kid",
+            "duration": "Permanent",
+            "timestamp": 1746650534,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 85,
+            "reason": "n word bypass",
+            "duration": "Permanent",
+            "timestamp": 1746808792,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1287847461142003757>",
+            "caseid": 98,
+            "reason": "not following host rules",
+            "duration": "Permanent",
+            "timestamp": 1746874833,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1341745492329234474>",
+            "caseid": 110,
+            "reason": "opening ticket with no reason",
+            "duration": "Permanent",
+            "timestamp": 1746916705,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1343969807481045087>",
+            "caseid": 144,
+            "reason": "asshole",
+            "duration": "Permanent",
+            "timestamp": 1747151820,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@806195088500850698>",
+            "caseid": 153,
+            "reason": "\u201ctest\u201d event",
+            "duration": "Permanent",
+            "timestamp": 1747391957,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 161,
+            "reason": "skull reacting \ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1747422289,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 162,
+            "reason": "skull reacting \ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1747422300,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1373790337071448177>",
+            "caseid": 189,
+            "reason": "scam",
+            "duration": "Permanent",
+            "timestamp": 1747671644,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@784791278692073475>",
+            "caseid": 208,
+            "reason": "idk",
+            "duration": "Permanent",
+            "timestamp": 1747982574,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1365589268902183052>",
+            "caseid": 243,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1748283740,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362678688943968370>",
+            "caseid": 249,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1748331610,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362678688943968370>",
+            "caseid": 250,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1748331615,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1335060551260442704>",
+            "caseid": 264,
+            "reason": "fake ticket",
+            "duration": "Permanent",
+            "timestamp": 1748702902,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1160162125285687377>",
+            "caseid": 305,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1748970161,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 314,
+            "reason": "10min bad boy",
+            "duration": "Permanent",
+            "timestamp": 1749153887,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 342,
+            "reason": "7 days",
+            "duration": "Permanent",
+            "timestamp": 1749344602,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@635295666976849936>",
+            "caseid": 560,
+            "reason": "hoe",
+            "duration": "Permanent",
+            "timestamp": 1750177616,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1104920741603983491>",
+            "caseid": 584,
+            "reason": "weird topics",
+            "duration": "Permanent",
+            "timestamp": 1750538816,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1172875702538866802>",
+            "caseid": 590,
+            "reason": "gay",
+            "duration": "Permanent",
+            "timestamp": 1750591738,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 591,
+            "reason": "bullying",
+            "duration": "Permanent",
+            "timestamp": 1750599649,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1278763693198409794>",
+            "caseid": 592,
+            "reason": "bullying",
+            "duration": "Permanent",
+            "timestamp": 1750599657,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1172875702538866802>",
+            "caseid": 600,
+            "reason": "misgendering my bf",
+            "duration": "Permanent",
+            "timestamp": 1750668873,
+            "type": "warn",
+            "status": "active"
+        }
+    ],
+    "902330799649615943": [
+        {
+            "user": "N/A",
+            "caseid": 2,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1746105726,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 9,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1746153391,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@900599492762538044>",
+            "caseid": 12,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746221027,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 17,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1746405722,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 41,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746482269,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 42,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746483050,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 43,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746483100,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 44,
+            "reason": "disrespecting",
+            "duration": "Permanent",
+            "timestamp": 1746483167,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 59,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746557038,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 94,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1746836770,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 115,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1746931993,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@985898170150187028>",
+            "caseid": 141,
+            "reason": "advertising",
+            "duration": "2h",
+            "timestamp": 1747145522,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 169,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1747521892,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 212,
+            "reason": "making members uncomfortable",
+            "duration": "Permanent",
+            "timestamp": 1748049789,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 223,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1748129182,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 224,
+            "reason": "making members uncomfortable",
+            "duration": "Permanent",
+            "timestamp": 1748129632,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 225,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1748129679,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1335317212075921451>",
+            "caseid": 226,
+            "reason": "n word and swearing in dms",
+            "duration": "2d",
+            "timestamp": 1748130266,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 227,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1748132118,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 248,
+            "reason": "spliting messages+spamming",
+            "duration": "Permanent",
+            "timestamp": 1748313365,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1322450201427841046>",
+            "caseid": 272,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1748784670,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1322450201427841046>",
+            "caseid": 273,
+            "reason": "spamming",
+            "duration": "1h",
+            "timestamp": 1748784687,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 328,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749274547,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 352,
+            "reason": "spamming ping",
+            "duration": "Permanent",
+            "timestamp": 1749501937,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 354,
+            "reason": "No reason provided",
+            "duration": "30m",
+            "timestamp": 1749502076,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 356,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749519062,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 379,
+            "reason": "spamming ping",
+            "duration": "30m",
+            "timestamp": 1749601967,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 380,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749604048,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 474,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1749868361,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 479,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749875799,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 480,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749877357,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 483,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749878481,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 494,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749959745,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 512,
+            "reason": "fake mute\ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1750131826,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 576,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750477925,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 577,
+            "reason": "n word\ud83d\udc94",
+            "duration": "Permanent",
+            "timestamp": 1750478382,
+            "type": "warn",
+            "status": "active"
+        }
+    ],
+    "1003968075521081465": [
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 3,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1746106420,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 14,
+            "reason": "discriminating someone who has no gif perms",
+            "duration": "Permanent",
+            "timestamp": 1746362116,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 22,
+            "reason": "spammed",
+            "duration": "15s",
+            "timestamp": 1746456620,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 25,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1746472085,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1197882282309070950>",
+            "caseid": 55,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1746537359,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 80,
+            "reason": "advertising/asking people to work for him",
+            "duration": "Permanent",
+            "timestamp": 1746728652,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 92,
+            "reason": "spammed",
+            "duration": "3s",
+            "timestamp": 1746832986,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1213245138143420466>",
+            "caseid": 101,
+            "reason": "using languages other than english",
+            "duration": "3d",
+            "timestamp": 1746877054,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1170320584001998868>",
+            "caseid": 118,
+            "reason": "dm advertising twice",
+            "duration": "Permanent",
+            "timestamp": 1746968223,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 122,
+            "reason": "direct swearing, acting like a wierdo",
+            "duration": "1h",
+            "timestamp": 1746983940,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1295145929346908375>",
+            "caseid": 124,
+            "reason": "dm advertising + scam server",
+            "duration": "Permanent",
+            "timestamp": 1746986172,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 143,
+            "reason": "nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747146272,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1346009864245346336>",
+            "caseid": 145,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747156197,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@855696210786254879>",
+            "caseid": 155,
+            "reason": "bypassing nword",
+            "duration": "Permanent",
+            "timestamp": 1747400062,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1114347211216666634>",
+            "caseid": 159,
+            "reason": "splitting messages to farm messages/flooding",
+            "duration": "Permanent",
+            "timestamp": 1747411210,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1114347211216666634>",
+            "caseid": 160,
+            "reason": "keeps on splitting messages",
+            "duration": "3h",
+            "timestamp": 1747411229,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1198604285643079700>",
+            "caseid": 173,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747569173,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 178,
+            "reason": "racism",
+            "duration": "Permanent",
+            "timestamp": 1747570608,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 179,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1747571596,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 183,
+            "reason": "impersonation",
+            "duration": "Permanent",
+            "timestamp": 1747591208,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 184,
+            "reason": "racism",
+            "duration": "Permanent",
+            "timestamp": 1747592717,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 185,
+            "reason": "wont unmute until you change ur username to something else",
+            "duration": "Permanent",
+            "timestamp": 1747593451,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@985898170150187028>",
+            "caseid": 186,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1747664441,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 194,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1747839426,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 196,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1747839621,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@947397046720143431>",
+            "caseid": 202,
+            "reason": "imagine getting warned",
+            "duration": "Permanent",
+            "timestamp": 1747928390,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 215,
+            "reason": "direct swearing, excess swearing",
+            "duration": "1h",
+            "timestamp": 1748098789,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 220,
+            "reason": "spamming/flooding",
+            "duration": "Permanent",
+            "timestamp": 1748121027,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 230,
+            "reason": "No reason provided",
+            "duration": "14d",
+            "timestamp": 1748197936,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 232,
+            "reason": "flooding/spamming",
+            "duration": "Permanent",
+            "timestamp": 1748265863,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 233,
+            "reason": "flooding/spamming",
+            "duration": "Permanent",
+            "timestamp": 1748265874,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 240,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1748269489,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 241,
+            "reason": "flood",
+            "duration": "Permanent",
+            "timestamp": 1748274630,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 244,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1748283909,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1365589268902183052>",
+            "caseid": 259,
+            "reason": "dm advertising",
+            "duration": "N/A",
+            "timestamp": 1748523783,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1331639899727593472>",
+            "caseid": 302,
+            "reason": "hacked",
+            "duration": "N/A",
+            "timestamp": 1748947109,
+            "type": "kick",
+            "status": "active"
+        }
+    ],
+    "1035893514577379329": [
+        {
+            "user": "N/A",
+            "caseid": 5,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1746107303,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1110154164421541969>",
+            "caseid": 8,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1746147087,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 10,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1746188956,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 11,
+            "reason": "not giving perm",
+            "duration": "Permanent",
+            "timestamp": 1746191556,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1328310119703908397>",
+            "caseid": 13,
+            "reason": "sybau you holy peace of shit you dirty monkey go fuck yourself or suck your mom bbc you shit",
+            "duration": "Permanent",
+            "timestamp": 1746344517,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 15,
+            "reason": "No reason provided",
+            "duration": "49h",
+            "timestamp": 1746364405,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@923701326230212709>",
+            "caseid": 16,
+            "reason": "No reason provided",
+            "duration": "100h",
+            "timestamp": 1746364734,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1122573779307089960>",
+            "caseid": 21,
+            "reason": "causing drama likes to lie on people's names",
+            "duration": "Permanent",
+            "timestamp": 1746406415,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 23,
+            "reason": "No reason provided",
+            "duration": "838m",
+            "timestamp": 1746462565,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 45,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1746529825,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 46,
+            "reason": "too sexy dih",
+            "duration": "N/A",
+            "timestamp": 1746530545,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 47,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746530702,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 49,
+            "reason": "No reason provided",
+            "duration": "83h",
+            "timestamp": 1746531185,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 51,
+            "reason": "suck your small dick or put a big lond bambo in your ass before I touch you",
+            "duration": "2992s",
+            "timestamp": 1746531597,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 53,
+            "reason": "Suck you holy white big dick before you get rape by 2994383 men and your asshole get nucked",
+            "duration": "696969s",
+            "timestamp": 1746531801,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 56,
+            "reason": "No reason provided",
+            "duration": "1s",
+            "timestamp": 1746539189,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 57,
+            "reason": "too hot",
+            "duration": "N/A",
+            "timestamp": 1746539306,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1299063668436107278>",
+            "caseid": 64,
+            "reason": "get out you 11y old bitch ass",
+            "duration": "Permanent",
+            "timestamp": 1746636690,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 65,
+            "reason": "No reason provided",
+            "duration": "838383s",
+            "timestamp": 1746637314,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1141396469002281000>",
+            "caseid": 79,
+            "reason": "No reason provided",
+            "duration": "29s",
+            "timestamp": 1746710760,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 87,
+            "reason": "n word",
+            "duration": "838338s",
+            "timestamp": 1746809681,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 89,
+            "reason": "No reason provided",
+            "duration": "83839s",
+            "timestamp": 1746810240,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 95,
+            "reason": "No reason provided",
+            "duration": "8383s",
+            "timestamp": 1746838549,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1065936938034532443>",
+            "caseid": 97,
+            "reason": "kid",
+            "duration": "93h",
+            "timestamp": 1746867087,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@472102714025967656>",
+            "caseid": 99,
+            "reason": "go fuck your self you monkey put some lays in your ass and get fucked",
+            "duration": "Permanent",
+            "timestamp": 1746876878,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@822123445201403910>",
+            "caseid": 100,
+            "reason": "you holy small gyatt go suck real ayk dick you little gonner",
+            "duration": "N/A",
+            "timestamp": 1746876889,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 102,
+            "reason": "No reason provided",
+            "duration": "99999s",
+            "timestamp": 1746877216,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 107,
+            "reason": "No reason provided",
+            "duration": "6s",
+            "timestamp": 1746889941,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@985898170150187028>",
+            "caseid": 142,
+            "reason": "No reason provided",
+            "duration": "33h",
+            "timestamp": 1747145539,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1345795681104826453>",
+            "caseid": 146,
+            "reason": "your holy mf send nsfw link next time or I will smash your small gyatt with level 0 get better kid and bend over and let me tell where the mother goes and oil up for diddy he is coming tonight",
+            "duration": "Permanent",
+            "timestamp": 1747156540,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1345795681104826453>",
+            "caseid": 147,
+            "reason": "your holy mf send nsfw link next time or I will smash your small gyatt with level 0 get better kid and bend over and let me tell where the mother goes and oil up for diddy he is coming tonight\nCase ID: 146",
+            "duration": "Permanent",
+            "timestamp": 1747156560,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@855696210786254879>",
+            "caseid": 150,
+            "reason": "saying nig",
+            "duration": "Permanent",
+            "timestamp": 1747317176,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 154,
+            "reason": "2998",
+            "duration": "Permanent",
+            "timestamp": 1747399986,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 156,
+            "reason": "No reason provided",
+            "duration": "8833s",
+            "timestamp": 1747400703,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 157,
+            "reason": "No reason provided",
+            "duration": "3s",
+            "timestamp": 1747401174,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 158,
+            "reason": "100y",
+            "duration": "Permanent",
+            "timestamp": 1747401203,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 172,
+            "reason": "sexual harrasment fr",
+            "duration": "29h",
+            "timestamp": 1747563130,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 174,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1747569218,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 175,
+            "reason": "1000y using gif",
+            "duration": "Permanent",
+            "timestamp": 1747570054,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 176,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1747570200,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 177,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1747570303,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 203,
+            "reason": "No reason provided",
+            "duration": "7977s",
+            "timestamp": 1747928500,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 209,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1748009669,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 217,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1748105287,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 228,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1748166307,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 234,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1748265885,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 235,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265905,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 236,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265905,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 237,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265907,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 238,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265908,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 239,
+            "reason": "\u2705 1im___ warned || flooding/spamming\nCase ID: 233",
+            "duration": "Permanent",
+            "timestamp": 1748265909,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 254,
+            "reason": "848y",
+            "duration": "Permanent",
+            "timestamp": 1748438524,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 256,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1748448235,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 260,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1748523950,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 265,
+            "reason": "typing",
+            "duration": "1s",
+            "timestamp": 1748710356,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 268,
+            "reason": "No reason provided",
+            "duration": "2h",
+            "timestamp": 1748748326,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 269,
+            "reason": "No reason provided",
+            "duration": "38h",
+            "timestamp": 1748753914,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 270,
+            "reason": "bye",
+            "duration": "Permanent",
+            "timestamp": 1748776944,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 271,
+            "reason": "11y using alt",
+            "duration": "28h",
+            "timestamp": 1748777049,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 282,
+            "reason": "No reason provided",
+            "duration": "83h",
+            "timestamp": 1748835298,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 283,
+            "reason": "No reason provided",
+            "duration": "38h",
+            "timestamp": 1748835370,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 285,
+            "reason": "imagine",
+            "duration": "9s",
+            "timestamp": 1748869469,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 287,
+            "reason": "No reason provided",
+            "duration": "30s",
+            "timestamp": 1748878376,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 288,
+            "reason": "nice try diddy",
+            "duration": "10s",
+            "timestamp": 1748878582,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@887606375381868594>",
+            "caseid": 289,
+            "reason": "nsfw fr",
+            "duration": "93h",
+            "timestamp": 1748878641,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@991327146859560970>",
+            "caseid": 290,
+            "reason": "do a blowjob and suck my dick",
+            "duration": "83h",
+            "timestamp": 1748878726,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 293,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1748884100,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 294,
+            "reason": "disrespectful",
+            "duration": "1d",
+            "timestamp": 1748884189,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 300,
+            "reason": "spamming/ farming message",
+            "duration": "Permanent",
+            "timestamp": 1748920838,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 301,
+            "reason": "spamming/ farming message",
+            "duration": "2d",
+            "timestamp": 1748920854,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1315775161273684069>",
+            "caseid": 303,
+            "reason": "why alt just use main  duck",
+            "duration": "Permanent",
+            "timestamp": 1748963661,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 304,
+            "reason": "subah YOU LITTLE NIG---",
+            "duration": "1w",
+            "timestamp": 1748970036,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 307,
+            "reason": "no",
+            "duration": "1d",
+            "timestamp": 1749002175,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1110154164421541969>",
+            "caseid": 310,
+            "reason": "erm",
+            "duration": "Permanent",
+            "timestamp": 1749139239,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 324,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749229678,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 330,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749290872,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 333,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749291038,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@944016826751389717>",
+            "caseid": 357,
+            "reason": "gay",
+            "duration": "N/A",
+            "timestamp": 1749534074,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 359,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749548750,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@984001093505790012>",
+            "caseid": 363,
+            "reason": "my son is a truly nigga",
+            "duration": "Permanent",
+            "timestamp": 1749558276,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@735147814878969968>",
+            "caseid": 365,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1749564725,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 396,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1749645706,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 397,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1749646136,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@1365328431742717973>",
+            "caseid": 399,
+            "reason": "1) i bet i can touch ur belly button from the inside\n2) ru spaghetti cuz i want u to meat my ballz\n3) are your legs oreos cuz i want to split them and lick them up\n4) ur such a baddie my zipper is falling for u\n5) my dik just died -- can i bury it in u\n6) (irl one)\n\nme: lemme clear a place for you to sit\n\nme: wipes face\n7) What\u2019s the need of all pick up lines when I can pin you down\n8) is ur butt the new snapchat filter? cuz i want it on my face\n9) I often make a mess while eating, spread ur legs and let me demonstrate\n10) im not a dentist but i sure could give u a filling\n11) They say that beauty is on the inside and i haven't been inside of you yet !\n12)  You are like a mathematical equation that makes me wanna add our beds, divide your legs and multiply.\n13) hey girl do u work in a farm?? because u raised my cok.\n14) hear ur looking for a stud, I've got the std, all I need is u\n15) do u wanna celebrate the next fathers day with a one month old?\n16) hey i pooped my pants... can i get in urs?\n17) What is the difference between u and sunglasses?\n\nSunglasses sit higher on my face\n18) u know big bang theory? Its when I bang u with my big dik\n19) hey babe u look great in jeans, but imagine great ur kids will look with my genes!\n20) i think my dik died. can u give it mouth to mouth?\n21) ur like my pinky toe -- u support me and im going to bang u on the coffee table\n22) do u mix concrete for a living? cuz ur making me hard.\n23) are you constipated? cuz i wanna fudge the sh it out of u\n24) I dont work at subway, but I can still give u a footlong\n26) I like my coffee how I like my woman\u2026 ||creamed||\n27) Nice pants- can I test the zipper?\n28) some1 vacuum my lap -- this girl needs a clean place to sit\n29) the tango burns 69 calories per minute. wanna wrok out?\n30) I\u2019ll give u a nickel if you tickle my pickle\n31) ur turning my floppy disc into a hard drive\n32) i heard u get good grades- hope this D won\u2019t hurt\n33) ru a lightbulb? cuz I\u2019m trying to screw u\n34) my cond om expires tomorrow. lets not let it go to waste.",
+            "duration": "Permanent",
+            "timestamp": 1749646317,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 412,
+            "reason": "let me trade",
+            "duration": "1m",
+            "timestamp": 1749695965,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@432610292342587392>",
+            "caseid": 426,
+            "reason": "No reason provided",
+            "duration": "8h",
+            "timestamp": 1749747174,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1278763693198409794>",
+            "caseid": 433,
+            "reason": "No reason provided",
+            "duration": "1s",
+            "timestamp": 1749819274,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 434,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1749819334,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 435,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819415,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 436,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819416,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 437,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819417,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 438,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819418,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 439,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819419,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 440,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819420,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 441,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819421,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 442,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819421,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 443,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819422,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 444,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819423,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 445,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819424,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 446,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819425,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 447,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819426,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 448,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819426,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 449,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819428,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 450,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819429,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 451,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819430,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 452,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819431,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 453,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819432,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 454,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819433,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 455,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819434,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 456,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819436,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 457,
+            "reason": "road to 69.warn <@1359195579166752948> road to 69.warn <@1359195579166752948> road to 69.warn <@1359195579166752948> road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819684,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 458,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819687,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 459,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749819688,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 461,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822106,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 462,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822107,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 463,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822108,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 464,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822205,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 465,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822206,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 466,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822208,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 467,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822209,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 468,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822210,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 469,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1749822212,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 472,
+            "reason": "No reason provided",
+            "duration": "2m",
+            "timestamp": 1749828166,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 475,
+            "reason": "No reason provided",
+            "duration": "3m",
+            "timestamp": 1749869398,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 486,
+            "reason": "No reason provided",
+            "duration": "30s",
+            "timestamp": 1749895644,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1359195579166752948>",
+            "caseid": 497,
+            "reason": "false information",
+            "duration": "Permanent",
+            "timestamp": 1749980191,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 498,
+            "reason": "not giving bj",
+            "duration": "Permanent",
+            "timestamp": 1749980216,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 499,
+            "reason": "too sexy",
+            "duration": "Permanent",
+            "timestamp": 1749980233,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228630046927884288>",
+            "caseid": 501,
+            "reason": "indian bla.... Scammer || you cant scam a scammer lil bro get better",
+            "duration": "Permanent",
+            "timestamp": 1749997944,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 505,
+            "reason": "No reason provided",
+            "duration": "3m",
+            "timestamp": 1750059796,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 508,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1750129675,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@235148962103951360>",
+            "caseid": 509,
+            "reason": "No reason provided",
+            "duration": "N/A",
+            "timestamp": 1750129913,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 510,
+            "reason": "GO SLEEP",
+            "duration": "2h",
+            "timestamp": 1750131429,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 511,
+            "reason": "No reason provided",
+            "duration": "1s",
+            "timestamp": 1750131755,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 513,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131989,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 514,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131990,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 515,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131991,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 516,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131997,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 517,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750131999,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 518,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132000,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 519,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132002,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 520,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132004,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 521,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132005,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 522,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132006,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 523,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132007,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 524,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132008,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 525,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132009,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 526,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132010,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 527,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132011,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 528,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132012,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 529,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132013,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 530,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132015,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 531,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132016,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 532,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132017,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 533,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132018,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 534,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132019,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 535,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132021,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 536,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132021,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 537,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132022,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 538,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132023,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 539,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132024,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 540,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132025,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 541,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132026,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 542,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132027,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 543,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132028,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 544,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132030,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 545,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132031,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 546,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132032,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 547,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132033,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 548,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132038,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 549,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132039,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 550,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132041,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 551,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132042,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 552,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132043,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 553,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132044,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 554,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132045,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 555,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132046,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 556,
+            "reason": "road to 69",
+            "duration": "Permanent",
+            "timestamp": 1750132047,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1379094443684134916>",
+            "caseid": 564,
+            "reason": "No reason provided",
+            "duration": "45h",
+            "timestamp": 1750240442,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@981955063692013638>",
+            "caseid": 565,
+            "reason": "No reason provided",
+            "duration": "83m",
+            "timestamp": 1750301396,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1289994660797874358>",
+            "caseid": 572,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750409287,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 595,
+            "reason": "catfishing",
+            "duration": "Permanent",
+            "timestamp": 1750642206,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 596,
+            "reason": "No reason provided",
+            "duration": "258h",
+            "timestamp": 1750642232,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 598,
+            "reason": "YOU LITTLE PEAVE OF SHIT YOU ASS HOLE GET OUT OF THIS SERVER YOU NIG--- INDIAN CATFISHER SCAMMER AND KICK YOUR BALLS NOW GET OUT MONKEY",
+            "duration": "Permanent",
+            "timestamp": 1750664859,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 619,
+            "reason": "trying to ban",
+            "duration": "Permanent",
+            "timestamp": 1750747407,
+            "type": "warn",
+            "status": "removed"
+        }
+    ],
+    "1228464292290891900": [
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 18,
+            "reason": "30 min disrespect and weird",
+            "duration": "Permanent",
+            "timestamp": 1746405847,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 19,
+            "reason": "30 min swearing and being werid",
+            "duration": "Permanent",
+            "timestamp": 1746406151,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1334264239392555098>",
+            "caseid": 20,
+            "reason": "20 min",
+            "duration": "Permanent",
+            "timestamp": 1746406302,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 24,
+            "reason": "10 min rasisct",
+            "duration": "Permanent",
+            "timestamp": 1746463642,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@820355901155704903>",
+            "caseid": 26,
+            "reason": "10 min nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746472504,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 27,
+            "reason": "10 min nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746472725,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 29,
+            "reason": "30 min sending nsfw again",
+            "duration": "Permanent",
+            "timestamp": 1746475599,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 30,
+            "reason": "1 hour direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1746475808,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 31,
+            "reason": "1 hour swearing",
+            "duration": "Permanent",
+            "timestamp": 1746475846,
+            "type": "mute",
+            "status": "removed"
+        },
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 32,
+            "reason": "30 min saying k__",
+            "duration": "Permanent",
+            "timestamp": 1746476080,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1291437732685680761>",
+            "caseid": 37,
+            "reason": "30",
+            "duration": "Permanent",
+            "timestamp": 1746477565,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1103720457745748048>",
+            "caseid": 61,
+            "reason": "1b direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1746565670,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1103720457745748048>",
+            "caseid": 62,
+            "reason": "direct swearing",
+            "duration": "1h",
+            "timestamp": 1746565701,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 67,
+            "reason": "saying k__",
+            "duration": "Permanent",
+            "timestamp": 1746650502,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 84,
+            "reason": "7 day said n word",
+            "duration": "Permanent",
+            "timestamp": 1746808769,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 88,
+            "reason": "nsfw",
+            "duration": "Permanent",
+            "timestamp": 1746810213,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 91,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746819345,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 103,
+            "reason": "false warn",
+            "duration": "Permanent",
+            "timestamp": 1746882338,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266170272352960543>",
+            "caseid": 113,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1746919430,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266170272352960543>",
+            "caseid": 114,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1746919697,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1170320584001998868>",
+            "caseid": 117,
+            "reason": "advertising in dm",
+            "duration": "Permanent",
+            "timestamp": 1746967964,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1303140677399482441>",
+            "caseid": 149,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1747252941,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1207107834349617262>",
+            "caseid": 163,
+            "reason": "saying bih",
+            "duration": "Permanent",
+            "timestamp": 1747422313,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 164,
+            "reason": "5 min spamming",
+            "duration": "Permanent",
+            "timestamp": 1747422762,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 165,
+            "reason": "5min spamming+rasisct",
+            "duration": "Permanent",
+            "timestamp": 1747422890,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 166,
+            "reason": "direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1747443433,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@977697896990380115>",
+            "caseid": 167,
+            "reason": "n word",
+            "duration": "7d",
+            "timestamp": 1747519508,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 170,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1747526419,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1342539958304510033>",
+            "caseid": 171,
+            "reason": "scam link",
+            "duration": "7d",
+            "timestamp": 1747529559,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 180,
+            "reason": "n word in sticker",
+            "duration": "Permanent",
+            "timestamp": 1747581567,
+            "type": "warn",
+            "status": "active"
+        }
+    ],
+    "1183496778406957189": [
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 33,
+            "reason": "30 min saying kill",
+            "duration": "Permanent",
+            "timestamp": 1746476533,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1308989731459305472>",
+            "caseid": 34,
+            "reason": "racism",
+            "duration": "Permanent",
+            "timestamp": 1746476867,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1071584378221772891>",
+            "caseid": 35,
+            "reason": "30 min :D",
+            "duration": "Permanent",
+            "timestamp": 1746477467,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1071584378221772891>",
+            "caseid": 37,
+            "reason": "e",
+            "duration": "30m",
+            "timestamp": 1746477533,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1071584378221772891>",
+            "caseid": 39,
+            "reason": "e",
+            "duration": "Permanent",
+            "timestamp": 1746481013,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 40,
+            "reason": "being a bad boy",
+            "duration": "30m",
+            "timestamp": 1746481333,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 81,
+            "reason": "weird",
+            "duration": "Permanent",
+            "timestamp": 1746733559,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 82,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1746735223,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 83,
+            "reason": "saying faggot",
+            "duration": "Permanent",
+            "timestamp": 1746735339,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1003968075521081465>",
+            "caseid": 90,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746819272,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 93,
+            "reason": "racist",
+            "duration": "Permanent",
+            "timestamp": 1746835092,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 108,
+            "reason": "doing a fake warn",
+            "duration": "Permanent",
+            "timestamp": 1746890666,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 120,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1746983253,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 134,
+            "reason": "leaking tomorrows messages",
+            "duration": "Permanent",
+            "timestamp": 1746997398,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 168,
+            "reason": "deleting warns + fake warning",
+            "duration": "Permanent",
+            "timestamp": 1747520251,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@980573948007817217>",
+            "caseid": 190,
+            "reason": "using commands in <#1347697960820932672>",
+            "duration": "Permanent",
+            "timestamp": 1747674974,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 191,
+            "reason": "using commands in <#1347697960820932672>",
+            "duration": "Permanent",
+            "timestamp": 1747674998,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 199,
+            "reason": "saying slurs",
+            "duration": "Permanent",
+            "timestamp": 1747853605,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 245,
+            "reason": "lying",
+            "duration": "5m",
+            "timestamp": 1748284760,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 253,
+            "reason": "called me daddy in terminus",
+            "duration": "5m",
+            "timestamp": 1748386156,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 262,
+            "reason": "homophobia",
+            "duration": "1d",
+            "timestamp": 1748565766,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 263,
+            "reason": "sexual harassment",
+            "duration": "Permanent",
+            "timestamp": 1748620317,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@840247968073777194>",
+            "caseid": 317,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749171734,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@840247968073777194>",
+            "caseid": 318,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749171754,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 337,
+            "reason": "made chat gay",
+            "duration": "1d",
+            "timestamp": 1749328971,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 338,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749331043,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 339,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749331689,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 340,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749331716,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 350,
+            "reason": "No reason provided",
+            "duration": "1d",
+            "timestamp": 1749477676,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@980573948007817217>",
+            "caseid": 378,
+            "reason": " stfu",
+            "duration": "5m",
+            "timestamp": 1749595520,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1379094443684134916>",
+            "caseid": 383,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749623001,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1346529721055318047>",
+            "caseid": 393,
+            "reason": "sybau",
+            "duration": "1d",
+            "timestamp": 1749626352,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 406,
+            "reason": "gay",
+            "duration": "Permanent",
+            "timestamp": 1749661777,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@873046793393438761>",
+            "caseid": 407,
+            "reason": "sybau",
+            "duration": "5m",
+            "timestamp": 1749668125,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@873046793393438761>",
+            "caseid": 408,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749668255,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1381147943322648576>",
+            "caseid": 409,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1749668645,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1280470094488670263>",
+            "caseid": 427,
+            "reason": "alt",
+            "duration": "Permanent",
+            "timestamp": 1749764715,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@901549711218049046>",
+            "caseid": 492,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1749934576,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1381147943322648576>",
+            "caseid": 493,
+            "reason": "alt account",
+            "duration": "Permanent",
+            "timestamp": 1749937724,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@806195088500850698>",
+            "caseid": 559,
+            "reason": "harassment",
+            "duration": "Permanent",
+            "timestamp": 1750173902,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1291437732685680761>",
+            "caseid": 563,
+            "reason": "go sleep",
+            "duration": "Permanent",
+            "timestamp": 1750198737,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1276618110367170665>",
+            "caseid": 568,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1750345034,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 580,
+            "reason": "No reason provided",
+            "duration": "5m",
+            "timestamp": 1750535371,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 583,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1750536386,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1362914630703386654>",
+            "caseid": 614,
+            "reason": "No reason provided",
+            "duration": "10m",
+            "timestamp": 1750705063,
+            "type": "mute",
+            "status": "expired"
+        }
+    ],
+    "947397046720143431": [
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 48,
+            "reason": "No reason provided",
+            "duration": "1m",
+            "timestamp": 1746531003,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 60,
+            "reason": "No reason provided",
+            "duration": "6h",
+            "timestamp": 1746563607,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 63,
+            "reason": "not wearing a bikini outfit and sending pics :(",
+            "duration": "Permanent",
+            "timestamp": 1746636588,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 86,
+            "reason": "sigma gay boy",
+            "duration": "1m",
+            "timestamp": 1746809437,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 111,
+            "reason": "n word in dms",
+            "duration": "Permanent",
+            "timestamp": 1746916839,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 119,
+            "reason": "gay",
+            "duration": "1m",
+            "timestamp": 1746983250,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 123,
+            "reason": "stink",
+            "duration": "5m",
+            "timestamp": 1746984618,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 125,
+            "reason": "weirdo",
+            "duration": "10m",
+            "timestamp": 1746986675,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 135,
+            "reason": "\ud83e\udd11",
+            "duration": "2h",
+            "timestamp": 1747066203,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1249704944332967987>",
+            "caseid": 138,
+            "reason": "Cross-trading, advertising & selling",
+            "duration": "N/A",
+            "timestamp": 1747137699,
+            "type": "kick",
+            "status": "active"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 198,
+            "reason": "L",
+            "duration": "Permanent",
+            "timestamp": 1747852555,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 205,
+            "reason": "e",
+            "duration": "30s",
+            "timestamp": 1747949433,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 206,
+            "reason": "shes my mommy not urs",
+            "duration": "6h",
+            "timestamp": 1747949594,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1366455849140097075>",
+            "caseid": 231,
+            "reason": "underaged",
+            "duration": "Permanent",
+            "timestamp": 1748258700,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1376352264020693106>",
+            "caseid": 246,
+            "reason": "retard",
+            "duration": "Permanent",
+            "timestamp": 1748297216,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1377333861947670709>",
+            "caseid": 257,
+            "reason": "alt",
+            "duration": "Permanent",
+            "timestamp": 1748453949,
+            "type": "ban",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 258,
+            "reason": "stop getting alts in here <:angy_cat:1348307808856047628>",
+            "duration": "Permanent",
+            "timestamp": 1748453973,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 364,
+            "reason": "weird \ud83e\udd40",
+            "duration": "7d",
+            "timestamp": 1749559244,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 432,
+            "reason": "sybau",
+            "duration": "3d",
+            "timestamp": 1749818391,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 585,
+            "reason": "retard",
+            "duration": "Permanent",
+            "timestamp": 1750549234,
+            "type": "ban",
+            "status": "active"
+        }
+    ],
+    "991327146859560970": [
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 50,
+            "reason": "1sec for being so hot",
+            "duration": "Permanent",
+            "timestamp": 1746531488,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 52,
+            "reason": "100days suck your small dick ama put my big dick insised you amd make u drink all the cum u stupid asshole",
+            "duration": "Permanent",
+            "timestamp": 1746531728,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 90,
+            "reason": "10sec hot",
+            "duration": "Permanent",
+            "timestamp": 1746817206,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1353863542184607774>",
+            "caseid": 148,
+            "reason": "100days be a good boy",
+            "duration": "Permanent",
+            "timestamp": 1747242169,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 219,
+            "reason": "stop flooding",
+            "duration": "Permanent",
+            "timestamp": 1748118905,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1244504881440755848>",
+            "caseid": 297,
+            "reason": "so noisey",
+            "duration": "Permanent",
+            "timestamp": 1748885737,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1244504881440755848>",
+            "caseid": 298,
+            "reason": "being soo arrogant",
+            "duration": "Permanent",
+            "timestamp": 1748885877,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1244504881440755848>",
+            "caseid": 299,
+            "reason": "abandoned me",
+            "duration": "Permanent",
+            "timestamp": 1748885976,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 308,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1749016905,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 313,
+            "reason": "MAKING WOMEN UNCOMFORTABLE",
+            "duration": "Permanent",
+            "timestamp": 1749153856,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 315,
+            "reason": "100years bro just no",
+            "duration": "Permanent",
+            "timestamp": 1749154282,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 316,
+            "reason": "flooding chat",
+            "duration": "Permanent",
+            "timestamp": 1749158658,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 319,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749174011,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1268607189376045067>",
+            "caseid": 341,
+            "reason": "acusing me",
+            "duration": "Permanent",
+            "timestamp": 1749342169,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 343,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749375147,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 366,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1749568918,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 367,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1749568934,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 368,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749568967,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 369,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749568976,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 370,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749568984,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 410,
+            "reason": "certified annoying man",
+            "duration": "Permanent",
+            "timestamp": 1749682039,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 411,
+            "reason": "certified annoying man",
+            "duration": "Permanent",
+            "timestamp": 1749682202,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1268607189376045067>",
+            "caseid": 571,
+            "reason": "No reason provided",
+            "duration": "Permanent",
+            "timestamp": 1750363925,
+            "type": "warn",
+            "status": "active"
+        }
+    ],
+    "1141396469002281000": [
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 58,
+            "reason": "calling me fat + disrespect. very aimed",
+            "duration": "Permanent",
+            "timestamp": 1746545230,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 557,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1750133349,
+            "type": "mute",
+            "status": "expired"
+        }
+    ],
+    "986609832327012393": [
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 72,
+            "reason": "loser",
+            "duration": "Permanent",
+            "timestamp": 1746650585,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 73,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746651682,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 74,
+            "reason": "disrespecting owner",
+            "duration": "Permanent",
+            "timestamp": 1746651848,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 75,
+            "reason": "disrespect to higher ups",
+            "duration": "Permanent",
+            "timestamp": 1746651950,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 76,
+            "reason": "being very rude to higher ranks",
+            "duration": "Permanent",
+            "timestamp": 1746652250,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 77,
+            "reason": "saying people to end it",
+            "duration": "Permanent",
+            "timestamp": 1746652454,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1228464292290891900>",
+            "caseid": 78,
+            "reason": "telling ppl to end it",
+            "duration": "30m",
+            "timestamp": 1746652547,
+            "type": "mute",
+            "status": "expired"
+        }
+    ],
+    "1228241844962332692": [
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 96,
+            "reason": "7",
+            "duration": "Permanent",
+            "timestamp": 1746866908,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 105,
+            "reason": "don't spam",
+            "duration": "Permanent",
+            "timestamp": 1746884252,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 106,
+            "reason": "cry",
+            "duration": "Permanent",
+            "timestamp": 1746889813,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 129,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746989399,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 130,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746990859,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 131,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1746990881,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1172875702538866802>",
+            "caseid": 140,
+            "reason": "...",
+            "duration": "Permanent",
+            "timestamp": 1747142590,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1294023220290261065>",
+            "caseid": 152,
+            "reason": "saying bad words to a good mod",
+            "duration": "Permanent",
+            "timestamp": 1747328316,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1213083863207907338>",
+            "caseid": 181,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747588589,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 182,
+            "reason": "sending nsfw",
+            "duration": "Permanent",
+            "timestamp": 1747588748,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1373790337071448177>",
+            "caseid": 187,
+            "reason": "Advertising",
+            "duration": "Permanent",
+            "timestamp": 1747669317,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 192,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1747839345,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 193,
+            "reason": "abuuus",
+            "duration": "Permanent",
+            "timestamp": 1747839406,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 197,
+            "reason": "fake warn",
+            "duration": "Permanent",
+            "timestamp": 1747839655,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 200,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1747928307,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 214,
+            "reason": "abusing our mods",
+            "duration": "Permanent",
+            "timestamp": 1748098785,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1359098260492648468>",
+            "caseid": 242,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1748276623,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 251,
+            "reason": "spamming and swearing staff",
+            "duration": "Permanent",
+            "timestamp": 1748355650,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 255,
+            "reason": "using n word",
+            "duration": "Permanent",
+            "timestamp": 1748445565,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 275,
+            "reason": "3hrs don't write nsfw",
+            "duration": "Permanent",
+            "timestamp": 1748793635,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1369342910360715264>",
+            "caseid": 276,
+            "reason": "NSFW",
+            "duration": "1h",
+            "timestamp": 1748794060,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 280,
+            "reason": "spam pinging our non abusive head amdin",
+            "duration": "Permanent",
+            "timestamp": 1748833580,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 281,
+            "reason": "spam pinging our non abusive head amdin",
+            "duration": "1h",
+            "timestamp": 1748834097,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 284,
+            "reason": "done spamming many times and again talking about nsfw",
+            "duration": "5h",
+            "timestamp": 1748869313,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 286,
+            "reason": "done spamming many times and again talking about nsfw",
+            "duration": "5h",
+            "timestamp": 1748870312,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 291,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1748878796,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1092423332743348244>",
+            "caseid": 309,
+            "reason": "saying n word",
+            "duration": "Permanent",
+            "timestamp": 1749036570,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 322,
+            "reason": "spamming too much",
+            "duration": "2h",
+            "timestamp": 1749227946,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 323,
+            "reason": "don't try to spam again",
+            "duration": "Permanent",
+            "timestamp": 1749228198,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 329,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749290370,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 331,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749290953,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 332,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749290983,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 334,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749291343,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 335,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749301498,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 336,
+            "reason": "disrespecting staff",
+            "duration": "1h",
+            "timestamp": 1749317679,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 344,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749378158,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 345,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749408526,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 346,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749458368,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 347,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749459115,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 348,
+            "reason": "stop pinging ayk",
+            "duration": "1h",
+            "timestamp": 1749476123,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 349,
+            "reason": "don't try to flood again",
+            "duration": "Permanent",
+            "timestamp": 1749476693,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 351,
+            "reason": "nsfw",
+            "duration": "1h",
+            "timestamp": 1749483464,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 358,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749543097,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 360,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749548761,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 361,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749548783,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@984001093505790012>",
+            "caseid": 362,
+            "reason": "saying n word",
+            "duration": "Permanent",
+            "timestamp": 1749557468,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 371,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749569331,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 372,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749569342,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 373,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749569352,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 374,
+            "reason": "nsfw",
+            "duration": "Permanent",
+            "timestamp": 1749574253,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 375,
+            "reason": "nsfw",
+            "duration": "1m",
+            "timestamp": 1749574429,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 376,
+            "reason": "flooding",
+            "duration": "30m",
+            "timestamp": 1749574541,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 377,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749574582,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 381,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749606309,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 382,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749622973,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 384,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749623626,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1218378802934190162>",
+            "caseid": 385,
+            "reason": "don't advertise",
+            "duration": "Permanent",
+            "timestamp": 1749623763,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 386,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749623813,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 387,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749623853,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 388,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749624007,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 389,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749624035,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 390,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749624154,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 391,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749624337,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 392,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749624366,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 394,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749639522,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 395,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749639613,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 398,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749646172,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 400,
+            "reason": "don't mass ping",
+            "duration": "6h",
+            "timestamp": 1749648632,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 401,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749648705,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 402,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749648716,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 403,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749648727,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 404,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749648741,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 405,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749648763,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 413,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749715421,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 414,
+            "reason": "unnecessary spamming",
+            "duration": "Permanent",
+            "timestamp": 1749715560,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 415,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749716187,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 416,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749716197,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 417,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749717398,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 418,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749717504,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 419,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749717558,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 420,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749717660,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 421,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749741413,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 422,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749741442,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 423,
+            "reason": "spamming",
+            "duration": "Permanent",
+            "timestamp": 1749742015,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 424,
+            "reason": "spamming",
+            "duration": "30s",
+            "timestamp": 1749742553,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@814075485667065878>",
+            "caseid": 425,
+            "reason": "change ur pfp noww in 2hrs otherwise strict action will be taken",
+            "duration": "Permanent",
+            "timestamp": 1749744269,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 428,
+            "reason": "don't spam cutie",
+            "duration": "Permanent",
+            "timestamp": 1749817227,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 429,
+            "reason": "No reason provided",
+            "duration": "30s",
+            "timestamp": 1749817423,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 430,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749817460,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 431,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749818376,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 432,
+            "reason": "stopp",
+            "duration": "2h",
+            "timestamp": 1749818391,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 460,
+            "reason": "No reason provided",
+            "duration": "10s",
+            "timestamp": 1749819719,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 470,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749822267,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 471,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749822284,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 473,
+            "reason": "No reason provided",
+            "duration": "20m",
+            "timestamp": 1749838231,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 477,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749870664,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 478,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749870677,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 481,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749878101,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 482,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749878143,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 484,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749891169,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1381147943322648576>",
+            "caseid": 485,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1749893731,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 487,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749896962,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 488,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1749919289,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1210662269193687131>",
+            "caseid": 489,
+            "reason": "\ud83d\ude1f",
+            "duration": "Permanent",
+            "timestamp": 1749921012,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 495,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749960111,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 496,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749974252,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1228630046927884288>",
+            "caseid": 500,
+            "reason": "advertising",
+            "duration": "Permanent",
+            "timestamp": 1749997618,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 502,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750000448,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 503,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750059777,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 504,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750059785,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 506,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750075400,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 507,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750075763,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1321803089942020122>",
+            "caseid": 558,
+            "reason": "don't spam asher",
+            "duration": "Permanent",
+            "timestamp": 1750138547,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 561,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750180879,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 562,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750181031,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 566,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750318556,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 567,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750318638,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1178205197227524198>",
+            "caseid": 569,
+            "reason": "No reason provided",
+            "duration": "2s",
+            "timestamp": 1750359578,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "N/A",
+            "caseid": 570,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750359596,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 573,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750439171,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 578,
+            "reason": "can't warn a higher staff",
+            "duration": "Permanent",
+            "timestamp": 1750478401,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "N/A",
+            "caseid": 579,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750520903,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 587,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750582338,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 588,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750584875,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 594,
+            "reason": "dm advertising even megz also",
+            "duration": "Permanent",
+            "timestamp": 1750642188,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 597,
+            "reason": "catfishing on my single friend",
+            "duration": "Permanent",
+            "timestamp": 1750642241,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 620,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750747692,
+            "type": "purge",
+            "status": "N/A"
+        }
+    ],
+    "1319648890529513472": [
+        {
+            "user": "<@1114612853756932206>",
+            "caseid": 104,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1746884130,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1363889156199157883>",
+            "caseid": 109,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1746897794,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1335946956572201032>",
+            "caseid": 121,
+            "reason": "Be respectful",
+            "duration": "Permanent",
+            "timestamp": 1746983900,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 126,
+            "reason": "harrasing members",
+            "duration": "1h",
+            "timestamp": 1746987220,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 127,
+            "reason": "harrasing members",
+            "duration": "1h",
+            "timestamp": 1746987636,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 128,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1746988449,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 132,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1746991147,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 133,
+            "reason": "10min",
+            "duration": "Permanent",
+            "timestamp": 1746991256,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 139,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1747142427,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1294023220290261065>",
+            "caseid": 151,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1747328277,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1228241844962332692>",
+            "caseid": 195,
+            "reason": "rule 34 talk",
+            "duration": "Permanent",
+            "timestamp": 1747839455,
+            "type": "warn",
+            "status": "removed"
+        }
+    ],
+    "442628530963218432": [
+        {
+            "user": "<@1266909773949964451>",
+            "caseid": 112,
+            "reason": "dm n word",
+            "duration": "Permanent",
+            "timestamp": 1746916934,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1202558638061789236>",
+            "caseid": 116,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1746945932,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@902330799649615943>",
+            "caseid": 136,
+            "reason": "abusing for income",
+            "duration": "Permanent",
+            "timestamp": 1747117411,
+            "type": "warn",
+            "status": "removed"
+        },
+        {
+            "user": "<@1183496778406957189>",
+            "caseid": 137,
+            "reason": "abusing for income",
+            "duration": "Permanent",
+            "timestamp": 1747117434,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1202558638061789236>",
+            "caseid": 188,
+            "reason": "dm advertising",
+            "duration": "Permanent",
+            "timestamp": 1747669736,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1141396469002281000>",
+            "caseid": 266,
+            "reason": "provocating with H word",
+            "duration": "Permanent",
+            "timestamp": 1748724427,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 292,
+            "reason": "sending nazi pics / memes",
+            "duration": "Permanent",
+            "timestamp": 1748880585,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1213245138143420466>",
+            "caseid": 306,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1748972583,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 311,
+            "reason": "spam and swearing against high rank staff",
+            "duration": "Permanent",
+            "timestamp": 1749146884,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 312,
+            "reason": "arguing with mod",
+            "duration": "Permanent",
+            "timestamp": 1749146936,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 320,
+            "reason": "mass ping",
+            "duration": "Permanent",
+            "timestamp": 1749174340,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 321,
+            "reason": "spam",
+            "duration": "Permanent",
+            "timestamp": 1749174355,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1349461121580404737>",
+            "caseid": 327,
+            "reason": "self advertising and flodding/spaming",
+            "duration": "Permanent",
+            "timestamp": 1749242738,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 490,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749921112,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 491,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1749921116,
+            "type": "purge",
+            "status": "N/A"
+        }
+    ],
+    "1291437732685680761": [
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 204,
+            "reason": "NSFW",
+            "duration": "Permanent",
+            "timestamp": 1747949205,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 207,
+            "reason": "calling someone \"mommy\" even after being asked multiple times not to \ud83e\udd40 Not tuff cuh \ud83e\udd40 \ud83d\udc94 \ud83d\ude02 \u270c\ud83c\udffc",
+            "duration": "Permanent",
+            "timestamp": 1747949634,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 218,
+            "reason": "chat flood.",
+            "duration": "Permanent",
+            "timestamp": 1748118835,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@854591758704050178>",
+            "caseid": 229,
+            "reason": "NSFW",
+            "duration": "Permanent",
+            "timestamp": 1748195657,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 247,
+            "reason": "Opening a ticket to beg for mod, too many warns and timeouts",
+            "duration": "1h",
+            "timestamp": 1748309578,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 252,
+            "reason": "chat flood || message implys NSFW",
+            "duration": "1h",
+            "timestamp": 1748364130,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 261,
+            "reason": "Homophobic comment \"Can't be saying ew when ur dating a trans\"",
+            "duration": "1h",
+            "timestamp": 1748560483,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 267,
+            "reason": "Homophobic",
+            "duration": "1h",
+            "timestamp": 1748739699,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 274,
+            "reason": "spam",
+            "duration": "5m",
+            "timestamp": 1748787323,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 277,
+            "reason": "nsfw",
+            "duration": "1h",
+            "timestamp": 1748803384,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1362845612344611138>",
+            "caseid": 278,
+            "reason": "nsfw",
+            "duration": "1h",
+            "timestamp": 1748803401,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1319648890529513472>",
+            "caseid": 279,
+            "reason": "nsfw",
+            "duration": "1h",
+            "timestamp": 1748803417,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 295,
+            "reason": "\"Kill yourzelf\"",
+            "duration": "10m",
+            "timestamp": 1748884809,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 296,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1748884854,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 325,
+            "reason": "AFK spam",
+            "duration": "Permanent",
+            "timestamp": 1749236435,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 326,
+            "reason": "spam",
+            "duration": "1h",
+            "timestamp": 1749236833,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 353,
+            "reason": "shut up",
+            "duration": "10m",
+            "timestamp": 1749501972,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 355,
+            "reason": "spam ping",
+            "duration": "1h",
+            "timestamp": 1749504728,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 574,
+            "reason": "N-word by pass",
+            "duration": "10m",
+            "timestamp": 1750443050,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 575,
+            "reason": "n-word by pass",
+            "duration": "10m",
+            "timestamp": 1750443063,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1356915119119929344>",
+            "caseid": 593,
+            "reason": "DM adv",
+            "duration": "Permanent",
+            "timestamp": 1750642146,
+            "type": "warn",
+            "status": "active"
+        }
+    ],
+    "1362845612344611138": [
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 210,
+            "reason": "harassing members",
+            "duration": "Permanent",
+            "timestamp": 1748041706,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 211,
+            "reason": "harassing members and spamming",
+            "duration": "10m",
+            "timestamp": 1748041743,
+            "type": "mute",
+            "status": "expired"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 213,
+            "reason": "direct swearing",
+            "duration": "Permanent",
+            "timestamp": 1748098726,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 216,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1748105262,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@986609832327012393>",
+            "caseid": 221,
+            "reason": "flooding",
+            "duration": "Permanent",
+            "timestamp": 1748123818,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1161742900904853545>",
+            "caseid": 222,
+            "reason": "direct swearing",
+            "duration": "5m",
+            "timestamp": 1748127468,
+            "type": "mute",
+            "status": "expired"
+        }
+    ],
+    "1114612853756932206": [
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 582,
+            "reason": "n word",
+            "duration": "Permanent",
+            "timestamp": 1750536091,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1223047237161193482>",
+            "caseid": 586,
+            "reason": "n word again",
+            "duration": "Permanent",
+            "timestamp": 1750552485,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1035893514577379329>",
+            "caseid": 589,
+            "reason": "flood/spam",
+            "duration": "Permanent",
+            "timestamp": 1750589376,
+            "type": "warn",
+            "status": "removed"
+        }
+    ],
+    "1172875702538866802": [
+        {
+            "user": "N/A",
+            "caseid": 599,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750665889,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 601,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682346,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 602,
+            "reason": "spam pinging",
+            "duration": "Permanent",
+            "timestamp": 1750682355,
+            "type": "warn",
+            "status": "active"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 603,
+            "reason": "spam pinging",
+            "duration": "15m",
+            "timestamp": 1750682363,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 604,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682379,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 605,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682385,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 606,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682400,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 607,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682418,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 608,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682462,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 609,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682472,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 610,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682568,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 611,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682591,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 612,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750682977,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "<@1356661993314189495>",
+            "caseid": 613,
+            "reason": "No reason provided",
+            "duration": "1h",
+            "timestamp": 1750683172,
+            "type": "mute",
+            "status": "active"
+        },
+        {
+            "user": "N/A",
+            "caseid": 615,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750711612,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 616,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750711635,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 617,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750711640,
+            "type": "purge",
+            "status": "N/A"
+        },
+        {
+            "user": "N/A",
+            "caseid": 618,
+            "reason": "N/A",
+            "duration": "N/A",
+            "timestamp": 1750711648,
+            "type": "purge",
+            "status": "N/A"
+        }
+    ]
+}
